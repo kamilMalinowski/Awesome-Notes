@@ -1,0 +1,30 @@
+.header-home {
+  &__title {
+    font-size: 60px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 16px;
+    background: var(--color-termina);
+    border-bottom: 6px solid var(--color-gray);
+    border-top: 6px solid var(--color-gray);
+    font-weight: normal;
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 22px;
+    }
+    &--special {
+      color: white;
+      background: var(--color-darkpurple);
+      border-bottom: 6px solid var(--color-purple);
+      border-top: 6px solid var(--color-purple);
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+}

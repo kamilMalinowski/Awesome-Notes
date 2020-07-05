@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/icon.png"
+      sizes="64x64"
+      type="image/png"
+    />
+    <title>Moja nauka Frontendu</title>
+  </head>
+
+  <body class="body">
+    <!--NAVIGATION-->
+    <header class="header">
+      <button class="hot-dog hot-dog--js" aria-label="otwórz menu">Menu</button>
+      <nav class="navigation navigation--html navigation--js">
+        <a class="navigation__link" href="index.html">WTF</a>
+        <a
+          class="navigation__link navigation__link--homepage"
+          href="notatki-html.html"
+          >HTML</a
+        >
+        <a class="navigation__link" href="notatki-css.html">CSS</a>
+        <a class="navigation__link" href="notatki-js.html">JS</a>
+        <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
+        <div class="darkmode">
+          <button
+            class="dot dot--js"
+            aria-label="przełącz na ciemny tryb"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+      <header class="header-home">
+        <h1 class="header-home__title">HTML</h1>
+        <img
+          class="header-home__image"
+          src="../assets/img/background_homepage_html.jpg"
+          alt="html wallpaper"
+        />
+      </header>
+
+      <!--HTML-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Co ten HTML?</h2>
+        <article class="notes__article">
+          <h3 class="notes__title">Notatki Html</h3>
+          <p class="notes__description">
+            <i>HTML = HyperText Markup Language</i>
+          </p>
+          <ul class="list">
+            <li class="list__element">
+              <b>HTML odpowiada za treść</b> - a właściwie za jej właściwe
+              opakowanie
+            </li>
+            <li class="list__element">
+              <b>&lt;/&gt;</b> - HTML składa się ze znaczników/tagów/elementów
+            </li>
+            <li class="list__element">
+              <b>Semantyczny </b> = mający znaczenie
+            </li>
+            <li class="list__element">
+              Pliki zawierające kod HTML mają zwykle rozszerzenie <i>.html</i>
+            </li>
+            <li class="list__element">
+              <b>HTML to szkielet strony internetowej</b> - nawet ma taką
+              budowę!
+            </li>
+            <li class="list__element">
+              <b
+                ><a
+                  class="notes__link"
+                  href="https://validator.w3.org/nu/#textarea"
+                  >Validator</a
+                ></b
+              >
+              - sprawdzamy tu kod
+            </li>
+          </ul>
+          <h3 class="notes__title">Główne znaczniki:</h3>
+          <ul class="list">
+            <li class="list__element">
+              <b>&lt;html&gt;</b> = &lt;head&gt;+&lt;body&gt;
+            </li>
+            <li class="list__element">
+              <b>&lt;main&gt;</b> - Główna część dokumentu
+            </li>
+            <li class="list__element">
+              <b>&lt;section&gt;</b> - Sekcja dokumentu
+            </li>
+            <li class="list__element">
+              <b>&lt;article&gt;</b> - Samodzielne treści
+            </li>
+            <li class="list__element">
+              <b>&lt;header&gt;</b> - Nagłówek - dokumentu / sekcji / artykułu
+            </li>
+            <li class="list__element">
+              <b>&lt;footer&gt;</b> - Stopka - dokumentu / sekcji
+            </li>
+            <li class="list__element">
+              <b>&lt;h1-h6&gt;</b> - Tekstowe nagłówki tytułowe - dokumentu
+              /sekcji
+            </li>
+            <li class="list__element"><b>&lt;p&gt;</b> - Paragraf / akapit</li>
+            <li class="list__element"><b>&lt;br&gt;</b> - nowa linia</li>
+            <li class="list__element">
+              <b>&lt;b&gt;/pogrubienie oraz &lt;i&gt;/wykrzywiony tekst</b> -
+              Nie mają dużego znaczenia semantycznego - służą do wyróżnienia
+              fragmentu z tekstu otaczającego
+            </li>
+            <li class="list__element">
+              <b>&lt;strong&gt;</b> - podkreśla wysoką istotność i poważność
+              frazy w nim zawartej
+            </li>
+            <li class="list__element">
+              <b>&lt;em&gt;</b> - podkreśla, że tekst może mieć inne znaczenie
+              (np. ironia)
+            </li>
+            <li class="list__element">
+              <b>&lt;a&gt;</b> - linki / łącza wewnątrz dokumentu
+            </li>
+            <li class="list__element">
+              <b>&lt;element id="moj-identyfikator"&gt;</b> - atrybut id -
+              identyfikuje element (przydaje się do nawigacji w obrębie
+              dokumentu)
+            </li>
+            <li class="list__element"><b>&lt;nav&gt;</b> - Nawigacja</li>
+            <li class="list__element">
+              <b>&lt;img src="" alt=""&gt;</b> - img - obrazek o podanym adresie
+            </li>
+            <li class="list__element"><b>&lt;sup&gt;</b> - index górny</li>
+            <li class="list__element"><b>&lt;sub&gt;</b> - index dolny</li>
+          </ul>
+          <h3 class="notes__title">Treść to:</h3>
+          <ul class="list">
+            <li class="list__element">Teksty</li>
+            <li class="list__element">Nagłówki</li>
+            <li class="list__element">Linki</li>
+            <li class="list__element">Listy</li>
+            <li class="list__element">Definicje</li>
+            <li class="list__element">Obrazki</li>
+            <li class="list__element">Video</li>
+            <li class="list__element">Formularze</li>
+            <li class="list__element">Wszystko co jest nośnikiem informacji</li>
+          </ul>
+          <h3 class="notes__title">BEM-block element modifier</h3>
+          <ul class="list">
+            <li class="list__element"><b>B</b>lock - nadrzędny element</li>
+            <li class="list__element">
+              <b>E</b>lement - część bloku (nie musi być bezpośrednim dzieckiem)
+            </li>
+            <li class="list__element">
+              <b>M</b>odifier - modyfikator - jeśli element występuje w kilku
+              wariacjach tworzymy dodatkową klasę
+            </li>
+          </ul>
+          <h3 class="notes__title">BEM-Dlaczego?</h3>
+          <ul class="list">
+            <li class="list__element">
+              Świat stylowania doszedł do wysokiego stopnia skomplikowania
+              (specyficzność)
+            </li>
+            <li class="list__element">Problem z logicznym nazywaniem klas</li>
+            <li class="list__element">
+              Brak ujednoliconego sposobu stylowania
+            </li>
+            <li class="list__element">Importanty, nadpisywanie rzeczy</li>
+            <li class="list__element">
+              Brak odwzorowanie struktury HTML w CSS
+            </li>
+            <li class="list__element">
+              Stylowanie kilkoma klasami, powtarzające się nazwy
+            </li>
+          </ul>
+          <h3 class="notes__title">Podsumowanie HTML:</h3>
+          <ul class="list">
+            <li class="list__element">Opakowuje i opisuje treść strony</li>
+            <li class="list__element">
+              Mówi przeglądarce o strukturze dokumentu (i o tym co ma wczytać)
+            </li>
+            <li class="list__element">Posiada swoją zdefiniowaną składnie</li>
+            <li class="list__element">
+              Nie jest językiem programowania, jest językiem znaczników (Markup
+              Language)
+            </li>
+            <li class="list__element">
+              Aktualną rekomendowaną wersją jest 5.2
+            </li>
+            <li class="list__element">
+              Całą specyfikację znajdziesz na stronie
+              <a class="notes__link" href="https://www.w3.org/TR/html52/"
+                >w3c</a
+              >
+            </li>
+          </ul>
+          <h3 class="notes__title">Podsumowanie lekcja nr.2</h3>
+          <ul class="list">
+            <li class="list__element">
+              atrybuty są "niewidzialne" - chowamy je w znaczniku
+            </li>
+            <li class="list__element">
+              nadają elementom dodatkowe właściwości (href, src)
+            </li>
+            <li class="list__element">
+              pozwalają na grupowanie elementów (class)
+            </li>
+            <li class="list__element">
+              pozwalają na identyfikowanie elementów (id)
+            </li>
+            <li class="list__element">można je miksować</li>
+            <li class="list__element">
+              spis atrybutów
+              <a
+                class="notes__link"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes "
+                >"globalnych"</a
+              >
+            </li>
+          </ul>
+          <h3 class="notes__title">Podsumowanie BEM</h3>
+          <ul class="list">
+            <li class="list__element">
+              Szukamy elementów na stronie i dzielimy ją na bloki
+            </li>
+            <li class="list__element">
+              Myślimy o elementach składowych / robimy analizę-selekcję
+            </li>
+            <li class="list__element">
+              Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze
+              zmieniamy tylko unikalne dla niego wartości, nie przepisujemy
+              rzeczy z klasy bazowej)
+            </li>
+          </ul>
+          <h3 class="notes__title">HTML Dalej: listy, tabele oraz definicje</h3>
+          <ul class="list">
+            <li class="list__element">
+              <b>&lt;ul&gt;</b> - lista nieuporządkowana
+            </li>
+            <li class="list__element"><b>&lt;li&gt;</b> - element listy</li>
+            <li class="list__element">
+              <b>&lt;ol&gt;</b> - lista uporządkowana
+            </li>
+            <li class="list__element">
+              Możemy zagnieżdżać listy wewnątrz elementu listy <i>li</i>
+            </li>
+            <li class="list__element">
+              <b>&lt;dl&gt;</b> - Description List:
+              <ol class="list">
+                <li class="list__element">
+                  <b>&lt;dt&gt;</b> - Description term
+                </li>
+                <li class="list__element">
+                  <b>&lt;dd&gt;</b> - Description detail
+                </li>
+              </ol>
+            </li>
+          </ul>
+          <!--bird-->
+          <article class="notes__article">
+            <h2 class="notes__title notes__title--h2">MYSIKRÓLIK</h2>
+            <p class="notes__description notes__description--bird">
+              <i>Przykład użycia definicji</i>
+            </p>
+            <img
+              class="notes__image notes__image--bird"
+              src="../assets/img/mysikrólik.jpg"
+              alt="mysikrólik"
+            />
+            <p class="notes__description notes__description--bird">
+              &uarr;&uarr;&uarr;&uarr;&uarr;pogłaszcz mysikrólika
+              myszką&uarr;&uarr;&uarr;&uarr;&uarr;
+            </p>
+            <dl>
+              <dt class="notes__dt">Występowanie</dt>
+              <dd class="notes__dd">
+                Występuje nieomal w całej Europie (na południu rzadziej,
+                najliczniej w środkowej i wschodniej) oraz w Azji – aż po
+                wschodnią Syberię i Japonię oraz w Azji Mniejszej. Nie
+                zamieszkuje dalekiej Północy. Częściowo osiadły (południowe
+                populacje), częściowo wędrowny (przeloty od marca do kwietnia i
+                odloty od września do listopada populacji północnych) lub
+                koczujący. Zimuje w południowej Europie, północnej Afryce i w
+                Azji.
+              </dd>
+              <dt class="notes__dt">Głos</dt>
+              <dd class="notes__dd">
+                Wydaje ciche, szczebioczące „si si si”, „sri sri sri” z akcentem
+                na kończącym pieśń trelu lub o podobnej wysokości falujący śpiew
+                wabiący. Samiec często śpiewa i w różnych porach roku – robi to
+                najczęściej blisko swego gniazda na wierzchołku drzewa. Usłyszeć
+                go można w lesie iglastym nawet zimą. Milknie w okresie wylęgu
+                piskląt, aby nie zwracać uwagi na gniazdo i nie tracić
+                czujności. Od śpiewu zniczka odróżnia go szybko powtarzane „si
+                si”, a następnie głośniejsza, dwusylabowa, modulowana seria
+                zakończona delikatnym trelem.
+              </dd>
+            </dl>
+          </article>
+          <!--table-->
+          <h3 class="notes__title">Tabela - czyli jak ją zrobić</h3>
+          <table class="table">
+            <caption class="table__description">
+              Tabela pokazowa
+            </caption>
+            <thead class="thead">
+              <tr class="row">
+                <th class="row__head">komórka w nagłówku</th>
+                <th class="row__head">komórka w nagłówku</th>
+                <th class="row__head">komórka w nagłówku</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr class="row">
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+              </tr>
+              <tr class="row">
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+              </tr>
+              <tr class="row">
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+              </tr>
+              <tr class="row">
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+              </tr>
+              <tr class="row">
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+                <td class="row__data">komórka tabeli</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer footer--html">
+      Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
+      WTF: Co ten Frontend.
+    </footer>
+  </body>
+</html>

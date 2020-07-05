@@ -1,153 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
+      rel="shortcut icon"
+      href="../assets/icons/icon.png"
+      sizes="64x64"
+      type="image/png"
     />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Moja nauka Frontendu</title>
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+
+  <body class="body">
+    <!--NAVIGATION-->
+    <header class="header">
+      <button class="hot-dog hot-dog--js" aria-label="otwórz menu">Menu</button>
+      <nav class="navigation navigation--js">
+        <a
+          class="navigation__link navigation__link--homepage-main"
+          href="index.html"
+          >WTF</a
+        >
+        <a class="navigation__link" href="notatki-html.html">HTML</a>
+        <a class="navigation__link" href="notatki-css.html">CSS</a>
+        <a class="navigation__link" href="notatki-js.html">JS</a>
+        <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
+        <div class="darkmode">
+          <button
+            class="dot dot--js"
+            aria-label="przełącz na ciemny tryb"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--HEADER-->
+      <header class="header-home">
+        <h1 class="header-home__title header-home__title--special">
+          Moja nauka Frontendu
+        </h1>
+        <img
+          class="header-home__image"
+          src="../assets/img/background_homepage.jpg"
+          alt="Mój logotyp Malinowski"
+        />
+      </header>
+
+      <!--ABOUT ME-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Kamil Malinowski</h2>
+        <div class="notes__images">
+          <img
+            class="notes__image notes__image--about-me"
+            src="../assets/img/about-left.jpg"
+            alt="Kamilasek Głuptasek patrzy w lewo"
+          />
+          <img
+            class="notes__image notes__image--about-me"
+            src="../assets/img/about-center.jpg"
+            alt="Kamilasek Głuptasek patrzy przed siebie"
+          />
+          <img
+            class="notes__image notes__image--about-me"
+            src="../assets/img/about-right.jpg"
+            alt="Kamilasek Głuptasek patrzy w prawo"
+          />
+        </div>
+        <article class="notes__article">
+          <h3 class="notes__title">Kim jestem?</h3>
+          <p class="notes__description">
+            Nazywam się Kamil i pasjonuję się programowaniem, grafiką
+            komputerową oraz grą na instrumentach muzycznych.<!--do poprawy-->
+          </p>
+          <h3 class="notes__title">Co tutaj robię?</h3>
+          <p class="notes__description">
+            W ramach 13 tygodniowego szkolenia WTF: Co ten Frontent uczę się
+            podstaw HTML, CSS oraz Javascript. Poznaję narzędzia devoloperskie
+            oraz standardy tworzenia stron internetowych. Na tej stronie
+            uzupełniam notatki.<!--do poprawy-->
+          </p>
+          <h3 class="notes__title">Co po szkoleniu?</h3>
+          <p class="notes__description">
+            Po szkoleniu zyskam cenne praktyczne doświadczenia oraz notatki
+            przydatne w mojej późniejszej edukacji.<!--do poprawy-->
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
+      WTF: Co ten Frontend.
+    </footer>
   </body>
 </html>

@@ -88,5 +88,29 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "another.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/notatki-html.html",
+      inject: true,
+      chunks: ["index", "another", "notatki-html"],
+      filename: "notatki-html.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/notatki-css.html",
+      inject: true,
+      chunks: ["index", "another", "notatki-html", "notatki-css"],
+      filename: "notatki-css.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/notatki-js.html",
+      inject: true,
+      chunks: ["index", "another", "notatki-html", "notatki-css", "notatki-js"],
+      filename: "notatki-js.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/notatki-terminal.html",
+      inject: true,
+      chunks: ["index", "another", "notatki-html", "notatki-css", "notatki-js", "notatki-terminal"],
+      filename: "notatki-terminal.html",
+    }),
   ],
 };

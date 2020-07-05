@@ -1,13 +1,72 @@
+
 @import "~normalize.css";
+@import "variables"; 
+/*IMPORT-RESET-BODY-MAIN-HAMBURGER-LIST*/
 
-@import "_variables";
-@import "modules/hello.scss";
+@import "modules/navigation.scss";
+@import "modules/header.scss";
+@import "modules/notes.scss";
+@import "modules/dark-mode.scss";
+@import "modules/grid.scss";
+@import "modules/box-model.scss";
+@import "modules/table.scss";
+@import "modules/footer.scss";
+@import "modules/colors-root.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+/*RESET-m.korsan idea*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*BODY AND MAIN*/
+.body {
+  background: var(--bacground1);
+  font-family: "Miriam Libre", sans-serif;
+  color: var(--color-gray);
+  margin: 0;
+}
+.main {
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 69px;
+  @media screen and (max-width: 1010px) {
+    margin: 0 16px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 56px;
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 46px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-top: 36px;
+  }
+}
+
+/*MENU-HAMBURGER*/
+.hot-dog {
+  display: none;
+  width: 100%;
+  background: var(--text-font);
+  color: white;
+  margin: 0;
+  border-style: double;
+  @media screen and (max-width: 425px) {
+    display: block;
+  }
+  &:hover {
+    color: gray;
+  }
+}
+
+/*LIST*/
+.list {
+  &__element {
+    @include mediaTabletMobile;
+  }
 }

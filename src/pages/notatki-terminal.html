@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="favicon"
-      href="../assets/icons/icon.png"
-      sizes="96x96"
-      type="image/png"
-    />
+    <link rel="icon" href="/icon.png" sizes="96x96" type="image/png" />
     <title>Moja nauka Frontendu</title>
   </head>
 
@@ -268,6 +263,65 @@
               <b>npm run +nazwa skryptu</b> odpalamy skrypt w terminalu
             </li>
           </ul>
+          <h3 class="notes__title">
+            WTF Webpack - instalacja oraz instrukcja obsługi
+          </h3>
+          <ol class="list">
+            <li class="list__element">
+              <b>
+                Utwórz z szablonu nowe repozytorium i sklonuj do siebie na dysk
+              </b>
+              -
+              <a
+                class="notes__link"
+                href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"
+                >wtf webpack</a
+              >
+            </li>
+            <li class="list__element">
+              <b>npm install</b> - instalujemy npm do naszego projektu
+            </li>
+            <li class="list__element">
+              <b>npm run start</b> -odpalamy webpack w naszym projekcie.
+            </li>
+            <li class="list__element">
+              <b>http://localhost:8080/</b> - mam dostęp do lokalnego serwera
+              bez konieczności używania wtyczek z Visual Studio Code
+            </li>
+            <li class="list__element">
+              <b>npm run build</b> - do zmiany trybu build
+            </li>
+            <li class="list__element">
+              <b>../</b> - dodajemy obrazki używając podpowiedzi z VSC
+            </li>
+            <li class="list__element">
+              <b>webpack.common.js</b> - w tym pliku dodajemy dodatkowe pliki
+              html-owe
+            </li>
+            <li class="list__element">
+              <b>chunks</b> - sa to tablice do których możemy przypiąć
+              indywidualnie pliki js
+            </li>
+            <li class="list__element">
+              <b>import "../scss/main.scss";</b> - ta linijka kodu importuje nam
+              style - <b>nie usuwamy jej!!!</b>
+            </li>
+            <li class="list__element">
+              <b>~</b> - używamy tyldy w sasse do importowania plików z
+              node_modules
+            </li>
+            <li class="list__element">
+              <b>source map</b> - jest to ściaga w devtool
+            </li>
+            <li class="list__element">
+              <b>DIST</b> - jest wynikiem naszej pracy, zawartość tego katalogu
+              publikujemy na serwerze
+            </li>
+            <li class="list__element">
+              <b>npm run publish</b> - generujemy w git hubie zakładkę
+              <i>gh-pages branch</i> - publikujemy tym strone
+            </li>
+          </ol>
         </article>
       </section>
     </main>

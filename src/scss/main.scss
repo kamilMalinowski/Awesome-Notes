@@ -1,8 +1,8 @@
 
 @import "~normalize.css";
 @import "variables"; 
-/*IMPORT-RESET-BODY-MAIN-HAMBURGER-LIST*/
 
+/*IMPORT-RESET-BODY-MAIN-HAMBURGER-LIST*/
 @import "modules/navigation.scss";
 @import "modules/header.scss";
 @import "modules/notes.scss";
@@ -70,3 +70,5 @@ html {
     @include mediaTabletMobile;
   }
 }
+
+

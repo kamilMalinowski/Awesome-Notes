@@ -1,4 +1,6 @@
-import '../scss/main.scss';
+import "../scss/main.scss"; /*dont  delete this code line*/
+
+import moment from "moment";
 
 /*ćwiczenia z lekcji nr.1
 const name = "Kamil";
@@ -77,7 +79,7 @@ console.log(hamburger);
 /*document.documentElement.style.setProperty('--zmienna', 'wartość') - darkmmode*/
 let isDark = false;
 
-const switchModes = document.querySelector(".dot--js");
+const switchModes = document.querySelector(".darkmode");
 
 switchModes.addEventListener("click", () => {
   if (isDark) {
@@ -118,3 +120,4 @@ switchModes.addEventListener("click", () => {
     isDark = true;
   }
 });
+

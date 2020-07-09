@@ -1,12 +1,14 @@
 .dot {
   background: var(--dot);
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   border-radius: 100%;
   border: none;
+  margin: 4px;
   cursor: pointer;
   &:hover {
     background: var(--dot-hover);
+margin-left: 34px;
   }
   @media screen and (max-width: 768px) {
     width: 14px;
@@ -24,13 +26,14 @@
 
 .darkmode {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background: var(--text-font);
-  width: 34px;
+  width: 60px;
   height: 34px;
   margin: 10px 2px 10px 2px;
-  border-radius: 100%;
+  border-radius: 25px;
+  cursor: pointer;
   @media screen and (max-width: 768px) {
     width: 24px;
     height: 24px;

@@ -1,18 +1,7 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![myWtfNotesLogo](https://mir-cdn.behance.net/v1/rendition/project_modules/fs/85c71f90815521.5f10cd28aed53.jpg "Moja nauka Frontendu")
 
-# WTF Webpack Starter Kit 
+# Moja nauka Frontendu 
 
-Simple toolkit for your static websites development.
+Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia WTF: Co ten Frontend.
 
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+`więcej wkrótce`

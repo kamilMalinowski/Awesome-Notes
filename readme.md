@@ -1,7 +1,20 @@
 ![myWtfNotesLogo](https://mir-cdn.behance.net/v1/rendition/project_modules/fs/85c71f90815521.5f10cd28aed53.jpg "Moja nauka Frontendu")
 
-# Moja nauka Frontendu 
+# MOJA NAUKA FRONTENDU - NOTES
 
-Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia WTF: Co ten Frontend.
+My notes created as part of the "WTF: Co ten frontend" training. I'm still thinking about how to assimilate them better.
 
-`więcej wkrótce`
+## TOOLS
+
+- WTF Webpack starterkit
+- HTML + CSS + JS
+- Github API
+
+## AVAILABLE SCRIPTS
+
+`npm run start` - runs development mode
+
+`npm run build` - runs build process for production
+
+`npm run publish` - runs build process and publish the page using `gh-pages` branch
+

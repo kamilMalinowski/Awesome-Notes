@@ -31,6 +31,8 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 {} - tak tworzymy obiekty
 [] - tak tworzymy tablice
 ... - spred operator
+`` - backtick
+$ {}
 
 ```
 ### Praktyczne przykłady:
@@ -139,7 +141,23 @@ const fruitAndDrink =[...fruit, ...drink];
 console.log(fruitAndDrink);
 ```
 
+```javascript 
+fetch("https://api.github.com/users/kamilMalinowski/repos")
+  .then((resp) => resp.json())
+  .then((resp) => {
+    for (let repo of resp) {
+      const repositoryList = document.querySelector(".list--js");
+      const { name, html_url } = repo;
+      const myTemplate = 
+      ``;
+      repositoryList.innerHTML += myTemplate;
+    }
+  })
+  .catch((error) => {
+    console.log("nie udało się pobrać");
+  });
+```
 więcej wkrótce...more comming son
-`
+
 
 

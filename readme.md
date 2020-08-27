@@ -141,6 +141,7 @@ const fruitAndDrink =[...fruit, ...drink];
 console.log(fruitAndDrink);
 ```
 
+#### fetch api
 ```javascript 
 fetch("https://api.github.com/users/kamilMalinowski/repos")
   .then((resp) => resp.json())
@@ -157,6 +158,19 @@ fetch("https://api.github.com/users/kamilMalinowski/repos")
     console.log("nie udało się pobrać");
   });
 ```
+
+#### hamburger
+```javascript
+const hamburger = document.querySelector(".hamburger--js");
+
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
+
+console.log(hamburger);
+```
+
 więcej wkrótce...more comming son
 
 

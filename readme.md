@@ -190,7 +190,7 @@ number
 ```javascript
 KOERCJA typów to inaczej ZMIANA typów
 
-1.  1 == 1            => return 1 === 1
+1. 1 == 1            => return 1 === 1
 2. null == undefined  => return true
 3. undefined == null  => return true
 4. 1 == '1'           => return 1 == Number('1')
@@ -208,6 +208,10 @@ np. [2, 3].toString()
 
 ```
 
+```javascript
+let name = prompt("Jak masz na imię?")
+
+```
 
 
 

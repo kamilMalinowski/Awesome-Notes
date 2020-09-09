@@ -171,7 +171,44 @@ hamburger.addEventListener("click", () => {
 console.log(hamburger);
 ```
 
-więcej wkrótce...more comming son
+#### == vs ===, czyli o koercji typów
+###### ===
+```javascript
+IDENTYCZNE === IDENTYCZNE
+//zapis ten jest prawidłowy
+
+IDENTYCZNE === 'IDENTYCZNE'
+//zapis ten jest błędny 
+
+PRZYKŁAD:
+2 === 2 
+typeof 2
+number
+//typ number - nie dochodzi do koercji
+```
+###### ==
+```javascript
+KOERCJA typów to inaczej ZMIANA typów
+
+1.  1 == 1            => return 1 === 1
+2. null == undefined  => return true
+3. undefined == null  => return true
+4. 1 == '1'           => return 1 == Number('1')
+5. '1' == 1           => return Number('1') == 1
+6. true == ...        => return Number(true) == ...
+7. ... == true        => return ... == Number(true)
+8. '1' == [1, 2, 3]   => return '1' == ToPrimitive([1, 2, 3])
+9. [1, 2, 3] == '1'   => return ToPrimitive([1, 2, 3]) == '1'
+10. return false 
+
+p.s.
+- sprawdzenie typu w przypadku tablicy używamy metody:
+np. [2, 3].toString()
+"2,3"
+
+```
+
+
 
 
 

@@ -31,8 +31,8 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 {} - tak tworzymy obiekty
 [] - tak tworzymy tablice
 ... - spred operator
-`` - backtick
-$ {}
+`` - backtick specjalny znacznik/literał, w którym możemy opakować tekst i zmienne
+${zmienna} - do opakowania zmiennych
 
 ```
 ### Praktyczne przykłady:
@@ -207,12 +207,16 @@ np. [2, 3].toString()
 "2,3"
 
 ```
-
+#### Różności:
 ```javascript
-let name = prompt("Jak masz na imię?")
-
+let name = prompt("np. Jak masz na imię?") - wyskakujace okienko do wypełnienia
+alert ('parametry') - polecenie wyskakującego okna na początku otwierania strony
 ```
 
-
+#### JSON
+```javascript
+JASON.stringify({zawartość pliku JSON}) - funkcja zamieniająca plik JSON na zwykły tekst
+JSON.parse(tekst) - funkcja pobierająca tekst, który zamienia w plik JSON
+```
 
 

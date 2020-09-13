@@ -18,4 +18,8 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
 
-## AVAILABLE JAVASRIPT NOTES
+## AVAILABLE README.MD NOTES
+
+1. [Javascript](https://github.com/kamilMalinowski/webpack-test/blob/master/README-JS.md)
+
+

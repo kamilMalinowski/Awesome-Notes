@@ -197,4 +197,21 @@ JASON.stringify({zawartość pliku JSON}) - funkcja zamieniająca plik JSON na z
 JSON.parse(tekst) - funkcja pobierająca tekst, który zamienia w plik JSON
 ```
 
+#### SIMPLE DARK MODE
+```javascript
+let isDark = false;
+const switchModes = document.querySelector(".darkmode");
+
+switchModes.addEventListener("click", () => {
+  if (isDark) {
+    document.documentElement.style.setProperty("--text-font", "black");
+
+    isDark = false;
+  } else {
+    document.documentElement.style.setProperty("--text-font", "white");
+
+    isDark = true;
+  }
+});
+```
 

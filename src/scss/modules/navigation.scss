@@ -16,7 +16,8 @@
   &--html,
   &--css,
   &--javas,
-  &--terminal {
+  &--terminal,
+  &--react {
     border-bottom: 6px solid var(--color-gray);
   }
   &--html {
@@ -30,6 +31,9 @@
   }
   &--terminal {
     background: var(--color-termina);
+  }
+  &--react {
+    background: var(--color-react);
   }
   &__link {
     font-size: 30px;

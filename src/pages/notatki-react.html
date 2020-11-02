@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="src/assets/icons/icon.png"
+    />
+    <title>Moja nauka Frontendu</title>
+  </head>
+
+  <body class="body">
+    <!--NAVIGATION-->
+    <header class="header">
+      <button class="hot-dog hot-dog--js" aria-label="otwórz menu">Menu</button>
+      <nav class="navigation navigation--react navigation--js">
+        <a class="navigation__link" href="index.html"
+          >WTF <span class="time--js"></span
+        ></a>
+        <a class="navigation__link" href="notatki-html.html">HTML</a>
+        <a class="navigation__link" href="notatki-css.html">CSS</a>
+        <a class="navigation__link" href="notatki-js.html">JS</a>
+        <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
+        <a
+          class="navigation__link navigation__link--homepage"
+          href="notatki-react.html"
+          >REACT</a
+        >
+        <div class="darkmode">
+          <button
+            class="dot dot--js"
+            aria-label="przełącz na ciemny tryb"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!--HEADER-->
+      <header class="header-home">
+        <h1 class="header-home__title">Terminal</h1>
+        <img
+          class="header-home__image"
+          src="../assets/img/background_homepage_terminal.jpg"
+          alt="Terminal"
+        />
+      </header>
+
+      <!--TERMINAL-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Co ten Terminal?</h2>
+        <article class="notes__article">
+          <h3 class="notes__title">Terminal</h3>
+          <p class="notes__description">
+            Terminal używamy w czasie pracy z naszym projektem. Umiejętność jego
+            obsługi jest kluczowa w pracy programistycznej i obecnie jest to
+            standard.
+          </p>
+          <h3 class="notes__title">Ważne komendy - MacOS</h3>
+        </article>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer footer--terminal">
+      Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
+      WTF: Co ten Frontend.
+    </footer>
+  </body>
+</html>

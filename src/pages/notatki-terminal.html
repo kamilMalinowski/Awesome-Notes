@@ -59,6 +59,7 @@
             obsługi jest kluczowa w pracy programistycznej i obecnie jest to
             standard.
           </p>
+          <!--Ważne komendy - MacOS-->
           <h3 class="notes__title">Ważne komendy - MacOS</h3>
           <ul class="list">
             <li class="list__element">
@@ -85,6 +86,7 @@
               nazwa-katalogu
             </li>
           </ul>
+          <!--Ważne komendy - Linux-->
           <h3 class="notes__title">Ważne komendy - Linux</h3>
           <ul class="list">
             <li class="list__element">
@@ -111,6 +113,7 @@
               nazwa-katalogu
             </li>
           </ul>
+          <!--Ważne komendy - Windows     -->
           <h3 class="notes__title">Ważne komendy - Windows</h3>
           <ul class="list">
             <li class="list__element">
@@ -137,6 +140,13 @@
               nazwa-katalogu
             </li>
           </ul>
+        </article>
+      </section>
+
+      <!--GIT-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Co ten Git?</h2>
+        <article class="notes__article">
           <h3 class="notes__title">Ważne komendy - Git</h3>
           <ul class="list">
             <li class="list__element"><b>git</b> informacje o git</li>
@@ -184,7 +194,45 @@
               naszego projekty w Visual Studio Code. Przy commitowaniu pliki
               oraz treść umieszczone w tym dokumencie nie są widoczne.
             </li>
+            <li class="list__element">
+              <b>push --force-with-lease</b> - <b>--fixup</b> -
+              <b>--assume-unchanged</b> - <b>sparse checkout</b> -
+              <b>! + &&</b> - <b>RERERE</b> - REuse REcorded REsolution s
+              <b></b> -
+            </li>
           </ul>
+          <h3 class="notes__title">Branch - podstawy</h3>
+          <ul class="list">
+            <li class="list__element">
+              <b>git branch</b> - sprawdzamy na jakim branchu jesteśmy.
+              Podstawowoy to <i>master</i>
+            </li>
+            <li class="list__element">
+              <b>git branch <i>nazwa nowego brancha</i></b> - tworzymy nowy
+              branch
+            </li>
+            <li class="list__element">
+              <b>git checkout <i>nazwa brancha</i></b> - przechodzimy na wybrany
+              branch
+            </li>
+            <li class="list__element">
+              <b>git push + formułka z gita (kopiuj/wklej)</b> - wypychamy nasz
+              branch do repozytorium na git hubie
+            </li>
+            <li class="list__element">
+              <b>git merge <i>nazwa brancha który chcemy dodać</i></b> - łączymy
+              nasz nowy branch z głównym branchem <i>master</i>. Komende
+              wpisujemy będąc na branchu, do którego chcemy dołączyć nowy
+              branch.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!--NODE.JS-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Co ten Node.js?</h2>
+        <article class="notes__article">
           <h3 class="notes__title">Node.js</h3>
           <ul class="list">
             <li class="list__element">
@@ -199,6 +247,79 @@
               <b>node -v</b> sprawdzamy wersję node.js/prawidłową instalację
             </li>
           </ul>
+        </article>
+      </section>
+
+      <!--WEBPACK-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Co ten Webpack?</h2>
+        <article class="notes__article">
+          <h3 class="notes__title">
+            WTF Webpack - instalacja oraz instrukcja obsługi
+          </h3>
+          <ol class="list">
+            <li class="list__element">
+              <b>
+                Utwórz z szablonu nowe repozytorium i sklonuj do siebie na dysk
+              </b>
+              -
+              <a
+                class="notes__link"
+                href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"
+                >wtf webpack</a
+              >
+            </li>
+            <li class="list__element">
+              <b>npm install</b> - instalujemy npm do naszego projektu
+            </li>
+            <li class="list__element">
+              <b>npm run start</b> -odpalamy webpack w naszym projekcie.
+            </li>
+            <li class="list__element">
+              <b>http://localhost:8080/</b> - mam dostęp do lokalnego serwera
+              bez konieczności używania wtyczek z Visual Studio Code
+            </li>
+            <li class="list__element">
+              <b>npm run build</b> - do zmiany trybu build
+            </li>
+            <li class="list__element">
+              <b>../</b> - dodajemy obrazki używając podpowiedzi z VSC
+            </li>
+            <li class="list__element">
+              <b>webpack.common.js</b> - w tym pliku dodajemy dodatkowe pliki
+              html-owe
+            </li>
+            <li class="list__element">
+              <b>chunks</b> - sa to tablice do których możemy przypiąć
+              indywidualnie pliki js
+            </li>
+            <li class="list__element">
+              <b>import "../scss/main.scss";</b> - ta linijka kodu importuje nam
+              style - <b>nie usuwamy jej!!!</b>
+            </li>
+            <li class="list__element">
+              <b>~</b> - używamy tyldy w sasse do importowania plików z
+              node_modules
+            </li>
+            <li class="list__element">
+              <b>source map</b> - jest to ściaga w devtool
+            </li>
+            <li class="list__element">
+              <b>DIST</b> - jest wynikiem naszej pracy, zawartość tego katalogu
+              publikujemy na serwerze
+            </li>
+            <li class="list__element">
+              <b>npm run publish</b> - generujemy w git hubie zakładkę
+              <i>gh-pages branch</i> - publikujemy tym strone
+            </li>
+          </ol>
+        </article>
+      </section>
+      
+      <!--NPM-->
+      <section class="notes">
+        <h2 class="notes__title notes__title--h2">Co ten Npm</h2>
+        <article class="notes__article">
           <h3 class="notes__title">NPM</h3>
           <ul class="list">
             <li class="list__element">
@@ -273,90 +394,6 @@
             </li>
             <li class="list__element">
               <b>npm run +nazwa skryptu</b> odpalamy skrypt w terminalu
-            </li>
-          </ul>
-          <h3 class="notes__title">
-            WTF Webpack - instalacja oraz instrukcja obsługi
-          </h3>
-          <ol class="list">
-            <li class="list__element">
-              <b>
-                Utwórz z szablonu nowe repozytorium i sklonuj do siebie na dysk
-              </b>
-              -
-              <a
-                class="notes__link"
-                href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"
-                >wtf webpack</a
-              >
-            </li>
-            <li class="list__element">
-              <b>npm install</b> - instalujemy npm do naszego projektu
-            </li>
-            <li class="list__element">
-              <b>npm run start</b> -odpalamy webpack w naszym projekcie.
-            </li>
-            <li class="list__element">
-              <b>http://localhost:8080/</b> - mam dostęp do lokalnego serwera
-              bez konieczności używania wtyczek z Visual Studio Code
-            </li>
-            <li class="list__element">
-              <b>npm run build</b> - do zmiany trybu build
-            </li>
-            <li class="list__element">
-              <b>../</b> - dodajemy obrazki używając podpowiedzi z VSC
-            </li>
-            <li class="list__element">
-              <b>webpack.common.js</b> - w tym pliku dodajemy dodatkowe pliki
-              html-owe
-            </li>
-            <li class="list__element">
-              <b>chunks</b> - sa to tablice do których możemy przypiąć
-              indywidualnie pliki js
-            </li>
-            <li class="list__element">
-              <b>import "../scss/main.scss";</b> - ta linijka kodu importuje nam
-              style - <b>nie usuwamy jej!!!</b>
-            </li>
-            <li class="list__element">
-              <b>~</b> - używamy tyldy w sasse do importowania plików z
-              node_modules
-            </li>
-            <li class="list__element">
-              <b>source map</b> - jest to ściaga w devtool
-            </li>
-            <li class="list__element">
-              <b>DIST</b> - jest wynikiem naszej pracy, zawartość tego katalogu
-              publikujemy na serwerze
-            </li>
-            <li class="list__element">
-              <b>npm run publish</b> - generujemy w git hubie zakładkę
-              <i>gh-pages branch</i> - publikujemy tym strone
-            </li>
-          </ol>
-          <h3 class="notes__title">Branch - podstawy</h3>
-          <ul class="list">
-            <li class="list__element">
-              <b>git branch</b> - sprawdzamy na jakim branchu jesteśmy.
-              Podstawowoy to <i>master</i>
-            </li>
-            <li class="list__element">
-              <b>git branch <i>nazwa nowego brancha</i></b> - tworzymy nowy
-              branch
-            </li>
-            <li class="list__element">
-              <b>git checkout <i>nazwa brancha</i></b> - przechodzimy na wybrany
-              branch
-            </li>
-            <li class="list__element">
-              <b>git push + formułka z gita (kopiuj/wklej)</b> - wypychamy nasz
-              branch do repozytorium na git hubie
-            </li>
-            <li class="list__element">
-              <b>git merge <i>nazwa brancha który chcemy dodać</i></b> - łączymy
-              nasz nowy branch z głównym branchem <i>master</i>. Komende
-              wpisujemy będąc na branchu, do którego chcemy dołączyć nowy
-              branch.
             </li>
           </ul>
         </article>

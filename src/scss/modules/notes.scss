@@ -11,36 +11,45 @@
 }
 
 .notes {
-  padding-bottom: 50px;
-  border-bottom: 1px solid var(--text-font);
+  padding-bottom: 20px;
+  border-bottom: 4px solid var(--text-font);
+  margin:0;
   &__title {
-
-    font-size: 20px;
-    margin: 10px 0;
+    background-color: coral;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
     @media screen and (max-width: 768px) {
-      font-size: 18px;
+      font-size: 22px;
     }
     @media screen and (max-width: 425px) {
-      font-size: 12px;
+      font-size: 18px;
     }
     @media screen and (max-width: 320px) {
-      font-size: 10px;
+      font-size: 12px;
     }
-    &--h2 {
-      background-color: coral;
-      padding: 20px;
-      font-size: 50px;
-      text-align: center;
-      margin: 10px 0;
+    &--h3 {
+      font-weight: 400;
+      background-color: cornflowerblue;
+      font-size: 26px;
+      padding: 8px 0;
       @media screen and (max-width: 768px) {
-        font-size: 22px;
-      }
-      @media screen and (max-width: 425px) {
         font-size: 18px;
       }
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 425px) {
         font-size: 12px;
       }
+      @media screen and (max-width: 320px) {
+        font-size: 10px;
+      }
+    }
+    &--h4 {
+      font-size: 18px;
+      background-color: darkgoldenrod;
+      padding: 6px 0;
+      font-weight: 400;
     }
   }
   &__images {
@@ -78,6 +87,7 @@
     text-decoration: none;
   }
   &__description {
+    text-align: center;
     @include mediaTabletMobile;
     &--bird {
       text-align: center;

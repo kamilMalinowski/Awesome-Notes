@@ -51,22 +51,26 @@
 
       <!--TERMINAL-->
       <section class="notes">
-        <h2 class="notes__title notes__title--h2">Co ten Terminal?</h2>
+        <h2 class="notes__title">Co ten Terminal?</h2>
         <article class="notes__article">
-          <h3 class="notes__title">Terminal</h3>
+          <h3 class="notes__title notes__title--h3">Terminal</h3>
           <p class="notes__description">
             Terminal używamy w czasie pracy z naszym projektem. Umiejętność jego
             obsługi jest kluczowa w pracy programistycznej i obecnie jest to
             standard.
           </p>
-          <!--Ważne komendy - MacOS-->
-          <h3 class="notes__title">Ważne komendy - MacOS</h3>
+
+          <!--Ważne komendy - MacOS & Linux & Windows-->
+          <h4 class="notes__title notes__title--h4">
+            Ważne komendy - MacOS, Linux oraz Windows
+          </h4>
           <ul class="list">
             <li class="list__element">
-              <b>cd ~</b> przejście do katalogu domowego
+              <b>cd ~ (Windows cd C:\)</b> przejście do katalogu domowego (w
+              Windows dysk C)
             </li>
             <li class="list__element">
-              <b>ls</b> wypisanie zawartości katalogu
+              <b>ls (Windows dir)</b> wypisanie zawartości katalogu
             </li>
             <li class="list__element">
               <b>cd ..</b> przejście do katalogu wyżej
@@ -79,75 +83,68 @@
               <b>code .</b> uruchomienie visual studio code w aktualnym katalogu
             </li>
             <li class="list__element">
-              <b>pwd</b> wyświetlenie aktualnej ścieżki
+              <b>pwd czyli <i>print working directory></i> (Windows cd)</b>
+              wyświetlenie aktualnej ścieżki
             </li>
             <li class="list__element">
               <b>mkdir</b> nazwa-katalogu stworzenie katalogu o nazwie
               nazwa-katalogu
             </li>
-          </ul>
-          <!--Ważne komendy - Linux-->
-          <h3 class="notes__title">Ważne komendy - Linux</h3>
-          <ul class="list">
             <li class="list__element">
-              <b>cd ~</b> przejście do katalogu domowego
+              <b>rmdir / rm</b> usuwa pusty katalog/ usuwa katalog nawet jak są
+              pliki
             </li>
             <li class="list__element">
-              <b>ls</b> wypisanie zawartości katalogu
+              <b>--help</b> każdy program ma opcję --help lub -h, która
+              wyświetla krótką pomoc
             </li>
             <li class="list__element">
-              <b>cd ..</b> przejście do katalogu wyżej
-            </li>
-            <li class="list__element">
-              <b>cd nazwa-katalogu</b> przejście do katalogu o nazwie
-              nazwa-katalogu
-            </li>
-            <li class="list__element">
-              <b>code .</b> uruchomienie visual studio code w aktualnym katalogu
-            </li>
-            <li class="list__element">
-              <b>pwd</b> wyświetlenie aktualnej ścieżki
-            </li>
-            <li class="list__element">
-              <b>mkdir</b> nazwa-katalogu stworzenie katalogu o nazwie
-              nazwa-katalogu
+              <b>clear (Windows cls)</b> komenda czyszcząca ekran terminala i
+              przesuwająca wiersz poleceń na górę ekranu
             </li>
           </ul>
-          <!--Ważne komendy - Windows     -->
-          <h3 class="notes__title">Ważne komendy - Windows</h3>
-          <ul class="list">
-            <li class="list__element">
-              <b>cd C:\</b> przejście do głównego katalogu na dysku C
-            </li>
-            <li class="list__element">
-              <b>dir</b> wypisanie zawartości katalogu
-            </li>
-            <li class="list__element">
-              <b>cd ..</b> przejście do katalogu wyżej
-            </li>
-            <li class="list__element">
-              <b>cd nazwa-katalogu</b> przejście do katalogu o nazwie
-              nazwa-katalogu
-            </li>
-            <li class="list__element">
-              <b>code .</b> uruchomienie visual studio code w aktualnym katalogu
-            </li>
-            <li class="list__element">
-              <b>cd</b> wyświetlenie aktualnej ścieżki
-            </li>
-            <li class="list__element">
-              <b>mkdir</b> nazwa-katalogu stworzenie katalogu o nazwie
-              nazwa-katalogu
-            </li>
-          </ul>
+          <p class="notes__description">
+            Więcej komend dla:
+            <a
+              class="notes__link"
+              href="https://www.thomas-krenn.com/pl/wiki/Komendy_wiersza_polece%C5%84_systemu_Windows"
+              >Windows</a
+            >
+            oraz
+            <a
+              class="notes__link"
+              href="https://pixelozaa.wordpress.com/podstawowe-komendy-linuxa/"
+              >Linux/MacOS</a
+            >
+          </p>
         </article>
       </section>
 
       <!--GIT-->
       <section class="notes">
-        <h2 class="notes__title notes__title--h2">Co ten Git?</h2>
+        <h2 class="notes__title">Co ten Git?</h2>
         <article class="notes__article">
-          <h3 class="notes__title">Ważne komendy - Git</h3>
+          <h3 class="notes__title notes__title--h3">Git</h3>
+          <p class="notes__description">
+            Rozproszony system kontroli wersji. Stworzył go Linus Torvalds jako
+            narzędzie wspomagające rozwój jądra Linux. Git stanowi wolne
+            oprogramowanie i został opublikowany na licencji GNU GPL w wersji 2.
+            Pierwsza wersja narzędzia Git została wydana 7 kwietnia 2005 roku,
+            by zastąpić poprzednio używany w rozwoju Linuksa, niebędący wolnym
+            oprogramowaniem, system kontroli wersji BitKeeper. - <i>Wiki</i>
+          </p>
+          <ul class="list">
+            <li class="list__element">
+              <b>katalog roboczy</b> - working directory
+            </li>
+            <li class="list__element"><b>przechowalnia</b> - stage area</li>
+            <li class="list__element"><b>repozytorium</b> - .git folder</li>
+          </ul>
+
+          <!--git ogólne-->
+          <h4 class="notes__title notes__title--h4">
+            Ważne komendy - Git (ogólne)
+          </h4>
           <ul class="list">
             <li class="list__element"><b>git</b> informacje o git</li>
             <li class="list__element">
@@ -165,14 +162,79 @@
               <b>git init</b> tworzymy repozytorium w danym katalogu
             </li>
             <li class="list__element">
+              <b>git log</b> - szczegółowa historia gita
+            </li>
+            <li class="list__element">
+              <b>git log --oneline</b> bardziej uproszczona/ skondensowana historia gita 
+            </li>
+            <li class="list__element">
+              <b> git log --author="np.Kamil"</b> wyszukiwanie poprzez wpisanie autora
+            </li>
+            <li class="list__element">
+              <b>git log --grep</b> wyszukiwanie poprzez wpisanie konkretnej frazy z komentarzy commita
+            </li>
+            <li class="list__element">
+              <b>git log --summary</b> wykazuje podsumowanie plików
+            </li>
+            <li class="list__element">
+              <b>git log --stat</b> wykazuje statystyki plików
+            </li>
+            <li class="list__element">
+              <b>git log --patch </b> sprawdzamy co zostało konkretnie zmienione np. git log --patch -- index.html
+            </li>
+            <li class="list__element">
+              <b>git log -np.3</b> decydujemy ile ostatnich historii chcemy zobaczyć
+            </li>
+            <li class="list__element">
+              <b>git log --format=""</b> <a class="notes__link" href="https://git-scm.com/docs/git-log">oficjalna dokumentacja</a>
+            </li>
+            <li class="list__element">
+              <b>git shortlog</b> prosty podział z uwzględnieniem użytkowników
+            </li>
+            
+          </ul>
+
+          <!--git lokalnie-->
+          <h4 class="notes__title notes__title--h4">
+            Ważne komendy - Git (lokalnie)
+          </h4>
+          <ul class="list">
+            <li class="list__element">
               <b>git status</b> sprawdzenie stanu katalogu
             </li>
             <li class="list__element">
-              <b>git add .</b> dodanie plików/mian w plikach
+              <b>git add .</b> dodanie wszystkich plików
+            </li>
+            <li class="list__element">
+              <b>git add + nazwa pliku</b> dodanie konkretnego pliku
             </li>
             <li class="list__element">
               <b>git commit -m "opis zmian"</b> commitowanie
             </li>
+            <li class="list__element">
+              <b>git clean</b> usuwanie plików które nie zostały dodane do
+              indexu Gita
+            </li>
+            <li class="list__element">
+              <b>git reset</b> przenoszenie plików ze stage do working
+              directory. odwrotność git add
+            </li>
+            <li class="list__element">
+              <b>git revert</b> operacja polegająca na odwróceniu zmian z wybranego commitu i zapisaniu ich jako nowy commit
+            </li>
+            <li class="list__element">
+              <b>git rm / git mv</b> usuwanie/przenoszenie plików w repozytorium
+            </li>
+            <li class="list__element">
+              <b>git checkout (path)</b> przywracanie stanu pliku z indeksu
+              gita. przywrócenie wprowadzonych zmian. działa tylko gdy jest
+              wprowadzone do indexu
+            </li>
+          </ul>
+
+          <!---->
+          <h4 class="notes__title notes__title--h4">Ważne komendy - Git ()</h4>
+          <ul class="list">
             <li class="list__element">
               <b>git push</b> przesłanie zapisanego commitu do githuba
             </li>
@@ -187,25 +249,13 @@
               readme.md) w celu uniknięcia konfliktów przesyłamy zmiany do gita
             </li>
           </ul>
-          <h3 class="notes__title">Git dalej</h3>
-          <ul class="list">
-            <li class="list__element">
-              <b>.gitignore</b> - jest to dodatkowy plik, który możemy dodać do
-              naszego projekty w Visual Studio Code. Przy commitowaniu pliki
-              oraz treść umieszczone w tym dokumencie nie są widoczne.
-            </li>
-            <li class="list__element">
-              <b>push --force-with-lease</b> - <b>--fixup</b> -
-              <b>--assume-unchanged</b> - <b>sparse checkout</b> -
-              <b>! + &&</b> - <b>RERERE</b> - REuse REcorded REsolution s
-              <b></b> -
-            </li>
-          </ul>
-          <h3 class="notes__title">Branch - podstawy</h3>
+
+          <!--git branch-->
+          <h4 class="notes__title notes__title--h4">Branch - podstawy</h4>
           <ul class="list">
             <li class="list__element">
               <b>git branch</b> - sprawdzamy na jakim branchu jesteśmy.
-              Podstawowoy to <i>master</i>
+              Podstawowy to <i>master</i>
             </li>
             <li class="list__element">
               <b>git branch <i>nazwa nowego brancha</i></b> - tworzymy nowy
@@ -226,14 +276,36 @@
               branch.
             </li>
           </ul>
+
+          <!--git pozostałe-->
+          <h4 class="notes__title notes__title--h4">Git dalej</h4>
+          <ul class="list">
+            <li class="list__element">
+              <b>.gitignore</b> - jest to dodatkowy plik, który możemy dodać do
+              naszego projekty w Visual Studio Code. Przy commitowaniu pliki
+              oraz treść umieszczone w tym dokumencie nie są widoczne.
+            </li>
+            <li class="list__element">
+              <b>push --force-with-lease</b> - <b>--fixup</b> -
+              <b>--assume-unchanged</b> - <b>sparse checkout</b> -
+              <b>! + &&</b> - <b>RERERE</b> - REuse REcorded REsolution s
+              <b></b> -
+            </li>
+          </ul>
         </article>
       </section>
 
       <!--NODE.JS-->
       <section class="notes">
-        <h2 class="notes__title notes__title--h2">Co ten Node.js?</h2>
+        <h2 class="notes__title">Co ten Node.js?</h2>
         <article class="notes__article">
-          <h3 class="notes__title">Node.js</h3>
+          <h3 class="notes__title notes__title--h3">Node.js</h3>
+          <p class="notes__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+            nesciunt atque numquam. Culpa qui accusantium quisquam veniam illum
+            nemo porro quo architecto repellat, dolorem, sunt repellendus
+            voluptas eveniet neque eaque.
+          </p>
           <ul class="list">
             <li class="list__element">
               <b>Node.js</b> - jest to JavaScipt używany poza przeglądarką. Nie
@@ -252,11 +324,18 @@
 
       <!--WEBPACK-->
       <section class="notes">
-        <h2 class="notes__title notes__title--h2">Co ten Webpack?</h2>
+        <h2 class="notes__title">Co ten Webpack?</h2>
         <article class="notes__article">
-          <h3 class="notes__title">
+          <h3 class="notes__title notes__title--h3">Webpack</h3>
+          <p class="notes__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perferendis quod eos ex fugit! Ratione maxime vel nihil quis, iure
+            ducimus ea nesciunt nobis mollitia nemo quisquam, laboriosam veniam
+            provident totam.
+          </p>
+          <h4 class="notes__title notes__title--h4">
             WTF Webpack - instalacja oraz instrukcja obsługi
-          </h3>
+          </h4>
           <ol class="list">
             <li class="list__element">
               <b>
@@ -315,12 +394,18 @@
           </ol>
         </article>
       </section>
-      
+
       <!--NPM-->
       <section class="notes">
-        <h2 class="notes__title notes__title--h2">Co ten Npm</h2>
+        <h2 class="notes__title">Co ten Npm</h2>
         <article class="notes__article">
-          <h3 class="notes__title">NPM</h3>
+          <h3 class="notes__title notes__title--h3">NPM</h3>
+          <p class="notes__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            dicta recusandae nesciunt iure quaerat esse obcaecati, amet dolores
+            rem ipsum, deserunt quo explicabo praesentium in reiciendis cum vel
+            enim cupiditate?
+          </p>
           <ul class="list">
             <li class="list__element">
               <b>NPM</b> - menadżer paczek do node.
@@ -369,7 +454,7 @@
               </ul>
             </li>
           </ul>
-          <h3 class="notes__title">NPX</h3>
+          <h4 class="notes__title notes__title--h4">NPX</h4>
           <ul class="list">
             <li class="list__element">
               <b>NPX</b> - narzędzia konsolowe używane w terminalu
@@ -381,7 +466,7 @@
               </ul>
             </li>
           </ul>
-          <h3 class="notes__title">Script</h3>
+          <h4 class="notes__title notes__title--h4">Script</h4>
           <ul class="list">
             <li class="list__element">
               <b>package.json</b> - wewnątrz pliku znajdują się skrypty, w

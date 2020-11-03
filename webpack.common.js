@@ -112,5 +112,11 @@ module.exports = {
       chunks: ["index"],
       filename: "notatki-terminal.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/notatki-react.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "notatki-react.html",
+    }),
   ],
 };

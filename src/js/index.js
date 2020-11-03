@@ -72,8 +72,8 @@ switchModes.addEventListener("click", () => {
   }
 });
 
-const time = moment().endOf("week").fromNow();
-const timePlaceholder = document.querySelector(".time--js");
-timePlaceholder.innerHTML = time;
+// const time = moment().endOf("week").fromNow();
+// const timePlaceholder = document.querySelector(".time--js");
+// timePlaceholder.innerHTML = time;
 
 

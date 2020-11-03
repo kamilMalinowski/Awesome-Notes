@@ -25,16 +25,21 @@ html {
 }
 
 /*BODY AND MAIN*/
+::-webkit-scrollbar {
+  display: none;
+}
 .body {
   background: var(--bacground1);
   font-family: "Miriam Libre", sans-serif;
   color: var(--color-gray);
   margin: 0;
+
 }
 .main {
   margin: 0 auto;
   max-width: 1000px;
   margin-top: 69px;
+
   @media screen and (max-width: 1010px) {
     margin: 0 16px;
   }

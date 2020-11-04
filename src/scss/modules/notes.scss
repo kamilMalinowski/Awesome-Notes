@@ -89,6 +89,10 @@
   &__description {
     text-align: center;
     @include mediaTabletMobile;
+    &--special {
+      font-size: 30px;
+      color: darkorange;
+    }
     &--bird {
       text-align: center;
     }

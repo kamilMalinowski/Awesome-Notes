@@ -151,6 +151,9 @@
               <b>git --version</b> sprawdzenie wersji gita
             </li>
             <li class="list__element">
+              <b>git init</b> tworzymy repozytorium w danym katalogu
+            </li>
+            <li class="list__element list__element--special">
               <b>git config --global user.name "Jan Nowak"</b> przypisanie
               danych użytkownika
             </li>
@@ -159,19 +162,23 @@
               przypisanie meila
             </li>
             <li class="list__element">
-              <b>git init</b> tworzymy repozytorium w danym katalogu
+              <b>git config --global core.editor + np."code --wait"</b>
+              przypisujemy program do edycji komentarzy
             </li>
-            <li class="list__element">
+            <li class="list__element list__element--special">
               <b>git log</b> - szczegółowa historia gita
             </li>
             <li class="list__element">
-              <b>git log --oneline</b> bardziej uproszczona/ skondensowana historia gita 
+              <b>git log --oneline</b> bardziej uproszczona/ skondensowana
+              historia gita
             </li>
             <li class="list__element">
-              <b> git log --author="np.Kamil"</b> wyszukiwanie poprzez wpisanie autora
+              <b>git log --author="np.Kamil"</b> wyszukiwanie poprzez wpisanie
+              autora
             </li>
             <li class="list__element">
-              <b>git log --grep</b> wyszukiwanie poprzez wpisanie konkretnej frazy z komentarzy commita
+              <b>git log --grep</b> wyszukiwanie poprzez wpisanie konkretnej
+              frazy z komentarzy commita
             </li>
             <li class="list__element">
               <b>git log --summary</b> wykazuje podsumowanie plików
@@ -180,18 +187,25 @@
               <b>git log --stat</b> wykazuje statystyki plików
             </li>
             <li class="list__element">
-              <b>git log --patch </b> sprawdzamy co zostało konkretnie zmienione np. git log --patch -- index.html
+              <b>git log --patch </b> sprawdzamy co zostało konkretnie zmienione
+              np. git log --patch -- index.html
             </li>
             <li class="list__element">
-              <b>git log -np.3</b> decydujemy ile ostatnich historii chcemy zobaczyć
+              <b>git log -np.3</b> decydujemy ile ostatnich historii chcemy
+              zobaczyć
             </li>
             <li class="list__element">
-              <b>git log --format=""</b> <a class="notes__link" href="https://git-scm.com/docs/git-log">oficjalna dokumentacja</a>
+              <b>git log --format=""</b>
+              <a class="notes__link" href="https://git-scm.com/docs/git-log"
+                >oficjalna dokumentacja</a
+              >
             </li>
             <li class="list__element">
               <b>git shortlog</b> prosty podział z uwzględnieniem użytkowników
             </li>
-            
+            <li class="list__element">
+              <b>git reflog</b> sprawdzamy historie resetów
+            </li>
           </ul>
 
           <!--git lokalnie-->
@@ -211,7 +225,7 @@
             <li class="list__element">
               <b>git commit -m "opis zmian"</b> commitowanie
             </li>
-            <li class="list__element">
+            <li class="list__element list__element--special">
               <b>git clean</b> usuwanie plików które nie zostały dodane do
               indexu Gita
             </li>
@@ -220,7 +234,8 @@
               directory. odwrotność git add
             </li>
             <li class="list__element">
-              <b>git revert</b> operacja polegająca na odwróceniu zmian z wybranego commitu i zapisaniu ich jako nowy commit
+              <b>git revert</b> operacja polegająca na odwróceniu zmian z
+              wybranego commitu i zapisaniu ich jako nowy commit
             </li>
             <li class="list__element">
               <b>git rm / git mv</b> usuwanie/przenoszenie plików w repozytorium
@@ -230,23 +245,93 @@
               gita. przywrócenie wprowadzonych zmian. działa tylko gdy jest
               wprowadzone do indexu
             </li>
-          </ul>
-
-          <!---->
-          <h4 class="notes__title notes__title--h4">Ważne komendy - Git ()</h4>
-          <ul class="list">
             <li class="list__element">
-              <b>git push</b> przesłanie zapisanego commitu do githuba
+              <b>git restore(aktualnie 2020) + nazwa pliku lub .</b> usuwa/cofa
+              zmiany wprowadzone w katalogu roboczym (working directory)
             </li>
             <li class="list__element">
-              <b>git clone</b> po utworzeniu repozytorium w githubie w terminalu
-              klonujemy repozytorium czyli łączymy githuba z gitem.<b>
+              <b>git restore --staged(aktualnie 2020) + nazwa pliku lub .</b>
+              cofa git add do poziomu katalogu roboczego
+            </li>
+            <li class="list__element list__element--special">
+              <b>git stash</b> Dodaje zmiany na stos
+            </li>
+            <li class="list__element">
+              <b>git stash push</b> j/w. ale umożliwia dodanie flagi -m
+              "[komentarz]"
+            </li>
+            <li class="list__element">
+              <b>git stash show (-p —patch)</b> pokazuje jakie zmiany znajdują
+              się na stosie
+            </li>
+            <li class="list__element">
+              <b>git stash list</b> wyświetla listę zmian odłożonych na stos
+            </li>
+            <li class="list__element">
+              <b>git stash pop (apply & drop)</b> przywraca zmiany ze stosu (i
+              usuwa je z niego)
+            </li>
+            <li class="list__element">
+              <b>git stash drop</b> usuwa zmiany ze stosu
+            </li>
+            <li class="list__element">
+              <b>git stash apply</b> przywraca zmiany ze stosu (zostawiając je
+              jednocześnie)
+            </li>
+            <li class="list__element">
+              <b>git stash branch</b> tworzy nowy branch zawierający zmiany z
+              wybranego stosu
+            </li>
+          </ul>
+
+          <!--git zdalne repozytorium-->
+          <h4 class="notes__title notes__title--h4">
+            Ważne komendy - Git (zdalnie)
+          </h4>
+          <ul class="list">
+            <li class="list__element">
+              <b>git push</b> przesłanie zapisanego commitu(zmian lub nowego
+              pliku) do zdalnego repozytorium
+            </li>
+            <li class="list__element">
+              <b>git fetch</b> - pobieramy zmiany ze zdalnego repozytorium
+            </li>
+            <li class="list__element">
+              <b>git merge + origin/master</b> - łączymy zmiany lokalnego
+              repozytorium ze zdalnym
+            </li>
+            <li class="list__element">
+              <b>git remote + np show</b> -zarządzamy repozytoriami + wykaz
+              informacji o repozytorium
+            </li>
+            <li class="list__element">
+              <b>git pull (jest to połączenie git fetch i git merge</b> -
+              łączenie, przesyłanie danych z zdalnego repozytorium do lokalnego.
+            </li>
+            <li class="list__element">
+              <b>git clone</b> po utworzeniu repozytorium w githubie(zdalnym
+              repozytorium) w terminalu klonujemy repozytorium czyli łączymy
+              githuba(zdalne repozytorium) z gitem.<b>
                 Ważne! dodajemy clona w folderze dev</b
               >
             </li>
+          </ul>
+
+          <!--forki-->
+          <h4 class="notes__title notes__title--h4">Fork???</h4>
+          <p class="notes__description">
+            Wymaga wyjaśnienia!!!<a
+              class="notes__link"
+              href="https://www.youtube.com/watch?v=7myDXGfEnds&list=PLjHmWifVUNMKIGHmaGPVqSD-L6i1Zw-MH&index=9"
+              >Wiecej o forkach</a
+            >
+          </p>
+          <ul class="list">
             <li class="list__element">
-              <b>git pull</b> - gdy edytujemy coś w githubie (np. plik
-              readme.md) w celu uniknięcia konfliktów przesyłamy zmiany do gita
+              <b></b>
+            </li>
+            <li class="list__element">
+              <b></b>
             </li>
           </ul>
 
@@ -262,6 +347,9 @@
               branch
             </li>
             <li class="list__element">
+              <b>git branch -D + nazwa brancha</b> -usuwamy branch
+            </li>
+            <li class="list__element">
               <b>git checkout <i>nazwa brancha</i></b> - przechodzimy na wybrany
               branch
             </li>
@@ -274,6 +362,30 @@
               nasz nowy branch z głównym branchem <i>master</i>. Komende
               wpisujemy będąc na branchu, do którego chcemy dołączyć nowy
               branch.
+            </li>
+            <li class="list__element">
+              <b>git log --graph --decorate --all --oneline</b> pełny wykaz
+              branchy
+            </li>
+          </ul>
+
+          <!--przykłady branchy-->
+          <h4 class="notes__title notes__title--h4">Przykładowe branche</h4>
+          <ul class="list">
+            <li class="list__element">
+              <b>Master branch</b> - główny branch (publikowany)
+            </li>
+            <li class="list__element">
+              <b>Dev branch</b> - testowy branch (alfa/beta)
+            </li>
+            <li class="list__element">
+              <b>Feature branch</b> - branch wprowadzający nowe funkcje
+            </li>
+            <li class="list__element">
+              <b>User branch</b> -prace indywidualne pojedyńczego członka grupy
+            </li>
+            <li class="list__element">
+              <b>Test/ Bugfix branch</b> - branch do testów, wykrywanie błędów
             </li>
           </ul>
 
@@ -492,3 +604,8 @@
     </footer>
   </body>
 </html>
+
+<!-- COPY / PASTE
+<li class="list__element">
+  <b></b> 
+</li> -->

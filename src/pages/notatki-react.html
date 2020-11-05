@@ -14,39 +14,31 @@
 
   <body class="body">
     <!--NAVIGATION-->
-    <header class="header">
-      <button class="hamburger hamburger--js" aria-label="otwórz menu">Menu</button>
-      <nav class="navigation navigation--react navigation--js">
-        <a class="navigation__link" href="index.html"
-          >START <span class="time--js"></span
-        ></a>
+    <header class="menu">
+      <button class="hamburger hamburger--js" aria-label="otwórz menu">
+        <span class="hamburger__item"></span>
+        <span class="hamburger__item"></span>
+        <span class="hamburger__item"></span>
+      </button>
+      <button
+        class="darkmode darkmode--js"
+        aria-label="przełącz na ciemny tryb"
+      >
+        DARK
+      </button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link" href="notatki-html.html">HTML</a>
         <a class="navigation__link" href="notatki-css.html">CSS</a>
-        <a class="navigation__link" href="notatki-js.html">JS</a>
+        <a class="navigation__link" href="notatki-js.html">JAVASCRIPT</a>
         <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
-        <a
-          class="navigation__link navigation__link--homepage"
-          href="notatki-react.html"
-          >REACT</a
-        >
-        <div class="darkmode">
-          <button
-            class="dot dot--js"
-            aria-label="przełącz na ciemny tryb"
-          ></button>
-        </div>
+        <a class="navigation__link" href="notatki-react.html">REACT</a>
       </nav>
     </header>
 
     <main class="main">
       <!--HEADER-->
       <header class="header-home">
-        <h1 class="header-home__title">React</h1>
-        <img
-          class="header-home__image"
-          src="../assets/img/background_homepage_react.jpg"
-          alt="Terminal"
-        />
+        <h1 class="header-home__title">Moja nauka Frontendu</h1>
       </header>
 
       <!--TERMINAL-->

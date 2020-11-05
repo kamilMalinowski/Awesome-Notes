@@ -2,7 +2,7 @@
 
 /*IMPORT-RESET-BODY-MAIN-HAMBURGER-LIST*/
 @import "modules/menu.scss";
-@import "modules/header.scss";
+@import "modules/header-home.scss";
 @import "modules/notes.scss";
 @import "modules/grid.scss";
 @import "modules/box-model.scss";
@@ -26,15 +26,14 @@ html {
   display: none;
 }
 .body {
-  background: var(--bacground1);
+  background: var(--color-bg);
   font-family: "Miriam Libre", sans-serif;
+  font-size: 16px;
   color: var(--color-gray);
   margin: 0;
 }
 .main {
   margin: 0 auto;
-  // max-width: 1000px;
-  margin-top: 69px;
 
   @media screen and (max-width: 1010px) {
     margin: 0 16px;

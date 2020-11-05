@@ -14,37 +14,31 @@
 
   <body class="body">
     <!--NAVIGATION-->
-    <header class="header">
-      <button class="hamburger hamburger--js" aria-label="otwórz menu">Menu</button>
-      <nav class="navigation navigation--html navigation--js">
-        <a class="navigation__link" href="index.html">START</a>
-        <a
-          class="navigation__link navigation__link--homepage"
-          href="notatki-html.html"
-          >HTML</a
-        >
+    <header class="menu">
+      <button class="hamburger hamburger--js" aria-label="otwórz menu">
+        <span class="hamburger__item"></span>
+        <span class="hamburger__item"></span>
+        <span class="hamburger__item"></span>
+      </button>
+      <button
+        class="darkmode darkmode--js"
+        aria-label="przełącz na ciemny tryb"
+      >
+        DARK
+      </button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link" href="notatki-html.html">HTML</a>
         <a class="navigation__link" href="notatki-css.html">CSS</a>
-        <a class="navigation__link" href="notatki-js.html">JS</a>
+        <a class="navigation__link" href="notatki-js.html">JAVASCRIPT</a>
         <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
         <a class="navigation__link" href="notatki-react.html">REACT</a>
-        <div class="darkmode">
-          <button
-            class="dot dot--js"
-            aria-label="przełącz na ciemny tryb"
-          ></button>
-        </div>
       </nav>
     </header>
 
-    <!--MAIN-->
     <main class="main">
+      <!--HEADER-->
       <header class="header-home">
-        <h1 class="header-home__title">HTML</h1>
-        <img
-          class="header-home__image"
-          src="../assets/img/background_homepage_html.jpg"
-          alt="html wallpaper"
-        />
+        <h1 class="header-home__title">Moja nauka Frontendu</h1>
       </header>
 
       <!--HTML-->
@@ -55,25 +49,25 @@
           <p class="notes__description">
             <i>HTML = HyperText Markup Language</i>
           </p>
-          <ul class="list">
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
               <b>HTML odpowiada za treść</b> - a właściwie za jej właściwe
               opakowanie
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;/&gt;</b> - HTML składa się ze znaczników/tagów/elementów
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>Semantyczny </b> = mający znaczenie
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Pliki zawierające kod HTML mają zwykle rozszerzenie <i>.html</i>
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>HTML to szkielet strony internetowej</b> - nawet ma taką
               budowę!
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b
                 ><a
                   class="notes__link"
@@ -85,115 +79,131 @@
             </li>
           </ul>
           <h3 class="notes__title">Główne znaczniki:</h3>
-          <ul class="list">
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
               <b>&lt;html&gt;</b> = &lt;head&gt;+&lt;body&gt;
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;main&gt;</b> - Główna część dokumentu
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;section&gt;</b> - Sekcja dokumentu
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;article&gt;</b> - Samodzielne treści
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;header&gt;</b> - Nagłówek - dokumentu / sekcji / artykułu
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;footer&gt;</b> - Stopka - dokumentu / sekcji
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;h1-h6&gt;</b> - Tekstowe nagłówki tytułowe - dokumentu
               /sekcji
             </li>
-            <li class="list__element"><b>&lt;p&gt;</b> - Paragraf / akapit</li>
-            <li class="list__element"><b>&lt;br&gt;</b> - nowa linia</li>
-            <li class="list__element">
+            <li class="notes-list__element">
+              <b>&lt;p&gt;</b> - Paragraf / akapit
+            </li>
+            <li class="notes-list__element"><b>&lt;br&gt;</b> - nowa linia</li>
+            <li class="notes-list__element">
               <b>&lt;b&gt;/pogrubienie oraz &lt;i&gt;/wykrzywiony tekst</b> -
               Nie mają dużego znaczenia semantycznego - służą do wyróżnienia
               fragmentu z tekstu otaczającego
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;strong&gt;</b> - podkreśla wysoką istotność i poważność
               frazy w nim zawartej
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;em&gt;</b> - podkreśla, że tekst może mieć inne znaczenie
               (np. ironia)
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;a&gt;</b> - linki / łącza wewnątrz dokumentu
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;element id="moj-identyfikator"&gt;</b> - atrybut id -
               identyfikuje element (przydaje się do nawigacji w obrębie
               dokumentu)
             </li>
-            <li class="list__element"><b>&lt;nav&gt;</b> - Nawigacja</li>
-            <li class="list__element">
+            <li class="notes-list__element"><b>&lt;nav&gt;</b> - Nawigacja</li>
+            <li class="notes-list__element">
               <b>&lt;img src="" alt=""&gt;</b> - img - obrazek o podanym adresie
             </li>
-            <li class="list__element"><b>&lt;sup&gt;</b> - index górny</li>
-            <li class="list__element"><b>&lt;sub&gt;</b> - index dolny</li>
+            <li class="notes-list__element">
+              <b>&lt;sup&gt;</b> - index górny
+            </li>
+            <li class="notes-list__element">
+              <b>&lt;sub&gt;</b> - index dolny
+            </li>
           </ul>
           <h3 class="notes__title">Treść to:</h3>
-          <ul class="list">
-            <li class="list__element">Teksty</li>
-            <li class="list__element">Nagłówki</li>
-            <li class="list__element">Linki</li>
-            <li class="list__element">Listy</li>
-            <li class="list__element">Definicje</li>
-            <li class="list__element">Obrazki</li>
-            <li class="list__element">Video</li>
-            <li class="list__element">Formularze</li>
-            <li class="list__element">Wszystko co jest nośnikiem informacji</li>
+          <ul class="notes-list">
+            <li class="notes-list__element">Teksty</li>
+            <li class="notes-list__element">Nagłówki</li>
+            <li class="notes-list__element">Linki</li>
+            <li class="notes-list__element">notes-listy</li>
+            <li class="notes-list__element">Definicje</li>
+            <li class="notes-list__element">Obrazki</li>
+            <li class="notes-list__element">Video</li>
+            <li class="notes-list__element">Formularze</li>
+            <li class="notes-list__element">
+              Wszystko co jest nośnikiem informacji
+            </li>
           </ul>
           <h3 class="notes__title">BEM-block element modifier</h3>
-          <ul class="list">
-            <li class="list__element"><b>B</b>lock - nadrzędny element</li>
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
+              <b>B</b>lock - nadrzędny element
+            </li>
+            <li class="notes-list__element">
               <b>E</b>lement - część bloku (nie musi być bezpośrednim dzieckiem)
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>M</b>odifier - modyfikator - jeśli element występuje w kilku
               wariacjach tworzymy dodatkową klasę
             </li>
           </ul>
           <h3 class="notes__title">BEM-Dlaczego?</h3>
-          <ul class="list">
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
               Świat stylowania doszedł do wysokiego stopnia skomplikowania
               (specyficzność)
             </li>
-            <li class="list__element">Problem z logicznym nazywaniem klas</li>
-            <li class="list__element">
+            <li class="notes-list__element">
+              Problem z logicznym nazywaniem klas
+            </li>
+            <li class="notes-list__element">
               Brak ujednoliconego sposobu stylowania
             </li>
-            <li class="list__element">Importanty, nadpisywanie rzeczy</li>
-            <li class="list__element">
+            <li class="notes-list__element">Importanty, nadpisywanie rzeczy</li>
+            <li class="notes-list__element">
               Brak odwzorowanie struktury HTML w CSS
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Stylowanie kilkoma klasami, powtarzające się nazwy
             </li>
           </ul>
           <h3 class="notes__title">Podsumowanie HTML:</h3>
-          <ul class="list">
-            <li class="list__element">Opakowuje i opisuje treść strony</li>
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
+              Opakowuje i opisuje treść strony
+            </li>
+            <li class="notes-list__element">
               Mówi przeglądarce o strukturze dokumentu (i o tym co ma wczytać)
             </li>
-            <li class="list__element">Posiada swoją zdefiniowaną składnie</li>
-            <li class="list__element">
+            <li class="notes-list__element">
+              Posiada swoją zdefiniowaną składnie
+            </li>
+            <li class="notes-list__element">
               Nie jest językiem programowania, jest językiem znaczników (Markup
               Language)
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Aktualną rekomendowaną wersją jest 5.2
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Całą specyfikację znajdziesz na stronie
               <a class="notes__link" href="https://www.w3.org/TR/html52/"
                 >w3c</a
@@ -201,21 +211,21 @@
             </li>
           </ul>
           <h3 class="notes__title">Podsumowanie lekcja nr.2</h3>
-          <ul class="list">
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
               atrybuty są "niewidzialne" - chowamy je w znaczniku
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               nadają elementom dodatkowe właściwości (href, src)
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               pozwalają na grupowanie elementów (class)
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               pozwalają na identyfikowanie elementów (id)
             </li>
-            <li class="list__element">można je miksować</li>
-            <li class="list__element">
+            <li class="notes-list__element">można je miksować</li>
+            <li class="notes-list__element">
               spis atrybutów
               <a
                 class="notes__link"
@@ -225,38 +235,40 @@
             </li>
           </ul>
           <h3 class="notes__title">Podsumowanie BEM</h3>
-          <ul class="list">
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
               Szukamy elementów na stronie i dzielimy ją na bloki
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Myślimy o elementach składowych / robimy analizę-selekcję
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze
               zmieniamy tylko unikalne dla niego wartości, nie przepisujemy
               rzeczy z klasy bazowej)
             </li>
           </ul>
           <h3 class="notes__title">HTML Dalej: listy, tabele oraz definicje</h3>
-          <ul class="list">
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
               <b>&lt;ul&gt;</b> - lista nieuporządkowana
             </li>
-            <li class="list__element"><b>&lt;li&gt;</b> - element listy</li>
-            <li class="list__element">
+            <li class="notes-list__element">
+              <b>&lt;li&gt;</b> - element listy
+            </li>
+            <li class="notes-list__element">
               <b>&lt;ol&gt;</b> - lista uporządkowana
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               Możemy zagnieżdżać listy wewnątrz elementu listy <i>li</i>
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>&lt;dl&gt;</b> - Description List:
-              <ol class="list">
-                <li class="list__element">
+              <ol class="notes-list">
+                <li class="notes-list__element">
                   <b>&lt;dt&gt;</b> - Description term
                 </li>
-                <li class="list__element">
+                <li class="notes-list__element">
                   <b>&lt;dd&gt;</b> - Description detail
                 </li>
               </ol>
@@ -350,41 +362,45 @@
             przez Johna Grubera i Aarona Swartza. Został stworzony w celu jak
             najbardziej uproszczonego tworzenia i formatowania tekstu.
           </p>
-          <ul class="list">
-            <li class="list__element"><b>#</b> - nagłówek (odpowiednik h1)</li>
-            <li class="list__element">
+          <ul class="notes-list">
+            <li class="notes-list__element">
+              <b>#</b> - nagłówek (odpowiednik h1)
+            </li>
+            <li class="notes-list__element">
               <b>##</b> - nagłówek (odpowiednik h2) i tak dalej i tak dalej
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>[opis linku](link)</b> - odpowiednik html-owego a(link)
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>![odpowiednik treści <i>alt=""</i>](link do obrazu)</b> -
               odpowiednik obrazu img
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>Kwadratowe [] przed okrągłymi ()</b> - K przed O
               (alfabetycznie) - <i>podstawowa reguła</i>
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>`polecenie / jednolinijkowy kod`</b> - wyróżniona treść
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>```javascript blok kodu ```</b> - tekst w bloku. W zależności
               od przeglądarki lub programu wpisując na początku kod (np.
               javascript) dostajemy kolory z edytora
             </li>
-            <li class="list__element"><b>*tekst*</b> - kursywa</li>
-            <li class="list__element"><b>**tekst**</b> - pogrubienie</li>
-            <li class="list__element">
+            <li class="notes-list__element"><b>*tekst*</b> - kursywa</li>
+            <li class="notes-list__element"><b>**tekst**</b> - pogrubienie</li>
+            <li class="notes-list__element">
               <b>***tekst***</b> - kursywa i pogrubienie
             </li>
-            <li class="list__element"><b>> tekst</b> - wcięcie do cytatu</li>
-            <li class="list__element"><b>- tekst</b> - lista</li>
-            <li class="list__element">
+            <li class="notes-list__element">
+              <b>> tekst</b> - wcięcie do cytatu
+            </li>
+            <li class="notes-list__element"><b>- tekst</b> - lista</li>
+            <li class="notes-list__element">
               <b>1. tekst ...i tak dalej</b> - lista numeryczna
             </li>
-            <li class="list__element">
+            <li class="notes-list__element">
               <b>.md</b> - pliki Markdown mają rozszerzenie .md
             </li>
           </ul>

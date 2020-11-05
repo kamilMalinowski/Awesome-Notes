@@ -1,13 +1,13 @@
 .footer {
   display: flex;
-  color: var(--color-darkpurple);
+  color: var(--color-gray);
   font-size: 18px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--color-green);
+  background: var(--color-lightGreen);
   padding: 10px;
-  border-top: 6px solid var(--color-purple);
+  border-top: 6px solid var(--color-gray);
   font-style: italic;
   height: 61px;
   @media screen and (max-width: 768px) {
@@ -18,28 +18,5 @@
   }
   @media screen and (max-width: 320px) {
     font-size: 10px;
-  }
-  &--html,
-  &--css,
-  &--js,
-  &--terminal,
-  &--react {
-    color: var(--color-black);
-    border-top: 6px solid var(--color-gray);
-  }
-  &--html {
-    background: var(--color-html);
-  }
-  &--css {
-    background: var(--color-css);
-  }
-  &--js {
-    background: var(--color-js);
-  }
-  &--terminal {
-    background: var(--color-termina);
-  }
-  &--react {
-    background: var(--color-react);
   }
 }

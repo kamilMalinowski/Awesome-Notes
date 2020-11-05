@@ -12,15 +12,21 @@
 
 .notes {
   padding-bottom: 20px;
-  border-bottom: 4px solid var(--color-black);
-  margin:0;
+  margin: 0;
   &__title {
-    background-color: coral;
-    padding: 20px;
-    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-pink);
+    color: var(--color-gray);
+    padding: 0;
+    font-size: 24px;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     font-weight: 400;
+    border-top: 6px solid var(--color-gray);
+    border-bottom: 6px solid var(--color-gray);
+    height: 80px;
     @media screen and (max-width: 768px) {
       font-size: 22px;
     }
@@ -32,9 +38,10 @@
     }
     &--h3 {
       font-weight: 400;
-      background-color: cornflowerblue;
-      font-size: 26px;
+      background-color: var(--color-orange);
+      font-size: 20px;
       padding: 8px 0;
+      height: 60px;
       @media screen and (max-width: 768px) {
         font-size: 18px;
       }
@@ -47,9 +54,11 @@
     }
     &--h4 {
       font-size: 18px;
-      background-color: darkgoldenrod;
-      padding: 6px 0;
+      background-color: var(--color-green);
+      padding: 0;
+
       font-weight: 400;
+      height: 40px;
     }
   }
   &__images {
@@ -87,12 +96,9 @@
     text-decoration: none;
   }
   &__description {
+    padding: 0 80px;
     text-align: center;
     @include mediaTabletMobile;
-    &--special {
-      font-size: 30px;
-      color: darkorange;
-    }
     &--bird {
       text-align: center;
     }
@@ -108,7 +114,7 @@
 }
 
 /*LIST*/
-.list {
+.notes-list {
   &__element {
     margin: 10px 0;
     @include mediaTabletMobile;
@@ -118,9 +124,13 @@
       border-top: 1px solid var(--color-black);
     }
   }
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-gray);
+  }
 }
 
 b {
   padding-right: 4px;
 }
- 

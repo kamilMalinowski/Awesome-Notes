@@ -1,11 +1,9 @@
 @import "~normalize.css";
-@import "variables";
 
 /*IMPORT-RESET-BODY-MAIN-HAMBURGER-LIST*/
-@import "modules/navigation.scss";
+@import "modules/menu.scss";
 @import "modules/header.scss";
 @import "modules/notes.scss";
-@import "modules/dark-mode.scss";
 @import "modules/grid.scss";
 @import "modules/box-model.scss";
 @import "modules/table.scss";
@@ -35,7 +33,7 @@ html {
 }
 .main {
   margin: 0 auto;
-  max-width: 800px;
+  // max-width: 1000px;
   margin-top: 69px;
 
   @media screen and (max-width: 1010px) {
@@ -50,37 +48,4 @@ html {
   @media screen and (max-width: 320px) {
     margin-top: 36px;
   }
-}
-
-/*MENU-HAMBURGER*/
-.hot-dog {
-  display: none;
-  width: 100%;
-  background: var(--text-font);
-  color: white;
-  margin: 0;
-  border-style: double;
-  @media screen and (max-width: 425px) {
-    display: block;
-  }
-  &:hover {
-    color: gray;
-  }
-}
-
-/*LIST*/
-.list {
-  &__element {
-    margin: 10px 0;
-    @include mediaTabletMobile;
-    &--special {
-      margin-top: 4px;
-      padding: 8px 0 0 0;
-      border-top: 1px solid var(--text-font);
-    }
-  }
-}
-
-b {
-  padding-right: 4px;
 }

@@ -18,7 +18,7 @@ fetch("https://api.github.com/users/kamilMalinowski/repos")
   });
 
 /*zadanie domowe wtf tydzień VI - hamburger*/
-const hamburger = document.querySelector(".hot-dog--js");
+const hamburger = document.querySelector(".hamburger--js");
 
 hamburger.addEventListener("click", () => {
   const nav = document.querySelector(".navigation--js");
@@ -38,7 +38,7 @@ switchModes.addEventListener("click", () => {
       "--bacground1",
       "rgb(250, 255, 238)"
     );
-    document.documentElement.style.setProperty("--text-font", "black");
+    document.documentElement.style.setProperty("--color-black", "black");
     document.documentElement.style.setProperty("--color-termina", "#686a6b");
     document.documentElement.style.setProperty("--color-js", "#f7df1e");
     document.documentElement.style.setProperty("--color-css", "#58a3e6");
@@ -56,7 +56,7 @@ switchModes.addEventListener("click", () => {
       "--bacground1",
       "rgb(17, 17, 17)"
     );
-    document.documentElement.style.setProperty("--text-font", "white");
+    document.documentElement.style.setProperty("--color-black", "white");
     document.documentElement.style.setProperty("--color-termina", "#000000");
     document.documentElement.style.setProperty("--color-js", "#443d07");
     document.documentElement.style.setProperty("--color-css", "#26425c");

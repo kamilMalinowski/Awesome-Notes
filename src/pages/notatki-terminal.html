@@ -15,10 +15,10 @@
   <body class="body">
     <!--NAVIGATION-->
     <header class="header">
-      <button class="hot-dog hot-dog--js" aria-label="otwórz menu">Menu</button>
+      <button class="hamburger hamburger--js" aria-label="otwórz menu">Menu</button>
       <nav class="navigation navigation--terminal navigation--js">
         <a class="navigation__link" href="index.html"
-          >WTF <span class="time--js"></span
+          >START <span class="time--js"></span
         ></a>
         <a class="navigation__link" href="notatki-html.html">HTML</a>
         <a class="navigation__link" href="notatki-css.html">CSS</a>
@@ -315,25 +315,27 @@
                 Ważne! dodajemy clona w folderze dev</b
               >
             </li>
+            <li class="list__element">
+              <b>git rebase</b> - sprawia ze historia comitów jest bardziej
+              czytelna
+            </li>
+            <li class="list__element list__element--special">
+              <b>git tag</b> - wykaz wszystkich etykiet
+            </li>
+            <li class="list__element">
+              <b>git tag -a</b> - tworzenie etykiet w commitach
+            </li>
           </ul>
 
           <!--forki-->
           <h4 class="notes__title notes__title--h4">Fork???</h4>
           <p class="notes__description">
-            Wymaga wyjaśnienia!!!<a
+            Wymaga wyjaśnienia!!! <a
               class="notes__link"
               href="https://www.youtube.com/watch?v=7myDXGfEnds&list=PLjHmWifVUNMKIGHmaGPVqSD-L6i1Zw-MH&index=9"
               >Wiecej o forkach</a
             >
           </p>
-          <ul class="list">
-            <li class="list__element">
-              <b></b>
-            </li>
-            <li class="list__element">
-              <b></b>
-            </li>
-          </ul>
 
           <!--git branch-->
           <h4 class="notes__title notes__title--h4">Branch - podstawy</h4>
@@ -390,20 +392,12 @@
           </ul>
 
           <!--git pozostałe-->
-          <h4 class="notes__title notes__title--h4">Git dalej</h4>
-          <ul class="list">
-            <li class="list__element">
-              <b>.gitignore</b> - jest to dodatkowy plik, który możemy dodać do
-              naszego projekty w Visual Studio Code. Przy commitowaniu pliki
-              oraz treść umieszczone w tym dokumencie nie są widoczne.
-            </li>
-            <li class="list__element">
-              <b>push --force-with-lease</b> - <b>--fixup</b> -
-              <b>--assume-unchanged</b> - <b>sparse checkout</b> -
-              <b>! + &&</b> - <b>RERERE</b> - REuse REcorded REsolution s
-              <b></b> -
-            </li>
-          </ul>
+          <h4 class="notes__title notes__title--h4">.gitignore</h4>
+          <p class="notes__description">
+            <b>.gitignore</b> - jest to dodatkowy plik, który możemy dodać do
+            naszego projekty w Visual Studio Code. Przy commitowaniu pliki oraz
+            treść umieszczone w tym dokumencie nie są widoczne.
+          </p>
         </article>
       </section>
 

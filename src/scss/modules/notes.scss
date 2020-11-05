@@ -12,7 +12,7 @@
 
 .notes {
   padding-bottom: 20px;
-  border-bottom: 4px solid var(--text-font);
+  border-bottom: 4px solid var(--color-black);
   margin:0;
   &__title {
     background-color: coral;
@@ -106,3 +106,21 @@
     @include mediaTabletMobile;
   }
 }
+
+/*LIST*/
+.list {
+  &__element {
+    margin: 10px 0;
+    @include mediaTabletMobile;
+    &--special {
+      margin-top: 4px;
+      padding: 8px 0 0 0;
+      border-top: 1px solid var(--color-black);
+    }
+  }
+}
+
+b {
+  padding-right: 4px;
+}
+ 

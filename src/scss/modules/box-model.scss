@@ -15,13 +15,13 @@
   @media screen and (max-width: 320px) {font-size: 12px;}
   &__margin {
     background: #f9cd9b;
-    color: var(--text-font);
+    color: var(--color-black);
     height: 80%;
     @include widthMargin;
   }
   &__border {
     background: #fddd9a;
-    border: 5px solid var(--text-font);
+    border: 5px solid var(--color-black);
     height: 80%;
     @include widthMargin;
   }

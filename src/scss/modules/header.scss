@@ -2,7 +2,7 @@
   &__title {
     font-size: 60px;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px 0 0 0;
     padding: 16px;
     background: var(--color-termina);
     border-bottom: 6px solid var(--color-gray);
@@ -25,6 +25,7 @@
     }
   }
   &__image {
-    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
   }
 }

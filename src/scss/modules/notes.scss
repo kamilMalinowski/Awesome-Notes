@@ -13,8 +13,8 @@
 .notes {
   padding-bottom: 20px;
   margin: 0;
-  &--aside{
-background-color: var(--color-lightGreen);
+  &--aside {
+    background-color: var(--color-lightGreen);
     border-left: 16px solid var(--color-gray);
   }
   &__title {
@@ -116,7 +116,6 @@ background-color: var(--color-lightGreen);
     @include mediaTabletMobile;
   }
   &__progress {
-
     width: 100%;
     background-color: greenyellow;
     color: indianred;
@@ -148,8 +147,7 @@ b {
   padding-right: 4px;
 }
 
-
-.div{
+.div {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }

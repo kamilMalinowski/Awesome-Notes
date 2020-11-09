@@ -26,6 +26,11 @@
       >
         DARK
       </button>
+      <a href="index.html" class="home">
+        <button class="home__button" aria-label="wróć do strony początkowej">
+          HOME
+        </button>
+      </a>
       <nav class="navigation navigation--js">
         <a class="navigation__link" href="notatki-html.html">HTML</a>
         <a class="navigation__link" href="notatki-css.html">CSS</a>
@@ -50,11 +55,15 @@
             <i>CSS = Cascading Style Sheets</i> - Kaskadowe arkusze stylów
           </p>
           <ul class="notes-list">
-            <li class="notes-list__element"><b>CSS odpowiadają za prezentację</b></li>
+            <li class="notes-list__element">
+              <b>CSS odpowiadają za prezentację</b>
+            </li>
             <li class="notes-list__element">
               CSS wpływają na wygląd elementów HTML na ekranie, wydrukach itp.
             </li>
-            <li class="notes-list__element">Składnia CSS to reguły <i>"{}"</i></li>
+            <li class="notes-list__element">
+              Składnia CSS to reguły <i>"{}"</i>
+            </li>
             <li class="notes-list__element">
               Pliki zawierające kod CSS mają rozszerzenie <i>.css</i> - jest
               jest możliwość korzystania z reguł CSS bez używania zewnętrznych
@@ -318,7 +327,9 @@
               <b>double</b> - Dwie proste linie, które dają w sumie liczbę
               pikseli zdefiniowaną jako border-width.
             </li>
-            <li class="notes-list__element"><b>groove</b> - Efekt wyrzeźbienia.</li>
+            <li class="notes-list__element">
+              <b>groove</b> - Efekt wyrzeźbienia.
+            </li>
             <li class="notes-list__element">
               <b>inset</b> - Sprawia wrażenie, że blok jest zapadnięty.
             </li>
@@ -633,7 +644,16 @@
     <!--FOOTER-->
     <footer class="footer footer--css">
       Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
-      WTF: Co ten Frontend.
+      WTF: Co ten Frontend. Twórca strony:
+      <a
+        class="footer__link"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="kamil github"
+        href="https://github.com/kamilMalinowski"
+      >
+        Kamil Malinowski</a
+      >
     </footer>
   </body>
 </html>

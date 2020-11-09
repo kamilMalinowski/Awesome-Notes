@@ -111,6 +111,15 @@
   &__dd {
     @include mediaTabletMobile;
   }
+  &__progress {
+
+    width: 100%;
+    background-color: greenyellow;
+    color: indianred;
+    border: 2px solid black;
+
+    margin-top: 20px;
+  }
 }
 
 /*LIST*/

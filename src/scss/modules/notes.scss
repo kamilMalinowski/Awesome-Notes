@@ -13,6 +13,10 @@
 .notes {
   padding-bottom: 20px;
   margin: 0;
+  &--aside{
+background-color: var(--color-lightGreen);
+    border-left: 16px solid var(--color-gray);
+  }
   &__title {
     display: flex;
     align-items: center;
@@ -92,7 +96,7 @@
     }
   }
   &__link {
-    color: var(--link-color);
+    color: var(--color-pink);
     text-decoration: none;
   }
   &__description {
@@ -136,10 +140,16 @@
   &__link {
     text-decoration: none;
     font-weight: 700;
-    color: var(--color-gray);
+    color: var(--color-pink);
   }
 }
 
 b {
   padding-right: 4px;
+}
+
+
+.div{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }

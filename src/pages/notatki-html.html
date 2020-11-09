@@ -42,371 +42,502 @@
         <h1 class="header-home__title">Moja nauka Frontendu</h1>
       </header>
 
-      <!--HTML-->
-      <section class="notes">
+      <!--LIST-->
+      <nav class="notes">
         <h2 class="notes__title">Co ten HTML?</h2>
-        <article class="notes__article">
-          <h3 class="notes__title">Notatki Html</h3>
-          <p class="notes__description">
-            <i>HTML = HyperText Markup Language</i>
-          </p>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              <b>HTML odpowiada za treść</b> - a właściwie za jej właściwe
-              opakowanie
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;/&gt;</b> - HTML składa się ze znaczników/tagów/elementów
-            </li>
-            <li class="notes-list__element">
-              <b>Semantyczny </b> = mający znaczenie
-            </li>
-            <li class="notes-list__element">
-              Pliki zawierające kod HTML mają zwykle rozszerzenie <i>.html</i>
-            </li>
-            <li class="notes-list__element">
-              <b>HTML to szkielet strony internetowej</b> - nawet ma taką
-              budowę!
-            </li>
-            <li class="notes-list__element">
-              <b
-                ><a
-                  class="notes__link"
-                  href="https://validator.w3.org/nu/#textarea"
-                  >Validator</a
-                ></b
-              >
-              - sprawdzamy tu kod
-            </li>
-          </ul>
-          <h3 class="notes__title">Główne znaczniki:</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              <b>&lt;html&gt;</b> = &lt;head&gt;+&lt;body&gt;
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;main&gt;</b> - Główna część dokumentu
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;section&gt;</b> - Sekcja dokumentu
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;article&gt;</b> - Samodzielne treści
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;header&gt;</b> - Nagłówek - dokumentu / sekcji / artykułu
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;footer&gt;</b> - Stopka - dokumentu / sekcji
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;h1-h6&gt;</b> - Tekstowe nagłówki tytułowe - dokumentu
-              /sekcji
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;p&gt;</b> - Paragraf / akapit
-            </li>
-            <li class="notes-list__element"><b>&lt;br&gt;</b> - nowa linia</li>
-            <li class="notes-list__element">
-              <b>&lt;b&gt;/pogrubienie oraz &lt;i&gt;/wykrzywiony tekst</b> -
-              Nie mają dużego znaczenia semantycznego - służą do wyróżnienia
-              fragmentu z tekstu otaczającego
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;strong&gt;</b> - podkreśla wysoką istotność i poważność
-              frazy w nim zawartej
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;em&gt;</b> - podkreśla, że tekst może mieć inne znaczenie
-              (np. ironia)
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;a&gt;</b> - linki / łącza wewnątrz dokumentu
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;element id="moj-identyfikator"&gt;</b> - atrybut id -
-              identyfikuje element (przydaje się do nawigacji w obrębie
-              dokumentu)
-            </li>
-            <li class="notes-list__element"><b>&lt;nav&gt;</b> - Nawigacja</li>
-            <li class="notes-list__element">
-              <b>&lt;img src="" alt=""&gt;</b> - img - obrazek o podanym adresie
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;sup&gt;</b> - index górny
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;sub&gt;</b> - index dolny
-            </li>
-          </ul>
-          <h3 class="notes__title">Treść to:</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">Teksty</li>
-            <li class="notes-list__element">Nagłówki</li>
-            <li class="notes-list__element">Linki</li>
-            <li class="notes-list__element">notes-listy</li>
-            <li class="notes-list__element">Definicje</li>
-            <li class="notes-list__element">Obrazki</li>
-            <li class="notes-list__element">Video</li>
-            <li class="notes-list__element">Formularze</li>
-            <li class="notes-list__element">
-              Wszystko co jest nośnikiem informacji
-            </li>
-          </ul>
-          <h3 class="notes__title">BEM-block element modifier</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              <b>B</b>lock - nadrzędny element
-            </li>
-            <li class="notes-list__element">
-              <b>E</b>lement - część bloku (nie musi być bezpośrednim dzieckiem)
-            </li>
-            <li class="notes-list__element">
-              <b>M</b>odifier - modyfikator - jeśli element występuje w kilku
-              wariacjach tworzymy dodatkową klasę
-            </li>
-          </ul>
-          <h3 class="notes__title">BEM-Dlaczego?</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              Świat stylowania doszedł do wysokiego stopnia skomplikowania
-              (specyficzność)
-            </li>
-            <li class="notes-list__element">
-              Problem z logicznym nazywaniem klas
-            </li>
-            <li class="notes-list__element">
-              Brak ujednoliconego sposobu stylowania
-            </li>
-            <li class="notes-list__element">Importanty, nadpisywanie rzeczy</li>
-            <li class="notes-list__element">
-              Brak odwzorowanie struktury HTML w CSS
-            </li>
-            <li class="notes-list__element">
-              Stylowanie kilkoma klasami, powtarzające się nazwy
-            </li>
-          </ul>
-          <h3 class="notes__title">Podsumowanie HTML:</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              Opakowuje i opisuje treść strony
-            </li>
-            <li class="notes-list__element">
-              Mówi przeglądarce o strukturze dokumentu (i o tym co ma wczytać)
-            </li>
-            <li class="notes-list__element">
-              Posiada swoją zdefiniowaną składnie
-            </li>
-            <li class="notes-list__element">
-              Nie jest językiem programowania, jest językiem znaczników (Markup
-              Language)
-            </li>
-            <li class="notes-list__element">
-              Aktualną rekomendowaną wersją jest 5.2
-            </li>
-            <li class="notes-list__element">
-              Całą specyfikację znajdziesz na stronie
-              <a class="notes__link" href="https://www.w3.org/TR/html52/"
-                >w3c</a
-              >
-            </li>
-          </ul>
-          <h3 class="notes__title">Podsumowanie lekcja nr.2</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              atrybuty są "niewidzialne" - chowamy je w znaczniku
-            </li>
-            <li class="notes-list__element">
-              nadają elementom dodatkowe właściwości (href, src)
-            </li>
-            <li class="notes-list__element">
-              pozwalają na grupowanie elementów (class)
-            </li>
-            <li class="notes-list__element">
-              pozwalają na identyfikowanie elementów (id)
-            </li>
-            <li class="notes-list__element">można je miksować</li>
-            <li class="notes-list__element">
-              spis atrybutów
-              <a
-                class="notes__link"
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes "
-                >"globalnych"</a
-              >
-            </li>
-          </ul>
-          <h3 class="notes__title">Podsumowanie BEM</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              Szukamy elementów na stronie i dzielimy ją na bloki
-            </li>
-            <li class="notes-list__element">
-              Myślimy o elementach składowych / robimy analizę-selekcję
-            </li>
-            <li class="notes-list__element">
-              Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze
-              zmieniamy tylko unikalne dla niego wartości, nie przepisujemy
-              rzeczy z klasy bazowej)
-            </li>
-          </ul>
-          <h3 class="notes__title">HTML Dalej: listy, tabele oraz definicje</h3>
-          <ul class="notes-list">
-            <li class="notes-list__element">
-              <b>&lt;ul&gt;</b> - lista nieuporządkowana
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;li&gt;</b> - element listy
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;ol&gt;</b> - lista uporządkowana
-            </li>
-            <li class="notes-list__element">
-              Możemy zagnieżdżać listy wewnątrz elementu listy <i>li</i>
-            </li>
-            <li class="notes-list__element">
-              <b>&lt;dl&gt;</b> - Description List:
-              <ol class="notes-list">
-                <li class="notes-list__element">
-                  <b>&lt;dt&gt;</b> - Description term
-                </li>
-                <li class="notes-list__element">
-                  <b>&lt;dd&gt;</b> - Description detail
-                </li>
-              </ol>
-            </li>
-          </ul>
-          <!--bird-->
+        <ol class="notes-list">
+          <li class="notes-list__element">
+            <a class="notes-list__link" href="#html">HTML</a> (...)
+          </li>
+          <li class="notes-list__element">
+            <a class="notes-list__link" href="#htmlelements">Elementy HTML</a>
+            (...)
+          </li>
+          <li class="notes-list__element">
+            <a class="notes-list__link" href="#bem">BEM</a> (...)
+          </li>
+          <li class="notes-list__element">
+            <a class="notes-list__link" href="#markdown">Markdown</a> (...)
+          </li>
+          <li class="notes-list__element">
+            <a class="notes-list__link" href="#bootstrap">Bootstrap</a> (...)
+          </li>
+        </ol>
+      </nav>
+
+      <!--HTML-->
+      <div class="div">
+        <section class="notes">
           <article class="notes__article">
-            <h2 class="notes__title">MYSIKRÓLIK</h2>
-            <p class="notes__description notes__description--bird">
-              <i>Przykład użycia definicji</i>
-            </p>
-            <img
-              class="notes__image notes__image--bird"
-              src="../assets/img/mysikrólik.jpg"
-              alt="mysikrólik"
-            />
-            <p class="notes__description notes__description--bird">
-              &uarr;&uarr;&uarr;&uarr;&uarr;pogłaszcz mysikrólika
-              myszką&uarr;&uarr;&uarr;&uarr;&uarr;
-            </p>
-            <dl>
-              <dt class="notes__dt">Występowanie</dt>
-              <dd class="notes__dd">
-                Występuje nieomal w całej Europie (na południu rzadziej,
-                najliczniej w środkowej i wschodniej) oraz w Azji – aż po
-                wschodnią Syberię i Japonię oraz w Azji Mniejszej. Nie
-                zamieszkuje dalekiej Północy. Częściowo osiadły (południowe
-                populacje), częściowo wędrowny (przeloty od marca do kwietnia i
-                odloty od września do listopada populacji północnych) lub
-                koczujący. Zimuje w południowej Europie, północnej Afryce i w
-                Azji.
-              </dd>
-              <dt class="notes__dt">Głos</dt>
-              <dd class="notes__dd">
-                Wydaje ciche, szczebioczące „si si si”, „sri sri sri” z akcentem
-                na kończącym pieśń trelu lub o podobnej wysokości falujący śpiew
-                wabiący. Samiec często śpiewa i w różnych porach roku – robi to
-                najczęściej blisko swego gniazda na wierzchołku drzewa. Usłyszeć
-                go można w lesie iglastym nawet zimą. Milknie w okresie wylęgu
-                piskląt, aby nie zwracać uwagi na gniazdo i nie tracić
-                czujności. Od śpiewu zniczka odróżnia go szybko powtarzane „si
-                si”, a następnie głośniejsza, dwusylabowa, modulowana seria
-                zakończona delikatnym trelem.
-              </dd>
-            </dl>
+            <h3 class="notes__title notes__title--h3" id="html">Html</h3>
+            <p class="notes__description">HTML = HyperText Markup Language</p>
+
+            <!--HTML elementy jakie używam-->
+            <h4 class="notes__title notes__title--h4">
+              Html - Elementy jakie używam
+            </h4>
+            <ul class="notes-list"></ul>
           </article>
-          <!--table-->
-          <h3 class="notes__title">Tabela - czyli jak ją zrobić</h3>
-          <table class="table">
-            <caption class="table__description">
-              Tabela pokazowa
-            </caption>
-            <thead class="thead">
-              <tr class="row">
-                <th class="row__head">komórka w nagłówku</th>
-                <th class="row__head">komórka w nagłówku</th>
-                <th class="row__head">komórka w nagłówku</th>
-              </tr>
-            </thead>
-            <tbody class="tbody">
-              <tr class="row">
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-              </tr>
-              <tr class="row">
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-              </tr>
-              <tr class="row">
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-              </tr>
-              <tr class="row">
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-              </tr>
-              <tr class="row">
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-                <td class="row__data">komórka tabeli</td>
-              </tr>
-            </tbody>
-          </table>
-          <h3 class="notes__title">Markdown</h3>
-          <p class="notes__description">
-            Język znaczników przeznaczony do formatowania tekstu zaprojektowany
-            przez Johna Grubera i Aarona Swartza. Został stworzony w celu jak
-            najbardziej uproszczonego tworzenia i formatowania tekstu.
-          </p>
-          <ul class="notes-list">
+          <article>
+            <h3 class="notes__title notes__title--h3">Główne znaczniki:</h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                <b>&lt;html&gt;</b> = &lt;head&gt;+&lt;body&gt;
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;main&gt;</b> - Główna część dokumentu
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;section&gt;</b> - Sekcja dokumentu
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;article&gt;</b> - Samodzielne treści
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;header&gt;</b> - Nagłówek - dokumentu / sekcji / artykułu
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;footer&gt;</b> - Stopka - dokumentu / sekcji
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;h1-h6&gt;</b> - Tekstowe nagłówki tytułowe - dokumentu
+                /sekcji
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;p&gt;</b> - Paragraf / akapit
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;br&gt;</b> - nowa linia
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;b&gt;/pogrubienie oraz &lt;i&gt;/wykrzywiony tekst</b> -
+                Nie mają dużego znaczenia semantycznego - służą do wyróżnienia
+                fragmentu z tekstu otaczającego
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;strong&gt;</b> - podkreśla wysoką istotność i poważność
+                frazy w nim zawartej
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;em&gt;</b> - podkreśla, że tekst może mieć inne znaczenie
+                (np. ironia)
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;a&gt;</b> - linki / łącza wewnątrz dokumentu
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;element id="moj-identyfikator"&gt;</b> - atrybut id -
+                identyfikuje element (przydaje się do nawigacji w obrębie
+                dokumentu)
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;nav&gt;</b> - Nawigacja
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;img src="" alt=""&gt;</b> - img - obrazek o podanym
+                adresie
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;sup&gt;</b> - index górny
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;sub&gt;</b> - index dolny
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3">Treść to:</h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">Teksty</li>
+              <li class="notes-list__element">Nagłówki</li>
+              <li class="notes-list__element">Linki</li>
+              <li class="notes-list__element">notes-listy</li>
+              <li class="notes-list__element">Definicje</li>
+              <li class="notes-list__element">Obrazki</li>
+              <li class="notes-list__element">Video</li>
+              <li class="notes-list__element">Formularze</li>
+              <li class="notes-list__element">
+                Wszystko co jest nośnikiem informacji
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3" id="bem">
+              BEM-block element modifier
+            </h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                <b>B</b>lock - nadrzędny element
+              </li>
+              <li class="notes-list__element">
+                <b>E</b>lement - część bloku (nie musi być bezpośrednim
+                dzieckiem)
+              </li>
+              <li class="notes-list__element">
+                <b>M</b>odifier - modyfikator - jeśli element występuje w kilku
+                wariacjach tworzymy dodatkową klasę
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3">BEM-Dlaczego?</h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                Świat stylowania doszedł do wysokiego stopnia skomplikowania
+                (specyficzność)
+              </li>
+              <li class="notes-list__element">
+                Problem z logicznym nazywaniem klas
+              </li>
+              <li class="notes-list__element">
+                Brak ujednoliconego sposobu stylowania
+              </li>
+              <li class="notes-list__element">
+                Importanty, nadpisywanie rzeczy
+              </li>
+              <li class="notes-list__element">
+                Brak odwzorowanie struktury HTML w CSS
+              </li>
+              <li class="notes-list__element">
+                Stylowanie kilkoma klasami, powtarzające się nazwy
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3">Podsumowanie HTML:</h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                Opakowuje i opisuje treść strony
+              </li>
+              <li class="notes-list__element">
+                Mówi przeglądarce o strukturze dokumentu (i o tym co ma wczytać)
+              </li>
+              <li class="notes-list__element">
+                Posiada swoją zdefiniowaną składnie
+              </li>
+              <li class="notes-list__element">
+                Nie jest językiem programowania, jest językiem znaczników
+                (Markup Language)
+              </li>
+              <li class="notes-list__element">
+                Aktualną rekomendowaną wersją jest 5.2
+              </li>
+              <li class="notes-list__element">
+                Całą specyfikację znajdziesz na stronie
+                <a class="notes__link" href="https://www.w3.org/TR/html52/"
+                  >w3c</a
+                >
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3">
+              Podsumowanie lekcja nr.2
+            </h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                atrybuty są "niewidzialne" - chowamy je w znaczniku
+              </li>
+              <li class="notes-list__element">
+                nadają elementom dodatkowe właściwości (href, src)
+              </li>
+              <li class="notes-list__element">
+                pozwalają na grupowanie elementów (class)
+              </li>
+              <li class="notes-list__element">
+                pozwalają na identyfikowanie elementów (id)
+              </li>
+              <li class="notes-list__element">można je miksować</li>
+              <li class="notes-list__element">
+                spis atrybutów
+                <a
+                  class="notes__link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes "
+                  >"globalnych"</a
+                >
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3">Podsumowanie BEM</h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                Szukamy elementów na stronie i dzielimy ją na bloki
+              </li>
+              <li class="notes-list__element">
+                Myślimy o elementach składowych / robimy analizę-selekcję
+              </li>
+              <li class="notes-list__element">
+                Tworzymy dwie klasy jeśli element ma modyfikator (w
+                modyfikatorze zmieniamy tylko unikalne dla niego wartości, nie
+                przepisujemy rzeczy z klasy bazowej)
+              </li>
+            </ul>
+            <h3 class="notes__title notes__title--h3">
+              HTML Dalej: listy, tabele oraz definicje
+            </h3>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                <b>&lt;ul&gt;</b> - lista nieuporządkowana
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;li&gt;</b> - element listy
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;ol&gt;</b> - lista uporządkowana
+              </li>
+              <li class="notes-list__element">
+                Możemy zagnieżdżać listy wewnątrz elementu listy <i>li</i>
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;dl&gt;</b> - Description List:
+                <ol class="notes-list">
+                  <li class="notes-list__element">
+                    <b>&lt;dt&gt;</b> - Description term
+                  </li>
+                  <li class="notes-list__element">
+                    <b>&lt;dd&gt;</b> - Description detail
+                  </li>
+                </ol>
+              </li>
+            </ul>
+            <!--bird-->
+            <article class="notes__article">
+              <h2 class="notes__title">MYSIKRÓLIK</h2>
+              <p class="notes__description notes__description--bird">
+                <i>Przykład użycia definicji</i>
+              </p>
+              <img
+                class="notes__image notes__image--bird"
+                src="../assets/img/mysikrólik.jpg"
+                alt="mysikrólik"
+              />
+              <p class="notes__description notes__description--bird">
+                &uarr;&uarr;&uarr;&uarr;&uarr;pogłaszcz mysikrólika
+                myszką&uarr;&uarr;&uarr;&uarr;&uarr;
+              </p>
+              <dl>
+                <dt class="notes__dt">Występowanie</dt>
+                <dd class="notes__dd">
+                  Występuje nieomal w całej Europie (na południu rzadziej,
+                  najliczniej w środkowej i wschodniej) oraz w Azji – aż po
+                  wschodnią Syberię i Japonię oraz w Azji Mniejszej. Nie
+                  zamieszkuje dalekiej Północy. Częściowo osiadły (południowe
+                  populacje), częściowo wędrowny (przeloty od marca do kwietnia
+                  i odloty od września do listopada populacji północnych) lub
+                  koczujący. Zimuje w południowej Europie, północnej Afryce i w
+                  Azji.
+                </dd>
+                <dt class="notes__dt">Głos</dt>
+                <dd class="notes__dd">
+                  Wydaje ciche, szczebioczące „si si si”, „sri sri sri” z
+                  akcentem na kończącym pieśń trelu lub o podobnej wysokości
+                  falujący śpiew wabiący. Samiec często śpiewa i w różnych
+                  porach roku – robi to najczęściej blisko swego gniazda na
+                  wierzchołku drzewa. Usłyszeć go można w lesie iglastym nawet
+                  zimą. Milknie w okresie wylęgu piskląt, aby nie zwracać uwagi
+                  na gniazdo i nie tracić czujności. Od śpiewu zniczka odróżnia
+                  go szybko powtarzane „si si”, a następnie głośniejsza,
+                  dwusylabowa, modulowana seria zakończona delikatnym trelem.
+                </dd>
+              </dl>
+            </article>
+            <!--table-->
+            <h3 class="notes__title notes__title--h3">
+              Tabela - czyli jak ją zrobić
+            </h3>
+            <table class="table">
+              <caption class="table__description">
+                Tabela pokazowa
+              </caption>
+              <thead class="thead">
+                <tr class="row">
+                  <th class="row__head">komórka w nagłówku</th>
+                  <th class="row__head">komórka w nagłówku</th>
+                  <th class="row__head">komórka w nagłówku</th>
+                </tr>
+              </thead>
+              <tbody class="tbody">
+                <tr class="row">
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                </tr>
+                <tr class="row">
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                </tr>
+                <tr class="row">
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                </tr>
+                <tr class="row">
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                </tr>
+                <tr class="row">
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                  <td class="row__data">komórka tabeli</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="notes__title notes__title--h3">Markdown</h3>
+            <p class="notes__description">
+              Język znaczników przeznaczony do formatowania tekstu
+              zaprojektowany przez Johna Grubera i Aarona Swartza. Został
+              stworzony w celu jak najbardziej uproszczonego tworzenia i
+              formatowania tekstu.
+            </p>
+            <ul class="notes-list">
+              <li class="notes-list__element">
+                <b>#</b> - nagłówek (odpowiednik h1)
+              </li>
+              <li class="notes-list__element">
+                <b>##</b> - nagłówek (odpowiednik h2) i tak dalej i tak dalej
+              </li>
+              <li class="notes-list__element">
+                <b>[opis linku](link)</b> - odpowiednik html-owego a(link)
+              </li>
+              <li class="notes-list__element">
+                <b>![odpowiednik treści <i>alt=""</i>](link do obrazu)</b> -
+                odpowiednik obrazu img
+              </li>
+              <li class="notes-list__element">
+                <b>Kwadratowe [] przed okrągłymi ()</b> - K przed O
+                (alfabetycznie) - <i>podstawowa reguła</i>
+              </li>
+              <li class="notes-list__element">
+                <b>`polecenie / jednolinijkowy kod`</b> - wyróżniona treść
+              </li>
+              <li class="notes-list__element">
+                <b>```javascript blok kodu ```</b> - tekst w bloku. W zależności
+                od przeglądarki lub programu wpisując na początku kod (np.
+                javascript) dostajemy kolory z edytora
+              </li>
+              <li class="notes-list__element"><b>*tekst*</b> - kursywa</li>
+              <li class="notes-list__element">
+                <b>**tekst**</b> - pogrubienie
+              </li>
+              <li class="notes-list__element">
+                <b>***tekst***</b> - kursywa i pogrubienie
+              </li>
+              <li class="notes-list__element">
+                <b>> tekst</b> - wcięcie do cytatu
+              </li>
+              <li class="notes-list__element"><b>- tekst</b> - lista</li>
+              <li class="notes-list__element">
+                <b>1. tekst ...i tak dalej</b> - lista numeryczna
+              </li>
+              <li class="notes-list__element">
+                <b>.md</b> - pliki Markdown mają rozszerzenie .md
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!--ASIDE-->
+        <aside class="notes notes--aside">
+          <h3 class="notes__title notes__title--h3" id="htmlelements">
+            Elementy Html
+          </h3>
+          <p class="notes__description">Lista elementów Html:</p>
+
+          <h4 class="notes__title notes__title--h4">A</h4>
+          <ol class="notes-list">
             <li class="notes-list__element">
-              <b>#</b> - nagłówek (odpowiednik h1)
+              <b>abbr</b>
             </li>
             <li class="notes-list__element">
-              <b>##</b> - nagłówek (odpowiednik h2) i tak dalej i tak dalej
+              <b>address</b>
             </li>
             <li class="notes-list__element">
-              <b>[opis linku](link)</b> - odpowiednik html-owego a(link)
+              <b>area</b>
             </li>
             <li class="notes-list__element">
-              <b>![odpowiednik treści <i>alt=""</i>](link do obrazu)</b> -
-              odpowiednik obrazu img
+              <b>article</b>
             </li>
             <li class="notes-list__element">
-              <b>Kwadratowe [] przed okrągłymi ()</b> - K przed O
-              (alfabetycznie) - <i>podstawowa reguła</i>
+              <b>aside</b>
             </li>
             <li class="notes-list__element">
-              <b>`polecenie / jednolinijkowy kod`</b> - wyróżniona treść
+              <b>audio</b>
+            </li>
+          </ol>
+          <h4 class="notes__title notes__title--h4">B</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b></b>
             </li>
             <li class="notes-list__element">
-              <b>```javascript blok kodu ```</b> - tekst w bloku. W zależności
-              od przeglądarki lub programu wpisując na początku kod (np.
-              javascript) dostajemy kolory z edytora
-            </li>
-            <li class="notes-list__element"><b>*tekst*</b> - kursywa</li>
-            <li class="notes-list__element"><b>**tekst**</b> - pogrubienie</li>
-            <li class="notes-list__element">
-              <b>***tekst***</b> - kursywa i pogrubienie
+              <b></b>
             </li>
             <li class="notes-list__element">
-              <b>> tekst</b> - wcięcie do cytatu
-            </li>
-            <li class="notes-list__element"><b>- tekst</b> - lista</li>
-            <li class="notes-list__element">
-              <b>1. tekst ...i tak dalej</b> - lista numeryczna
+              <b></b>
             </li>
             <li class="notes-list__element">
-              <b>.md</b> - pliki Markdown mają rozszerzenie .md
+              <b></b>
             </li>
-          </ul>
-        </article>
-      </section>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+          </ol>
+          <h4 class="notes__title notes__title--h4">C</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+          </ol>
+          <h4 class="notes__title notes__title--h4">D</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+            <li class="notes-list__element">
+              <b></b>
+            </li>
+          </ol>
+        </aside>
+      </div>
     </main>
 
     <!--FOOTER-->
@@ -420,8 +551,67 @@
         title="kamil github"
         href="https://github.com/kamilMalinowski"
       >
-        Kamil Malinowski</a
-      >
+        Kamil Malinowski
+      </a>
     </footer>
   </body>
 </html>
+
+<!-- 
+<li class="notes-list__element">
+  <b>HTML odpowiada za treść</b> - a właściwie za jej właściwe
+  opakowanie
+</li>
+<li class="notes-list__element">
+  <b>&lt;/&gt;</b> - HTML składa się ze znaczników/tagów/elementów
+</li>
+<li class="notes-list__element">
+  <b>Semantyczny </b> = mający znaczenie
+</li>
+<li class="notes-list__element">
+  Pliki zawierające kod HTML mają zwykle rozszerzenie <i>.html</i>
+</li>
+<li class="notes-list__element">
+  <b>HTML to szkielet strony internetowej</b> - nawet ma taką
+  budowę!
+</li>
+<li class="notes-list__element">
+  <b
+    ><a
+      class="notes__link"
+      href="https://validator.w3.org/nu/#textarea"
+      >Validator</a
+    ></b
+  >
+  - sprawdzamy tu kod
+</li> -->
+
+<!-- <pre>
+  a
+
+b
+base
+bdi
+bdo
+blockquote
+body
+br
+button
+canvas
+caption
+cite
+code
+col
+colgroup
+data
+datalist
+dd
+del
+details
+dfn
+dialog
+div
+dl
+dt
+</pre
+    > -->

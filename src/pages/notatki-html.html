@@ -66,20 +66,32 @@
       </nav>
 
       <!--HTML-->
-      <div class="div">
+      <div class="wrapper">
         <section class="notes">
           <article class="notes__article">
             <h3 class="notes__title notes__title--h3" id="html">Html</h3>
             <p class="notes__description">HTML = HyperText Markup Language</p>
 
+            <!--treść-->
+            <h4 class="notes__title notes__title--h4">Treść to:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__element">Teksty</li>
+              <li class="notes-list__element">Nagłówki</li>
+              <li class="notes-list__element">Linki</li>
+              <li class="notes-list__element">notes-listy</li>
+              <li class="notes-list__element">Definicje</li>
+              <li class="notes-list__element">Obrazki</li>
+              <li class="notes-list__element">Video</li>
+              <li class="notes-list__element">Formularze</li>
+              <li class="notes-list__element">
+                Wszystko co jest nośnikiem informacji
+              </li>
+            </ul>
+
             <!--HTML elementy jakie używam-->
             <h4 class="notes__title notes__title--h4">
               Html - Elementy jakie używam
             </h4>
-            <ul class="notes-list"></ul>
-          </article>
-          <article>
-            <h3 class="notes__title notes__title--h3">Główne znaczniki:</h3>
             <ul class="notes-list">
               <li class="notes-list__element">
                 <b>&lt;html&gt;</b> = &lt;head&gt;+&lt;body&gt;
@@ -143,24 +155,34 @@
               <li class="notes-list__element">
                 <b>&lt;sub&gt;</b> - index dolny
               </li>
-            </ul>
-            <h3 class="notes__title notes__title--h3">Treść to:</h3>
-            <ul class="notes-list">
-              <li class="notes-list__element">Teksty</li>
-              <li class="notes-list__element">Nagłówki</li>
-              <li class="notes-list__element">Linki</li>
-              <li class="notes-list__element">notes-listy</li>
-              <li class="notes-list__element">Definicje</li>
-              <li class="notes-list__element">Obrazki</li>
-              <li class="notes-list__element">Video</li>
-              <li class="notes-list__element">Formularze</li>
               <li class="notes-list__element">
-                Wszystko co jest nośnikiem informacji
+                <b>&lt;ul&gt;</b> - lista nieuporządkowana
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;li&gt;</b> - element listy
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;ol&gt;</b> - lista uporządkowana
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;dl&gt;</b> - Description List:
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;dt&gt;</b> - Description term
+              </li>
+              <li class="notes-list__element">
+                <b>&lt;dd&gt;</b> - Description detail
               </li>
             </ul>
-            <h3 class="notes__title notes__title--h3" id="bem">
-              BEM-block element modifier
-            </h3>
+          </article>
+
+          <!--BEM-->
+          <article class="notes__article">
+            <h3 class="notes__title notes__title--h3" id="bem">BEM</h3>
+            <p class="notes__description">Block Element Modifier</p>
+
+            <!--znaczenie skrótu BEM-->
+            <h4 class="notes__title notes__title--h4">Co oznacza BEM:</h4>
             <ul class="notes-list">
               <li class="notes-list__element">
                 <b>B</b>lock - nadrzędny element
@@ -174,212 +196,20 @@
                 wariacjach tworzymy dodatkową klasę
               </li>
             </ul>
-            <h3 class="notes__title notes__title--h3">BEM-Dlaczego?</h3>
-            <ul class="notes-list">
-              <li class="notes-list__element">
-                Świat stylowania doszedł do wysokiego stopnia skomplikowania
-                (specyficzność)
-              </li>
-              <li class="notes-list__element">
-                Problem z logicznym nazywaniem klas
-              </li>
-              <li class="notes-list__element">
-                Brak ujednoliconego sposobu stylowania
-              </li>
-              <li class="notes-list__element">
-                Importanty, nadpisywanie rzeczy
-              </li>
-              <li class="notes-list__element">
-                Brak odwzorowanie struktury HTML w CSS
-              </li>
-              <li class="notes-list__element">
-                Stylowanie kilkoma klasami, powtarzające się nazwy
-              </li>
-            </ul>
-            <h3 class="notes__title notes__title--h3">Podsumowanie HTML:</h3>
-            <ul class="notes-list">
-              <li class="notes-list__element">
-                Opakowuje i opisuje treść strony
-              </li>
-              <li class="notes-list__element">
-                Mówi przeglądarce o strukturze dokumentu (i o tym co ma wczytać)
-              </li>
-              <li class="notes-list__element">
-                Posiada swoją zdefiniowaną składnie
-              </li>
-              <li class="notes-list__element">
-                Nie jest językiem programowania, jest językiem znaczników
-                (Markup Language)
-              </li>
-              <li class="notes-list__element">
-                Aktualną rekomendowaną wersją jest 5.2
-              </li>
-              <li class="notes-list__element">
-                Całą specyfikację znajdziesz na stronie
-                <a class="notes__link" href="https://www.w3.org/TR/html52/"
-                  >w3c</a
-                >
-              </li>
-            </ul>
-            <h3 class="notes__title notes__title--h3">
-              Podsumowanie lekcja nr.2
-            </h3>
-            <ul class="notes-list">
-              <li class="notes-list__element">
-                atrybuty są "niewidzialne" - chowamy je w znaczniku
-              </li>
-              <li class="notes-list__element">
-                nadają elementom dodatkowe właściwości (href, src)
-              </li>
-              <li class="notes-list__element">
-                pozwalają na grupowanie elementów (class)
-              </li>
-              <li class="notes-list__element">
-                pozwalają na identyfikowanie elementów (id)
-              </li>
-              <li class="notes-list__element">można je miksować</li>
-              <li class="notes-list__element">
-                spis atrybutów
-                <a
-                  class="notes__link"
-                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes "
-                  >"globalnych"</a
-                >
-              </li>
-            </ul>
-            <h3 class="notes__title notes__title--h3">Podsumowanie BEM</h3>
-            <ul class="notes-list">
-              <li class="notes-list__element">
-                Szukamy elementów na stronie i dzielimy ją na bloki
-              </li>
-              <li class="notes-list__element">
-                Myślimy o elementach składowych / robimy analizę-selekcję
-              </li>
-              <li class="notes-list__element">
-                Tworzymy dwie klasy jeśli element ma modyfikator (w
-                modyfikatorze zmieniamy tylko unikalne dla niego wartości, nie
-                przepisujemy rzeczy z klasy bazowej)
-              </li>
-            </ul>
-            <h3 class="notes__title notes__title--h3">
-              HTML Dalej: listy, tabele oraz definicje
-            </h3>
-            <ul class="notes-list">
-              <li class="notes-list__element">
-                <b>&lt;ul&gt;</b> - lista nieuporządkowana
-              </li>
-              <li class="notes-list__element">
-                <b>&lt;li&gt;</b> - element listy
-              </li>
-              <li class="notes-list__element">
-                <b>&lt;ol&gt;</b> - lista uporządkowana
-              </li>
-              <li class="notes-list__element">
-                Możemy zagnieżdżać listy wewnątrz elementu listy <i>li</i>
-              </li>
-              <li class="notes-list__element">
-                <b>&lt;dl&gt;</b> - Description List:
-                <ol class="notes-list">
-                  <li class="notes-list__element">
-                    <b>&lt;dt&gt;</b> - Description term
-                  </li>
-                  <li class="notes-list__element">
-                    <b>&lt;dd&gt;</b> - Description detail
-                  </li>
-                </ol>
-              </li>
-            </ul>
-            <!--bird-->
-            <article class="notes__article">
-              <h2 class="notes__title">MYSIKRÓLIK</h2>
-              <p class="notes__description notes__description--bird">
-                <i>Przykład użycia definicji</i>
-              </p>
-              <img
-                class="notes__image notes__image--bird"
-                src="../assets/img/mysikrólik.jpg"
-                alt="mysikrólik"
-              />
-              <p class="notes__description notes__description--bird">
-                &uarr;&uarr;&uarr;&uarr;&uarr;pogłaszcz mysikrólika
-                myszką&uarr;&uarr;&uarr;&uarr;&uarr;
-              </p>
-              <dl>
-                <dt class="notes__dt">Występowanie</dt>
-                <dd class="notes__dd">
-                  Występuje nieomal w całej Europie (na południu rzadziej,
-                  najliczniej w środkowej i wschodniej) oraz w Azji – aż po
-                  wschodnią Syberię i Japonię oraz w Azji Mniejszej. Nie
-                  zamieszkuje dalekiej Północy. Częściowo osiadły (południowe
-                  populacje), częściowo wędrowny (przeloty od marca do kwietnia
-                  i odloty od września do listopada populacji północnych) lub
-                  koczujący. Zimuje w południowej Europie, północnej Afryce i w
-                  Azji.
-                </dd>
-                <dt class="notes__dt">Głos</dt>
-                <dd class="notes__dd">
-                  Wydaje ciche, szczebioczące „si si si”, „sri sri sri” z
-                  akcentem na kończącym pieśń trelu lub o podobnej wysokości
-                  falujący śpiew wabiący. Samiec często śpiewa i w różnych
-                  porach roku – robi to najczęściej blisko swego gniazda na
-                  wierzchołku drzewa. Usłyszeć go można w lesie iglastym nawet
-                  zimą. Milknie w okresie wylęgu piskląt, aby nie zwracać uwagi
-                  na gniazdo i nie tracić czujności. Od śpiewu zniczka odróżnia
-                  go szybko powtarzane „si si”, a następnie głośniejsza,
-                  dwusylabowa, modulowana seria zakończona delikatnym trelem.
-                </dd>
-              </dl>
-            </article>
-            <!--table-->
-            <h3 class="notes__title notes__title--h3">
-              Tabela - czyli jak ją zrobić
-            </h3>
-            <table class="table">
-              <caption class="table__description">
-                Tabela pokazowa
-              </caption>
-              <thead class="thead">
-                <tr class="row">
-                  <th class="row__head">komórka w nagłówku</th>
-                  <th class="row__head">komórka w nagłówku</th>
-                  <th class="row__head">komórka w nagłówku</th>
-                </tr>
-              </thead>
-              <tbody class="tbody">
-                <tr class="row">
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                </tr>
-                <tr class="row">
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                </tr>
-                <tr class="row">
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                </tr>
-                <tr class="row">
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                </tr>
-                <tr class="row">
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                  <td class="row__data">komórka tabeli</td>
-                </tr>
-              </tbody>
-            </table>
-            <h3 class="notes__title notes__title--h3">Markdown</h3>
+          </article>
+
+          <!--MARKDOWN-->
+          <article class="notes__article">
+            <h3 class="notes__title notes__title--h3" id="markdown">Markdown</h3>
             <p class="notes__description">
               Język znaczników przeznaczony do formatowania tekstu
               zaprojektowany przez Johna Grubera i Aarona Swartza. Został
               stworzony w celu jak najbardziej uproszczonego tworzenia i
               formatowania tekstu.
             </p>
+
+            <!--znaczniki-->
+            <h4 class="notes__title notes__title--h4">Znaczniki</h4>
             <ul class="notes-list">
               <li class="notes-list__element">
                 <b>#</b> - nagłówek (odpowiednik h1)
@@ -425,6 +255,28 @@
               </li>
             </ul>
           </article>
+
+          <!--BOOTSTRAP-->
+          <article class="notes__article">
+            <h3 class="notes__title notes__title--h3" id="bootstrap">Bootstrap</h3>
+            <p class="notes__description">
+              biblioteka CSS, rozwijany przez programistów Twittera, wydawany na
+              licencji MIT. Zawiera zestaw przydatnych narzędzi ułatwiających
+              tworzenie interfejsu graficznego stron oraz aplikacji
+              internetowych.
+            </p>
+
+            <!--Instalacja bootstrapa-->
+            <h4 class="notes__title notes__title--h4">Instalacja:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__element"><b></b> -</li>
+            </ul>
+            <!--Kontenery-->
+            <h4 class="notes__title notes__title--h4">Kontenery</h4>
+            <ul class="notes-list">
+              <li class="notes-list__element"><b></b> -</li>
+            </ul>
+          </article>
         </section>
 
         <!--ASIDE-->
@@ -437,420 +289,434 @@
           <h4 class="notes__title notes__title--h4">A</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>a</b>
+              <abbr
+                class="notes-list__element--abbr"
+                title="The 'a' (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL."
+                >a</abbr
+              >
             </li>
             <li class="notes-list__element">
-              <b>abbr</b>
+              <abbr
+                class="notes-list__element--abbr"
+                title="The HTML Abbreviation element ('abbr') represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else."
+                >abbr</abbr
+              >
             </li>
             <li class="notes-list__element">
-              <b>address</b>
+              <abbr class="notes-list__element--abbr" title="address"
+                >address</abbr
+              >
             </li>
             <li class="notes-list__element">
-              <b>area</b>
+              <abbr
+                class="notes-list__element--abbr"
+                title="The 'area' defines a hot-spot region on an image, and optionally associates it with a hypertext link. This element is used only within a 'map' element."
+                >area</abbr
+              >
             </li>
             <li class="notes-list__element">
-              <b>article</b>
+              <abbr class="notes-list__element--abbr" title="">article</abbr>
             </li>
             <li class="notes-list__element">
-              <b>aside</b>
+              <abbr class="notes-list__element--abbr" title="">aside</abbr>
             </li>
             <li class="notes-list__element">
-              <b>audio</b>
+              <abbr class="notes-list__element--abbr" title="">audio</abbr>
             </li>
           </ol>
           <!--B-->
           <h4 class="notes__title notes__title--h4">B</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>b</b>
+              <abbr class="notes-list__element--abbr" title="">b</abbr>
             </li>
             <li class="notes-list__element">
-              <b>base</b>
+              <abbr class="notes-list__element--abbr" title="">base</abbr>
             </li>
             <li class="notes-list__element">
-              <b>bdi</b>
+              <abbr class="notes-list__element--abbr" title="">bdi</abbr>
             </li>
             <li class="notes-list__element">
-              <b>bdo</b>
+              <abbr class="notes-list__element--abbr" title="">bdo</abbr>
             </li>
             <li class="notes-list__element">
-              <b>blockquote</b>
+              <abbr class="notes-list__element--abbr" title="">blockquote</abbr>
             </li>
             <li class="notes-list__element">
-              <b>body</b>
+              <abbr class="notes-list__element--abbr" title="">body</abbr>
             </li>
             <li class="notes-list__element">
-              <b>br</b>
+              <abbr class="notes-list__element--abbr" title="">br</abbr>
             </li>
             <li class="notes-list__element">
-              <b>button</b>
+              <abbr class="notes-list__element--abbr" title="">button</abbr>
             </li>
           </ol>
           <!--C-->
           <h4 class="notes__title notes__title--h4">C</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>canvas</b>
+              <abbr class="notes-list__element--abbr" title="">canvas</abbr>
             </li>
             <li class="notes-list__element">
-              <b>caption</b>
+              <abbr class="notes-list__element--abbr" title="">caption</abbr>
             </li>
             <li class="notes-list__element">
-              <b>cite</b>
+              <abbr class="notes-list__element--abbr" title="">cite</abbr>
             </li>
             <li class="notes-list__element">
-              <b>code</b>
+              <abbr class="notes-list__element--abbr" title="">code</abbr>
             </li>
             <li class="notes-list__element">
-              <b>col</b>
+              <abbr class="notes-list__element--abbr" title="">col</abbr>
             </li>
             <li class="notes-list__element">
-              <b>colgroup</b>
+              <abbr class="notes-list__element--abbr" title="">colgroup</abbr>
             </li>
           </ol>
           <!--D-->
           <h4 class="notes__title notes__title--h4">D</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>data</b>
+              <abbr class="notes-list__element--abbr" title="">data</abbr>
             </li>
             <li class="notes-list__element">
-              <b>datalist</b>
+              <abbr class="notes-list__element--abbr" title="">datalist</abbr>
             </li>
             <li class="notes-list__element">
-              <b>dd</b>
+              <abbr class="notes-list__element--abbr" title="">dd</abbr>
             </li>
             <li class="notes-list__element">
-              <b>del</b>
+              <abbr class="notes-list__element--abbr" title="">del</abbr>
             </li>
             <li class="notes-list__element">
-              <b>details</b>
+              <abbr class="notes-list__element--abbr" title="">details</abbr>
             </li>
             <li class="notes-list__element">
-              <b>dfn</b>
+              <abbr class="notes-list__element--abbr" title="">dfn</abbr>
             </li>
             <li class="notes-list__element">
-              <b>dialog</b>
+              <abbr class="notes-list__element--abbr" title="">dialog</abbr>
             </li>
             <li class="notes-list__element">
-              <b>div</b>
+              <abbr class="notes-list__element--abbr" title="">div</abbr>
             </li>
             <li class="notes-list__element">
-              <b>dl</b>
+              <abbr class="notes-list__element--abbr" title="">dl</abbr>
             </li>
             <li class="notes-list__element">
-              <b>dt</b>
+              <abbr class="notes-list__element--abbr" title="">dt</abbr>
             </li>
           </ol>
           <!--E-->
           <h4 class="notes__title notes__title--h4">E</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>em</b>
+              <abbr class="notes-list__element--abbr" title="">em</abbr>
             </li>
             <li class="notes-list__element">
-              <b>embed</b>
+              <abbr class="notes-list__element--abbr" title="">embed</abbr>
             </li>
           </ol>
           <!--F-->
           <h4 class="notes__title notes__title--h4">F</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>fieldset</b>
+              <abbr class="notes-list__element--abbr" title="">fieldset</abbr>
             </li>
             <li class="notes-list__element">
-              <b>figcaption</b>
+              <abbr class="notes-list__element--abbr" title="">figcaption</abbr>
             </li>
             <li class="notes-list__element">
-              <b>figure</b>
+              <abbr class="notes-list__element--abbr" title="">figure</abbr>
             </li>
             <li class="notes-list__element">
-              <b>footer</b>
+              <abbr class="notes-list__element--abbr" title="">footer</abbr>
             </li>
             <li class="notes-list__element">
-              <b>form</b>
+              <abbr class="notes-list__element--abbr" title="">form</abbr>
             </li>
           </ol>
           <!--H-->
           <h4 class="notes__title notes__title--h4">H</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>h1</b>
+              <abbr class="notes-list__element--abbr" title="">h1</abbr>
             </li>
             <li class="notes-list__element">
-              <b>h2</b>
+              <abbr class="notes-list__element--abbr" title="">h2</abbr>
             </li>
             <li class="notes-list__element">
-              <b>h3</b>
+              <abbr class="notes-list__element--abbr" title="">h3</abbr>
             </li>
             <li class="notes-list__element">
-              <b>h4</b>
+              <abbr class="notes-list__element--abbr" title="">h4</abbr>
             </li>
             <li class="notes-list__element">
-              <b>h5</b>
+              <abbr class="notes-list__element--abbr" title="">h5</abbr>
             </li>
             <li class="notes-list__element">
-              <b>h6</b>
+              <abbr class="notes-list__element--abbr" title="">h6</abbr>
             </li>
             <li class="notes-list__element">
-              <b>head</b>
+              <abbr class="notes-list__element--abbr" title="">head</abbr>
             </li>
             <li class="notes-list__element">
-              <b>header</b>
+              <abbr class="notes-list__element--abbr" title="">header</abbr>
             </li>
             <li class="notes-list__element">
-              <b>hr</b>
+              <abbr class="notes-list__element--abbr" title="">hr</abbr>
             </li>
             <li class="notes-list__element">
-              <b>html</b>
+              <abbr class="notes-list__element--abbr" title="">html</abbr>
             </li>
           </ol>
           <!--I-->
           <h4 class="notes__title notes__title--h4">I</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>i</b>
+              <abbr class="notes-list__element--abbr" title="">i</abbr>
             </li>
             <li class="notes-list__element">
-              <b>iframe</b>
+              <abbr class="notes-list__element--abbr" title="">iframe</abbr>
             </li>
             <li class="notes-list__element">
-              <b>img</b>
+              <abbr class="notes-list__element--abbr" title="">img</abbr>
             </li>
             <li class="notes-list__element">
-              <b>input</b>
+              <abbr class="notes-list__element--abbr" title="">input</abbr>
             </li>
             <li class="notes-list__element">
-              <b>ins</b>
+              <abbr class="notes-list__element--abbr" title="">ins</abbr>
             </li>
           </ol>
           <!--K-->
           <h4 class="notes__title notes__title--h4">K</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>kbd</b>
+              <abbr class="notes-list__element--abbr" title="">kbd</abbr>
             </li>
           </ol>
           <!--L-->
           <h4 class="notes__title notes__title--h4">L</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>label</b>
+              <abbr class="notes-list__element--abbr" title="">label</abbr>
             </li>
             <li class="notes-list__element">
-              <b>legend</b>
+              <abbr class="notes-list__element--abbr" title="">legend</abbr>
             </li>
             <li class="notes-list__element">
-              <b>li</b>
+              <abbr class="notes-list__element--abbr" title="">li</abbr>
             </li>
             <li class="notes-list__element">
-              <b>link</b>
+              <abbr class="notes-list__element--abbr" title="">link</abbr>
             </li>
           </ol>
           <!--M-->
           <h4 class="notes__title notes__title--h4">M</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>main</b>
+              <abbr class="notes-list__element--abbr" title="">main</abbr>
             </li>
             <li class="notes-list__element">
-              <b>map</b>
+              <abbr class="notes-list__element--abbr" title="">map</abbr>
             </li>
             <li class="notes-list__element">
-              <b>mark</b>
+              <abbr class="notes-list__element--abbr" title="">mark</abbr>
             </li>
             <li class="notes-list__element">
-              <b>meta</b>
+              <abbr class="notes-list__element--abbr" title="">meta</abbr>
             </li>
             <li class="notes-list__element">
-              <b>meter</b>
+              <abbr class="notes-list__element--abbr" title="">meter</abbr>
             </li>
           </ol>
           <!--N-->
           <h4 class="notes__title notes__title--h4">N</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>nav</b>
+              <abbr class="notes-list__element--abbr" title="">nav</abbr>
             </li>
             <li class="notes-list__element">
-              <b>noscript</b>
+              <abbr class="notes-list__element--abbr" title="">noscript</abbr>
             </li>
           </ol>
           <!--O-->
           <h4 class="notes__title notes__title--h4">O</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>object</b>
+              <abbr class="notes-list__element--abbr" title="">object</abbr>
             </li>
             <li class="notes-list__element">
-              <b>ol</b>
+              <abbr class="notes-list__element--abbr" title="">ol</abbr>
             </li>
             <li class="notes-list__element">
-              <b>optgroup</b>
+              <abbr class="notes-list__element--abbr" title="">optgroup</abbr>
             </li>
             <li class="notes-list__element">
-              <b>option</b>
+              <abbr class="notes-list__element--abbr" title="">option</abbr>
             </li>
             <li class="notes-list__element">
-              <b>output</b>
+              <abbr class="notes-list__element--abbr" title="">output</abbr>
             </li>
           </ol>
           <!--P-->
           <h4 class="notes__title notes__title--h4">P</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>p</b>
+              <abbr class="notes-list__element--abbr" title="">p</abbr>
             </li>
             <li class="notes-list__element">
-              <b>param</b>
+              <abbr class="notes-list__element--abbr" title="">param</abbr>
             </li>
             <li class="notes-list__element">
-              <b>picture</b>
+              <abbr class="notes-list__element--abbr" title="">picture</abbr>
             </li>
             <li class="notes-list__element">
-              <b>pre</b>
+              <abbr class="notes-list__element--abbr" title="">pre</abbr>
             </li>
             <li class="notes-list__element">
-              <b>progress</b>
+              <abbr class="notes-list__element--abbr" title="">progress</abbr>
             </li>
           </ol>
           <!--Q-->
           <h4 class="notes__title notes__title--h4">Q</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>q</b>
+              <abbr class="notes-list__element--abbr" title="">q</abbr>
             </li>
           </ol>
           <!--R-->
           <h4 class="notes__title notes__title--h4">R</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>rb</b>
+              <abbr class="notes-list__element--abbr" title="">rb</abbr>
             </li>
             <li class="notes-list__element">
-              <b>rp</b>
+              <abbr class="notes-list__element--abbr" title="">rp</abbr>
             </li>
             <li class="notes-list__element">
-              <b>rt</b>
+              <abbr class="notes-list__element--abbr" title="">rt</abbr>
             </li>
             <li class="notes-list__element">
-              <b>rtc</b>
+              <abbr class="notes-list__element--abbr" title="">rtc</abbr>
             </li>
             <li class="notes-list__element">
-              <b>ruby</b>
+              <abbr class="notes-list__element--abbr" title="">ruby</abbr>
             </li>
           </ol>
           <!--S-->
           <h4 class="notes__title notes__title--h4">S</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>s</b>
+              <abbr class="notes-list__element--abbr" title="">s</abbr>
             </li>
             <li class="notes-list__element">
-              <b>samp</b>
+              <abbr class="notes-list__element--abbr" title="">samp</abbr>
             </li>
             <li class="notes-list__element">
-              <b>script</b>
+              <abbr class="notes-list__element--abbr" title="">script</abbr>
             </li>
             <li class="notes-list__element">
-              <b>section</b>
+              <abbr class="notes-list__element--abbr" title="">section</abbr>
             </li>
             <li class="notes-list__element">
-              <b>select</b>
+              <abbr class="notes-list__element--abbr" title="">select</abbr>
             </li>
             <li class="notes-list__element">
-              <b>slot</b>
+              <abbr class="notes-list__element--abbr" title="">slot</abbr>
             </li>
             <li class="notes-list__element">
-              <b>small</b>
+              <abbr class="notes-list__element--abbr" title="">small</abbr>
             </li>
             <li class="notes-list__element">
-              <b>source</b>
+              <abbr class="notes-list__element--abbr" title="">source</abbr>
             </li>
             <li class="notes-list__element">
-              <b>span</b>
+              <abbr class="notes-list__element--abbr" title="">span</abbr>
             </li>
             <li class="notes-list__element">
-              <b>strong</b>
+              <abbr class="notes-list__element--abbr" title="">strong</abbr>
             </li>
             <li class="notes-list__element">
-              <b>style</b>
+              <abbr class="notes-list__element--abbr" title="">style</abbr>
             </li>
             <li class="notes-list__element">
-              <b>sub</b>
+              <abbr class="notes-list__element--abbr" title="">sub</abbr>
             </li>
             <li class="notes-list__element">
-              <b>summary</b>
+              <abbr class="notes-list__element--abbr" title="">summary</abbr>
             </li>
             <li class="notes-list__element">
-              <b>sup</b>
+              <abbr class="notes-list__element--abbr" title="">sup</abbr>
             </li>
           </ol>
           <!--T-->
           <h4 class="notes__title notes__title--h4">T</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>table</b>
+              <abbr class="notes-list__element--abbr" title="">table</abbr>
             </li>
             <li class="notes-list__element">
-              <b>tbody</b>
+              <abbr class="notes-list__element--abbr" title="">tbody</abbr>
             </li>
             <li class="notes-list__element">
-              <b>td</b>
+              <abbr class="notes-list__element--abbr" title="">td</abbr>
             </li>
             <li class="notes-list__element">
-              <b>template</b>
+              <abbr class="notes-list__element--abbr" title="">template</abbr>
             </li>
             <li class="notes-list__element">
-              <b>textarea</b>
+              <abbr class="notes-list__element--abbr" title="">textarea</abbr>
             </li>
             <li class="notes-list__element">
-              <b>tfoot</b>
+              <abbr class="notes-list__element--abbr" title="">tfoot</abbr>
             </li>
             <li class="notes-list__element">
-              <b>th</b>
+              <abbr class="notes-list__element--abbr" title="">th</abbr>
             </li>
             <li class="notes-list__element">
-              <b>thead</b>
+              <abbr class="notes-list__element--abbr" title="">thead</abbr>
             </li>
             <li class="notes-list__element">
-              <b>time</b>
+              <abbr class="notes-list__element--abbr" title="">time</abbr>
             </li>
             <li class="notes-list__element">
-              <b>title</b>
+              <abbr class="notes-list__element--abbr" title="">title</abbr>
             </li>
             <li class="notes-list__element">
-              <b>tr</b>
+              <abbr class="notes-list__element--abbr" title="">tr</abbr>
             </li>
             <li class="notes-list__element">
-              <b>track</b>
+              <abbr class="notes-list__element--abbr" title="">track</abbr>
             </li>
           </ol>
           <!--U-->
           <h4 class="notes__title notes__title--h4">U</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>u</b>
+              <abbr class="notes-list__element--abbr" title="">u</abbr>
             </li>
             <li class="notes-list__element">
-              <b>ul</b>
+              <abbr class="notes-list__element--abbr" title="">ul</abbr>
             </li>
           </ol>
           <!--V-->
           <h4 class="notes__title notes__title--h4">V</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>var</b>
+              <abbr class="notes-list__element--abbr" title="">var</abbr>
             </li>
             <li class="notes-list__element">
-              <b>video</b>
+              <abbr class="notes-list__element--abbr" title="">video</abbr>
             </li>
           </ol>
           <!--W-->
           <h4 class="notes__title notes__title--h4">W</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>wbr</b>
+              <abbr class="notes-list__element--abbr" title="">wbr</abbr>
             </li>
           </ol>
         </aside>
@@ -873,32 +739,3 @@
     </footer>
   </body>
 </html>
-
-<!-- 
-<li class="notes-list__element">
-  <b>HTML odpowiada za treść</b> - a właściwie za jej właściwe
-  opakowanie
-</li>
-<li class="notes-list__element">
-  <b>&lt;/&gt;</b> - HTML składa się ze znaczników/tagów/elementów
-</li>
-<li class="notes-list__element">
-  <b>Semantyczny </b> = mający znaczenie
-</li>
-<li class="notes-list__element">
-  Pliki zawierające kod HTML mają zwykle rozszerzenie <i>.html</i>
-</li>
-<li class="notes-list__element">
-  <b>HTML to szkielet strony internetowej</b> - nawet ma taką
-  budowę!
-</li>
-<li class="notes-list__element">
-  <b
-    ><a
-      class="notes__link"
-      href="https://validator.w3.org/nu/#textarea"
-      >Validator</a
-    ></b
-  >
-  - sprawdzamy tu kod
-</li> -->

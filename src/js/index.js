@@ -29,11 +29,11 @@ console.log(hamburger);
 /*document.documentElement.style.setProperty('--zmienna', 'wartość') - darkmmode*/
 let isDark = false;
 
-const switchModes = document.querySelector(".darkmode");
+const switchModes = document.querySelector(".darkmode--js");
 
 switchModes.addEventListener("click", () => {
+
   if (isDark) {
-    document.documentElement.style.setProperty("--color-bg", "#faffee");
     document.documentElement.style.setProperty("--color-lightGreen", "#daff82");
     document.documentElement.style.setProperty("--color-purple", "#a38fffa6b");
     document.documentElement.style.setProperty("--color-orange", "#ffd475");
@@ -41,26 +41,19 @@ switchModes.addEventListener("click", () => {
     document.documentElement.style.setProperty("--color-green", "#75ffc2");
 
     document.documentElement.style.setProperty("--color-gray", "#333333");
-    // document.documentElement.style.setProperty("--color-darkpurple", "#796db3");
-    // document.documentElement.style.setProperty("--color-purple", "#a38fff");
-    // document.documentElement.style.setProperty("--color-green", "#daff82");
-    // document.documentElement.style.setProperty("--dot", "white");
-    // document.documentElement.style.setProperty("--click-menu-button", "white");
+    document.documentElement.style.setProperty("--color-bg", "#faffee");
+
     isDark = false;
   } else {
-    document.documentElement.style.setProperty("--color-bg", "#333333");
     document.documentElement.style.setProperty("--color-lightGreen", "#333333");
     document.documentElement.style.setProperty("--color-purple", "#333333");
     document.documentElement.style.setProperty("--color-orange", "#333333");
-    document.documentElement.style.setProperty("--color-pink", "#333333");
+    document.documentElement.style.setProperty("--color-pink", "#75ffc2");
     document.documentElement.style.setProperty("--color-green", "#333333");
 
     document.documentElement.style.setProperty("--color-gray", "#faffee");
-    // document.documentElement.style.setProperty("--color-darkpurple", "#29253a");
-    // document.documentElement.style.setProperty("--color-purple", "#6e6591");
-    // document.documentElement.style.setProperty("--color-green", "#2b331a");
-    // document.documentElement.style.setProperty("--dot", "black");
-    // document.documentElement.style.setProperty("--click-menu-button", "grey");
+    document.documentElement.style.setProperty("--color-bg", "#333333");
+
     isDark = true;
   }
 });
@@ -68,3 +61,4 @@ switchModes.addEventListener("click", () => {
 // const time = moment().endOf("week").fromNow();
 // const timePlaceholder = document.querySelector(".time--js");
 // timePlaceholder.innerHTML = time;
+

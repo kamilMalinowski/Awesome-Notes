@@ -20,7 +20,7 @@
   &__article {
     &--bootstrap {
       background: var(--color-gray);
-      width:100%;
+      width: 100%;
     }
   }
   &__title {
@@ -157,6 +157,12 @@
     text-decoration: none;
     font-weight: 700;
     color: var(--color-pink);
+    opacity: 1;
+    &:hover {
+      text-decoration: none;
+      color: var(--color-pink);
+      opacity: 0.6;
+    }
   }
 }
 
@@ -210,6 +216,6 @@ figcaption {
   color: var(--color-bg);
 }
 
-.container{
-  width:80%;
+.container {
+  width: 80%;
 }

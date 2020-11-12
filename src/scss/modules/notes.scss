@@ -17,6 +17,11 @@
     background-color: var(--color-lightGreen);
     border-left: 16px solid var(--color-gray);
   }
+  &__article {
+    &--bootstrap {
+      background: var(--color-gray);
+    }
+  }
   &__title {
     display: flex;
     align-items: center;
@@ -71,11 +76,11 @@
   }
   &__image {
     width: 100%;
-    &--about-me {
-      border: 6px solid var(--color-purple);
-      width: 30%;
-      margin-bottom: 20px;
-    }
+
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+
     &--bird {
       display: flex;
       justify-content: center;
@@ -100,9 +105,12 @@
     text-decoration: none;
   }
   &__description {
-    padding: 0 20px;
+    padding: 10px 20px;
     text-align: center;
     @include mediaTabletMobile;
+    &--bootstrap {
+      color: var(--color-bg);
+    }
     &--bird {
       text-align: center;
     }
@@ -157,4 +165,34 @@ b {
 .wrapper {
   display: grid;
   grid-template-columns: 5fr 1fr;
+}
+.table-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.notes-table {
+  border: 6px solid var(--color-gray);
+
+  text-align: center;
+  &__td {
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-orange);
+    &--special {
+      color: var(--color-pink);
+      background-color: var(--color-bg);
+    }
+  }
+  &__th {
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-purple);
+    padding: 14px;
+  }
+}
+
+figcaption {
+  padding-top: 10px;
+  color: var(--color-bg);
 }

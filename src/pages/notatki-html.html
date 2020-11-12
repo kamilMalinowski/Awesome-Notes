@@ -200,7 +200,9 @@
 
           <!--MARKDOWN-->
           <article class="notes__article">
-            <h3 class="notes__title notes__title--h3" id="markdown">Markdown</h3>
+            <h3 class="notes__title notes__title--h3" id="markdown">
+              Markdown
+            </h3>
             <p class="notes__description">
               Język znaczników przeznaczony do formatowania tekstu
               zaprojektowany przez Johna Grubera i Aarona Swartza. Został
@@ -258,24 +260,253 @@
 
           <!--BOOTSTRAP-->
           <article class="notes__article">
-            <h3 class="notes__title notes__title--h3" id="bootstrap">Bootstrap</h3>
+            <h3 class="notes__title notes__title--h3" id="bootstrap">
+              Bootstrap
+            </h3>
             <p class="notes__description">
-              biblioteka CSS, rozwijany przez programistów Twittera, wydawany na
-              licencji MIT. Zawiera zestaw przydatnych narzędzi ułatwiających
-              tworzenie interfejsu graficznego stron oraz aplikacji
-              internetowych.
+              Bootstrap to biblioteka CSS. Jest on rozwijany przez programistów
+              Twittera, wydawany na licencji MIT. Zawiera zestaw przydatnych
+              narzędzi ułatwiających tworzenie interfejsu graficznego stron oraz
+              aplikacji internetowych.
             </p>
 
             <!--Instalacja bootstrapa-->
-            <h4 class="notes__title notes__title--h4">Instalacja:</h4>
-            <ul class="notes-list">
-              <li class="notes-list__element"><b></b> -</li>
-            </ul>
+            <h4 class="notes__title notes__title--h4">Instalacja (Webpack):</h4>
+            <ol class="notes-list">
+              <li class="notes-list__element">
+                <b>npm install bootstrap</b> - instalujemy w terminalu
+                bootstrapa (w tym przypadku będzie to C:\dev\Awesome Notes)
+              </li>
+              <li class="notes-list__element">
+                <b>import 'bootstrap';</b> - dodajemy tą linijkę kodu do gównego
+                pliku index.js
+              </li>
+              <li class="notes-list__element">
+                <b>npm install --save jquery popper.js</b> - dodajemy bibliotekę
+                jQuery oraz narzędzie do pozycjonowania Popper
+              </li>
+              <li class="notes-list__element">
+                <b
+                  >@import "custom"; oraz @import
+                  "~bootstrap/scss/bootstrap";</b
+                >
+                - dodajemy te linijki kodu do gównego pliku main.scss (wymagane
+                ładowarki: sass-loader, postcss-loader z Autoprefixerem - w tym
+                webpacku już mam)
+              </li>
+              <li class="notes-list__element">
+                <b>import 'bootstrap/dist/css/bootstrap.min.css';</b> -
+                alternatywne rozwiązanie punktu czwartego (wymagany podstawowy
+                style-loader oraz css-loader)
+              </li>
+            </ol>
+
             <!--Kontenery-->
             <h4 class="notes__title notes__title--h4">Kontenery</h4>
-            <ul class="notes-list">
-              <li class="notes-list__element"><b></b> -</li>
-            </ul>
+            <div class="table-wrapper">
+              <table class="notes-table">
+                <thead>
+                  <tr>
+                    <th class="notes-table__th">Podstawowy układ kontenerów</th>
+                    <th class="notes-table__th">Extra small &lt; 576px</th>
+                    <th class="notes-table__th">Small ≥ 576px</th>
+                    <th class="notes-table__th">Medium ≥ 768px</th>
+                    <th class="notes-table__th">Large ≥ 992px</th>
+                    <th class="notes-table__th">Extra large ≥ 1200px</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="notes-table__td notes-table__td--special">
+                      .container
+                    </td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">540px</td>
+                    <td class="notes-table__td">720px</td>
+                    <td class="notes-table__td">960px</td>
+                    <td class="notes-table__td">1140px</td>
+                  </tr>
+                  <tr>
+                    <td class="notes-table__td notes-table__td--special">
+                      .container-sm
+                    </td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">540px</td>
+                    <td class="notes-table__td">720px</td>
+                    <td class="notes-table__td">960px</td>
+                    <td class="notes-table__td">1140px</td>
+                  </tr>
+                  <tr>
+                    <td class="notes-table__td notes-table__td--special">
+                      .container-md
+                    </td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">720px</td>
+                    <td class="notes-table__td">960px</td>
+                    <td class="notes-table__td">1140px</td>
+                  </tr>
+                  <tr>
+                    <td class="notes-table__td notes-table__td--special">
+                      .container-lg
+                    </td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">960px</td>
+                    <td class="notes-table__td">1140px</td>
+                  </tr>
+                  <tr>
+                    <td class="notes-table__td notes-table__td--special">
+                      .container-xl
+                    </td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">1140px</td>
+                  </tr>
+                  <tr>
+                    <td class="notes-table__td notes-table__td--special">
+                      .container-fluid
+                    </td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                    <td class="notes-table__td">100%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!--Bootstrap - Praktyczny przykład-->
+            <h4 class="notes__title notes__title--h4">
+              Praktyczny przykład Bootstrap:
+            </h4>
+            <article class="notes__article notes__article--bootstrap">
+              <h3 class="notes__title notes__title--h3">
+                My top 10 best drummers
+              </h3>
+              <p class="notes__description notes__description--bootstrap">
+                This is my top ten best drummer all times
+              </p>
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/mike_p.jpg"
+                        alt="Mike Portnoy"
+                      />
+                      <figcaption>1. Mike Portnoy</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/mike_m.jpg"
+                        alt="Mike Mangini"
+                      />
+                      <figcaption>1. Mike Mangini</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/thomas_l.jpg"
+                        alt="Thomas Lang"
+                      />
+                      <figcaption>2. Thomas Lang</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/alex_r.jpg"
+                        alt="Alex Rüdinger"
+                      />
+                      <figcaption>3. Alex Rüdinger</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/sebastian_l.jpg"
+                        alt="Sebastian Lanser"
+                      />
+                      <figcaption>4. Sebastian Lanser</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/ray_h.jpg"
+                        alt="Ray Hearne"
+                      />
+                      <figcaption>5. Ray Hearne</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/aquiles_p.jpg"
+                        alt="Aquiles Priester"
+                      />
+                      <figcaption>6. Aquiles Priester</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/dave_l.jpg"
+                        alt="Dave Lombardo"
+                      />
+                      <figcaption>7. Dave Lombardo</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/ray_l.jpg"
+                        alt="Ray Luzier"
+                      />
+                      <figcaption>8. Ray Luzier</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/terry_b.jpg"
+                        alt="Terry Bozzio"
+                      />
+                      <figcaption>9. Terry Bozzio</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-sm-4 col-md-3">
+                    <figure>
+                      <img
+                        class="notes__image"
+                        src="../assets/img/bootstrap_drummers/chris_a.jpg"
+                        alt="Chris Adler"
+                      />
+                      <figcaption>10. Chris Adler</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </article>
           </article>
         </section>
 

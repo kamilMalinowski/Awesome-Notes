@@ -1,4 +1,5 @@
 import "../scss/main.scss"; /*dont  delete this code line*/
+import 'bootstrap'; /*second step to install bootstrap*/
 
 import moment from "moment";
 /*pobranie repozytorium do html*/

@@ -20,6 +20,7 @@
   &__article {
     &--bootstrap {
       background: var(--color-gray);
+      width:100%;
     }
   }
   &__title {
@@ -110,6 +111,7 @@
     @include mediaTabletMobile;
     &--bootstrap {
       color: var(--color-bg);
+      padding: 10px 0;
     }
     &--bird {
       text-align: center;
@@ -189,10 +191,25 @@ b {
     border: 1px solid var(--color-gray);
     background-color: var(--color-purple);
     padding: 14px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    width: 80%;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
   }
 }
 
 figcaption {
   padding-top: 10px;
   color: var(--color-bg);
+}
+
+.container{
+  width:80%;
 }

@@ -1,16 +1,14 @@
 @import "~normalize.css";
-@import "custom"; /*fourth step to install bootstrap*/
+// @import "custom"; /*fourth step to install bootstrap*/
 @import "~bootstrap/scss/bootstrap"; /*fourth step to install bootstrap*/
 
 /*IMPORT-RESET-BODY-MAIN-HAMBURGER-LIST*/
-@import "modules/menu.scss";
-@import "modules/header-home.scss";
-@import "modules/notes.scss";
-@import "modules/grid.scss";
-@import "modules/box-model.scss";
-@import "modules/table.scss";
-@import "modules/footer.scss";
-@import "modules/colors-root.scss";
+@import "modules/1.body_menu.scss";
+@import "modules/2.body_hero.scss";
+@import "modules/3.main_notes.scss";
+@import "modules/4.main_variables.scss";
+@import "modules/5.body_footer.scss";
+@import "modules/6.colors_root.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
 /*RESET-m.korsan idea*/
@@ -37,6 +35,8 @@ html {
 }
 .main {
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 //   @media screen and (max-width: 1010px) {
 //     margin: 0 16px;
@@ -52,11 +52,11 @@ html {
 //   }
 // }
 
-iframe{
-  width:100%;
+iframe {
+  width: 100%;
   height: 100vw;
 }
 
-figure{
+figure {
   text-align: center;
 }

@@ -13,57 +13,92 @@
   </head>
 
   <body class="body">
-    <!--NAVIGATION-->
-    <header class="menu">
-      <button class="hamburger hamburger--js" aria-label="otwórz menu">
-        <span class="hamburger__item"></span>
-        <span class="hamburger__item"></span>
-        <span class="hamburger__item"></span>
+    <!--MENU NAVIGATION-->
+    <nav class="menu">
+      <!--menu button-->
+      <button class="menu-hamburger hamburger--js" aria-label="otwórz menu">
+        <span class="menu-hamburger__item"></span>
+        <span class="menu-hamburger__item"></span>
+        <span class="menu-hamburger__item"></span>
       </button>
+      <!--dark/light mode button-->
       <button
-        class="darkmode darkmode--js"
+        class="menu-darkmode darkmode--js"
         aria-label="przełącz na ciemny tryb"
       >
-        DARK
+        NOC
       </button>
-      <a class="home" href="index.html"> HOME </a>
-      <nav class="navigation navigation--js">
-        <a class="navigation__link" href="notatki-html.html">HTML</a>
-        <a class="navigation__link" href="notatki-css.html">CSS</a>
-        <a class="navigation__link" href="notatki-js.html">JAVASCRIPT</a>
-        <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
-        <a class="navigation__link" href="notatki-react.html">REACT</a>
+      <!--home button-->
+      <a class="menu-home" href="index.html">DOM</a>
+      <!--navigation list-->
+      <nav class="menu-navigation menu-navigation--js">
+        <a class="menu-navigation__link" href="notatki-html.html">HTML</a>
+        <a class="menu-navigation__link" href="notatki-css.html">CSS</a>
+        <a class="menu-navigation__link" href="notatki-js.html">JAVASCRIPT</a>
+        <a class="menu-navigation__link" href="notatki-terminal.html"
+          >TERMINAL</a
+        >
+        <a class="menu-navigation__link" href="notatki-react.html">REACT</a>
       </nav>
+    </nav>
+
+    <!--HEADER-->
+    <header class="header">
+      <h1 class="header__title">HTML</h1>
+      <h2 class="header__subTitle">Co ten HTML?</h2>
+      <!--wrapper-->
+      <div class="header-wrapper">
+        <!--wrapperLegend-->
+        <div class="header-wrapperLegend">
+          <div
+            class="header-wrapperLegend__lightGreen header-wrapperLegend__lightGreen--special"
+          ></div>
+          <div class="header-wrapperLegend__black"></div>
+          <div class="header-wrapperLegend__lightGreen"></div>
+          <div class="header-wrapperLegend__purple"></div>
+          <div class="header-wrapperLegend__orange"></div>
+          <div class="header-wrapperLegend__green"></div>
+          <div class="header-wrapperLegend__link"></div>
+        </div>
+        <nav class="header-nav>">
+          <ul class="header-navList">
+            <li class="header-navList__element" id="html">HTML</li>
+          </ul>
+          <ul class="header-navList">
+            <li class="header-navList__element" id="elementyHTML">
+              Elementy HTML
+            </li>
+          </ul>
+          <ul class="header-navList">
+            <li class="header-navList__element" id="bem">BEM</li>
+          </ul>
+          <ul class="header-navList">
+            <li class="header-navList__element" id="morkdown">Markdown</li>
+          </ul>
+          <ul class="header-navList">
+            <li class="header-navList__element" id="bootstrap">Bootstrap</li>
+          </ul>
+        </nav>
+        <!--wrapperLegend-->
+        <div class="header-wrapperLegend">
+          <div
+            class="header-wrapperLegend__lightGreen header-wrapperLegend__lightGreen--special"
+          ></div>
+          <div class="header-wrapperLegend__black"></div>
+          <div class="header-wrapperLegend__lightGreen"></div>
+          <div class="header-wrapperLegend__purple"></div>
+          <div class="header-wrapperLegend__orange"></div>
+          <div class="header-wrapperLegend__green"></div>
+          <div class="header-wrapperLegend__link"></div>
+        </div>
+      </div>
     </header>
 
     <main class="main">
       <!--HEADER-->
       <header class="header-home">
-        <h1 class="header-home__title">HTML</h1>
+        <h1 class="header-home__title"></h1>
       </header>
-
-      <!--LIST-->
-      <nav class="notes">
-        <h2 class="notes__title">Co ten HTML?</h2>
-        <ol class="notes-list">
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#html">HTML</a> (...)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#htmlelements">Elementy HTML</a>
-            (...)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#bem">BEM</a> (...)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#markdown">Markdown</a> (...)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#bootstrap">Bootstrap</a> (...)
-          </li>
-        </ol>
-      </nav>
 
       <!--HTML-->
       <div class="wrapper">
@@ -955,18 +990,20 @@
     </main>
 
     <!--FOOTER-->
-    <footer class="footer footer--html">
-      Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
-      WTF: Co ten Frontend. Twórca strony:
-      <a
-        class="footer__link"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="kamil github"
-        href="https://github.com/kamilMalinowski"
-      >
-        Kamil Malinowski
-      </a>
+    <footer class="footer">
+      <p class="footer__description">
+        Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
+        WTF: Co ten Frontend. Zapraszam na mojego GitHuba:
+        <a
+          class="footer__description--link"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="kamil github"
+          href="https://github.com/kamilMalinowski"
+        >
+          Kamil Malinowski</a
+        >
+      </p>
     </footer>
   </body>
 </html>

@@ -21,8 +21,8 @@ fetch("https://api.github.com/users/kamilMalinowski/repos")
 const hamburger = document.querySelector(".hamburger--js");
 
 hamburger.addEventListener("click", () => {
-  const nav = document.querySelector(".navigation--js");
-  nav.classList.toggle("navigation--open");
+  const nav = document.querySelector(".menu-navigation--js");
+  nav.classList.toggle("menu-navigation--open");
 });
 
 console.log(hamburger);

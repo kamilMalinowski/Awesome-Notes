@@ -13,73 +13,100 @@
   </head>
 
   <body class="body">
-    <!--NAVIGATION-->
-    <header class="menu">
-      <button class="hamburger hamburger--js" aria-label="otwórz menu">
-        <span class="hamburger__item"></span>
-        <span class="hamburger__item"></span>
-        <span class="hamburger__item"></span>
+    <!--MENU NAVIGATION-->
+    <nav class="menu">
+      <!--menu button-->
+      <button class="menu-hamburger hamburger--js" aria-label="otwórz menu">
+        <span class="menu-hamburger__item"></span>
+        <span class="menu-hamburger__item"></span>
+        <span class="menu-hamburger__item"></span>
       </button>
+      <!--dark/light mode button-->
       <button
-        class="darkmode darkmode--js"
+        class="menu-darkmode darkmode--js"
         aria-label="przełącz na ciemny tryb"
       >
         DARK
       </button>
-      <nav class="navigation navigation--js">
-        <a class="navigation__link" href="notatki-html.html">HTML</a>
-        <a class="navigation__link" href="notatki-css.html">CSS</a>
-        <a class="navigation__link" href="notatki-js.html">JAVASCRIPT</a>
-        <a class="navigation__link" href="notatki-terminal.html">TERMINAL</a>
-        <a class="navigation__link" href="notatki-react.html">REACT</a>
+      <!--home button-->
+      <a class="menu-home" href="#home">DOM</a>
+      <!--navigation list-->
+      <nav class="menu-navigation menu-navigation--js">
+        <a class="menu-navigation__link" href="notatki-html.html">HTML</a>
+        <a class="menu-navigation__link" href="notatki-css.html">CSS</a>
+        <a class="menu-navigation__link" href="notatki-js.html">JAVASCRIPT</a>
+        <a class="menu-navigation__link" href="notatki-terminal.html"
+          >TERMINAL</a
+        >
+        <a class="menu-navigation__link" href="notatki-react.html">REACT</a>
       </nav>
-    </header>
+    </nav>
 
-    <main class="main">
-      <!--HEADER-->
-      <header class="header-home">
-        <h1 class="header-home__title">Moja nauka Frontendu</h1>
-      </header>
-
-      <!--ABOUT ME-->
-      <section class="notes">
-        <h2 class="notes__title">Kamil Malinowski</h2>
-        <div class="notes__intro">
-          <img
-            class="notes__image notes__image--special"
-            src="../assets/img/kamil_m.jpg"
-            alt="Kamil Malinowski"
-          />
-
-          <p class="notes__description">
-            Witam,<br />
-            nazywam się Kamil i jestem początkującym Frontend developerem. Na tej
-            stronie uzupełniam swoją wiedzę o frontendzie i nie tylko. Jest to
-            mój prywatny notes i pewnego rodzaju ściąga (przypominajka). Zarówno
-            część wizualna strony, jak i kod oraz commity są tutaj z każdą
-            aktualizacją inne. Z założenia czym więcej pracuję przy tym
-            projekcie, tym więcej się uczę na swoich błędach i dzięki temu pewne
-            elementy nabiorą bardziej konkretnego wyglądu i zaczną działąć tak
-            jak powinny (mam przynajmniej taką nadzieję). Miłego studiowania
-            materiału :).
-            <br />
-            P.S. Po prawej stronie umiesciłem małą legende:
-          </p>
-          <div class="legend">
-            Legenda:
-            <div class="legend__black">black</div>
-            <div class="legend__purple">purple</div>
-            <div class="legend__orange">orange</div>
-            <div class="legend__green">green</div>
-            <div class="legend__link">link</div>
-            <div class="legend__line">linia</div>
+    <!--HEADER-->
+    <header class="header">
+      <h1 class="header__title">Moja nauka Frontendu</h1>
+      <h2 class="header__subTitle" id="home">Kamil Malinowski</h2>
+      <!--wrapper-->
+      <div class="header-wrapper">
+        <img
+          class="header-wrapper__image"
+          src="../assets/img/kamil_m.jpg"
+          alt="Kamil Malinowski"
+        />
+        <p class="header-wrapper__description">
+          Witam,<br />
+          nazywam się Kamil i jestem początkującym Frontend developerem. Na tej
+          stronie uzupełniam swoją wiedzę o frontendzie i nie tylko. Jest to mój
+          prywatny notes i pewnego rodzaju ściąga (przypominajka). Zarówno część
+          wizualna strony, jak i kod oraz commity są tutaj z każdą aktualizacją
+          inne. Z założenia czym więcej pracuję przy tym projekcie, tym więcej
+          się uczę na swoich błędach i dzięki temu pewne elementy nabiorą
+          bardziej konkretnego wyglądu i zaczną działąć tak jak powinny (mam
+          przynajmniej taką nadzieję). Miłego studiowania materiału :).
+          <br />
+          P.S. Po prawej stronie umiesciłem małą legende ►
+        </p>
+        <!--wrapper__legend-->
+        <div class="header-wrapper__legend">
+          <div
+            class="header-wrapper__legend header-wrapper__legend--lightGreen"
+          >
+            1. Menu
+          </div>
+          <div class="header-wrapper__legend header-wrapper__legend--black">
+            2. Notatka
+          </div>
+          <div class="header-wrapper__legend header-wrapper__legend--purple">
+            3. Sekcja
+          </div>
+          <div class="header-wrapper__legend header-wrapper__legend--orange">
+            4. Artykuł
+          </div>
+          <div class="header-wrapper__legend header-wrapper__legend--green">
+            5. Grupa
+          </div>
+          <div class="header-wrapper__legend header-wrapper__legend--link">
+            6. Link
+          </div>
+          <div class="header-wrapper__legend header-wrapper__legend--line">
+            7. Separator
           </div>
         </div>
-        <article class="notes__article">
-          <h3 class="notes__title notes__title--h3">Przydatne linki</h3>
-          <p class="notes__description">
+      </div>
+    </header>
+
+    <!--SECTION NOTES-->
+    <main class="main">
+      <section class="notes">
+        <h2 class="notes__title">Ściągawka</h2>
+
+        <!--linki-->
+        <article class="notes-article">
+          <h3 class="notes-article__title">Przydatne linki</h3>
+          <p class="notes-article__description">
             Linki do stron, którę mogą sie przydać:
           </p>
+          <!--article link list-->
           <ol class="notes-list">
             <li class="notes-list__element">
               <a
@@ -570,11 +597,8 @@
               - jak uzywać BEMa (strona główna)
             </li>
           </ol>
-          <p class="notes__description">
+          <p class="notes-article__description">
             Linki dodaję w wolnej chwili poza czasem nauki. Więcej wkrótce...
-            <progress class="notes__progress" value="43" max="100">
-              43 %
-            </progress>
           </p>
         </article>
       </section>
@@ -582,17 +606,19 @@
 
     <!--FOOTER-->
     <footer class="footer">
-      Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
-      WTF: Co ten Frontend. Twórca strony:
-      <a
-        class="footer__link"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="kamil github"
-        href="https://github.com/kamilMalinowski"
-      >
-        Kamil Malinowski</a
-      >
+      <p class="footer__description">
+        Strona "Moja nauka Frontendu" powstała w ramach drugiej edycji szkolenia
+        WTF: Co ten Frontend. Twórca strony:
+        <a
+          class="footer__description--link"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="kamil github"
+          href="https://github.com/kamilMalinowski"
+        >
+          Kamil Malinowski</a
+        >
+      </p>
     </footer>
   </body>
 </html>

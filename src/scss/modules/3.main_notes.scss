@@ -1,76 +1,77 @@
-@mixin mediaTabletMobile {
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-  @media screen and (max-width: 425px) {
-    font-size: 12px;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 10px;
-  }
-}
-
 .notes {
   padding-bottom: 20px;
   margin: 0;
   &__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     background-color: var(--color-purple);
     font-size: 20px;
-    padding: 8px 0;
+    padding: 0;
     height: 60px;
+    border-top: 6px solid var(--color-gray);
+    border-bottom: 6px solid var(--color-gray);
+    margin-bottom: 10px;
   }
+}
+
+.notes-article {
   &__intro {
     display: flex;
     flex-direction: row;
   }
   &--aside {
     background-color: var(--color-lightGreen);
-    border-left: 16px solid var(--color-gray);
-    text-align: left;
+    border-left: 40px solid var(--color-gray);
     margin: 0;
     padding: 0;
-    width: 100%;
-    @media screen and (max-width: 425px) {
-      font-size: 12px;
+    width: 12px;
+    transition-duration: 0.5s;
+    &:hover{
+      width:200px;
+      text-align: left;
+      border-left: 12px solid var(--color-gray);
+
     }
-  }
-  &__article {
-    &--bootstrap {
-      background: var(--color-gray);
-      width: 100%;
-    }
+
   }
 
-  &--h3 {
+  &--bootstrap {
+    background: var(--color-gray);
+    width: 100%;
+  }
+
+  &__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 6px solid var(--color-gray);
+    border-bottom: 6px solid var(--color-gray);
     font-weight: 400;
     background-color: var(--color-orange);
-    font-size: 20px;
-    padding: 8px 0;
-    height: 60px;
-    @media screen and (max-width: 768px) {
-      font-size: 18px;
-    }
-    @media screen and (max-width: 425px) {
-      font-size: 12px;
-    }
-    @media screen and (max-width: 320px) {
-      font-size: 10px;
-    }
-  }
-  &--h4 {
     font-size: 18px;
+    padding: 0;
+    height: 50px;
+    margin: 0;
+  }
+  &__subTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 6px solid var(--color-gray);
+    border-bottom: 6px solid var(--color-gray);
+    font-size: 16px;
     background-color: var(--color-green);
     padding: 0;
-
     font-weight: 400;
     height: 40px;
+    margin-bottom: 10px;
   }
 
-  &__images {
-    display: flex;
-    justify-content: space-between;
-  }
   &__image {
     width: 100%;
 
@@ -83,25 +84,8 @@
       box-shadow: none;
       margin: 10px;
     }
-    &--bird {
-      display: flex;
-      justify-content: center;
-      width: 100px;
-      height: 100px;
-      border-radius: 100px;
-      margin: 0 auto;
-      transform: rotate(-360deg);
-      transition-duration: 2s;
-      cursor: pointer;
-      &:hover {
-        width: 100px;
-        height: 100px;
-        border-radius: 100px;
-        transform: rotate(360deg);
-        transition-duration: 2s;
-      }
-    }
   }
+
   &__link {
     color: var(--color-pink);
     text-decoration: none;
@@ -110,30 +94,11 @@
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    @include mediaTabletMobile;
+    margin: 0;
     &--bootstrap {
       color: var(--color-bg);
       padding: 10px 0;
     }
-    &--bird {
-      text-align: center;
-    }
-  }
-  &__dt {
-    font-weight: bold;
-    padding: 16px;
-    @include mediaTabletMobile;
-  }
-  &__dd {
-    @include mediaTabletMobile;
-  }
-  &__progress {
-    width: 100%;
-    background-color: greenyellow;
-    color: indianred;
-    border: 2px solid black;
-
-    margin-top: 20px;
   }
 
   /*LIST*/
@@ -144,7 +109,6 @@
     }
     &__element {
       margin: 10px 0;
-      @include mediaTabletMobile;
       &--special {
         margin-top: 4px;
         padding: 8px 0 0 0;
@@ -168,6 +132,34 @@
         color: var(--color-pink);
         opacity: 0.6;
       }
+    }
+  }
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 10px;
+  color: var(--color-bg);
+}
+
+.notes-table {
+  border: 6px solid var(--color-gray);
+  padding: 0;
+  text-align: center;
+  &__td {
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-orange);
+    &--special {
+      color: var(--color-pink);
+      background-color: var(--color-bg);
+    }
+  }
+  &__th {
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-purple);
+    padding: 14px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
     }
   }
 }

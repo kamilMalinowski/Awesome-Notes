@@ -62,11 +62,21 @@
         </div>
         <nav class="header-nav>">
           <ul class="header-navList">
-            <li class="header-navList__element" id="terminal">Terminal</li>
-            <li class="header-navList__element" id="git">Git</li>
-            <li class="header-navList__element" id="nodejs">Node.js</li>
-            <li class="header-navList__element" id="webpack">Webpack</li>
-            <li class="header-navList__element" id="npm">Npm</li>
+            <li class="header-navList__element">
+              <a class="header-navList__link" href="#terminal">Terminal</a>
+            </li>
+            <li class="header-navList__element">
+              <a class="header-navList__link" href="#git">Git</a>
+            </li>
+            <li class="header-navList__element">
+              <a class="header-navList__link" href="#nodeJS">Node.js</a>
+            </li>
+            <li class="header-navList__element">
+              <a class="header-navList__link" href="#webpack">Webpack</a>
+            </li>
+            <li class="header-navList__element">
+              <a class="header-navList__link" href="#npm">Npm</a>
+            </li>
           </ul>
         </nav>
         <!--wrapperLegend-->
@@ -84,44 +94,22 @@
       </div>
     </header>
 
+    <!--SECTION NOTES-->
     <main class="main">
-      <!--HEADER-->
-      <header class="header-home">
-        <h1 class="header-home__title"></h1>
-      </header>
-
-      <!--TERMINAL-->
       <section class="notes">
-        <h2 class="notes__title"></h2>
-        <ol class="notes-list">
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#terminal">Terminal</a> (definicja
-            i komendy)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#git">Git</a> (definicja, komendy
-            lokalne oraz zdalne, branch, fork)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#nodejs">Node.js</a> (...)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#webpack">Webpack</a> (...)
-          </li>
-          <li class="notes-list__element">
-            <a class="notes-list__link" href="#npm">Npm</a> (...)
-          </li>
-        </ol>
-        <article class="notes__article">
-          <h3 class="notes__title notes__title--h3" id="terminal">Terminal</h3>
-          <p class="notes__description">
+        <h2 class="notes__title">Ściągawka</h2>
+
+        <!---->
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="terminal">Terminal</h3>
+          <p class="notes-article__description">
             Terminal używamy w czasie pracy z naszym projektem. Umiejętność jego
             obsługi jest kluczowa w pracy programistycznej i obecnie jest to
             standard.
           </p>
 
           <!--Ważne komendy - MacOS & Linux & Windows-->
-          <h4 class="notes__title notes__title--h4">
+          <h4 class="notes-article__subTitle">
             Ważne komendy - MacOS, Linux oraz Windows
           </h4>
           <ul class="notes-list">
@@ -163,16 +151,16 @@
               przesuwająca wiersz poleceń na górę ekranu
             </li>
           </ul>
-          <p class="notes__description">
+          <p class="notes-article__description">
             Więcej komend dla:
             <a
-              class="notes__link"
+              class="notes-list__link"
               href="https://www.thomas-krenn.com/pl/wiki/Komendy_wiersza_polece%C5%84_systemu_Windows"
               >Windows</a
             >
             oraz
             <a
-              class="notes__link"
+              class="notes-list__link"
               href="https://pixelozaa.wordpress.com/podstawowe-komendy-linuxa/"
               >Linux/MacOS</a
             >
@@ -180,9 +168,9 @@
         </article>
 
         <!--GIT-->
-        <article class="notes__article">
-          <h3 class="notes__title notes__title--h3" id="git">Git</h3>
-          <p class="notes__description">
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="git">Git</h3>
+          <p class="notes-article__description">
             Rozproszony system kontroli wersji. Stworzył go Linus Torvalds jako
             narzędzie wspomagające rozwój jądra Linux. Git stanowi wolne
             oprogramowanie i został opublikowany na licencji GNU GPL w wersji 2.
@@ -203,9 +191,7 @@
           </ul>
 
           <!--git ogólne-->
-          <h4 class="notes__title notes__title--h4">
-            Ważne komendy - Git (ogólne)
-          </h4>
+          <h4 class="notes-article__subTitle">Ważne komendy - Git (ogólne)</h4>
           <ul class="notes-list">
             <li class="notes-list__element"><b>git</b> informacje o git</li>
             <li class="notes-list__element">
@@ -257,7 +243,7 @@
             </li>
             <li class="notes-list__element">
               <b>git log --format=""</b>
-              <a class="notes__link" href="https://git-scm.com/docs/git-log"
+              <a class="notes-list__link" href="https://git-scm.com/docs/git-log"
                 >oficjalna dokumentacja</a
               >
             </li>
@@ -270,7 +256,7 @@
           </ul>
 
           <!--git lokalnie-->
-          <h4 class="notes__title notes__title--h4">
+          <h4 class="notes-article__subTitle">
             Ważne komendy - Git (lokalnie)
           </h4>
           <ul class="notes-list">
@@ -346,9 +332,7 @@
           </ul>
 
           <!--git zdalne repozytorium-->
-          <h4 class="notes__title notes__title--h4">
-            Ważne komendy - Git (zdalnie)
-          </h4>
+          <h4 class="notes-article__subTitle">Ważne komendy - Git (zdalnie)</h4>
           <ul class="notes-list">
             <li class="notes-list__element">
               <b>git push</b> przesłanie zapisanego commitu(zmian lub nowego
@@ -389,18 +373,18 @@
           </ul>
 
           <!--forki-->
-          <h4 class="notes__title notes__title--h4">Fork???</h4>
-          <p class="notes__description">
+          <h4 class="notes-article__subTitle">Fork???</h4>
+          <p class="notes-article__description">
             Wymaga wyjaśnienia!!!
             <a
-              class="notes__link"
+              class="notes-list__link"
               href="https://www.youtube.com/watch?v=7myDXGfEnds&list=PLjHmWifVUNMKIGHmaGPVqSD-L6i1Zw-MH&index=9"
               >Wiecej o forkach</a
             >
           </p>
 
           <!--git branch-->
-          <h4 class="notes__title notes__title--h4">Branch - podstawy</h4>
+          <h4 class="notes-article__subTitle">Branch - podstawy</h4>
           <ul class="notes-list">
             <li class="notes-list__element">
               <b>git branch</b> - sprawdzamy na jakim branchu jesteśmy.
@@ -434,7 +418,7 @@
           </ul>
 
           <!--przykłady branchy-->
-          <h4 class="notes__title notes__title--h4">Przykładowe branche</h4>
+          <h4 class="notes-article__subTitle">Przykładowe branche</h4>
           <ul class="notes-list">
             <li class="notes-list__element">
               <b>Master branch</b> - główny branch (publikowany)
@@ -454,8 +438,8 @@
           </ul>
 
           <!--git pozostałe-->
-          <h4 class="notes__title notes__title--h4">.gitignore</h4>
-          <p class="notes__description">
+          <h4 class="notes-article__subTitle">.gitignore</h4>
+          <p class="notes-article__description">
             <b>.gitignore</b> - jest to dodatkowy plik, który możemy dodać do
             naszego projekty w Visual Studio Code. Przy commitowaniu pliki oraz
             treść umieszczone w tym dokumencie nie są widoczne.
@@ -463,9 +447,9 @@
         </article>
 
         <!--NODE.JS-->
-        <article class="notes__article">
-          <h3 class="notes__title notes__title--h3" id="nodejs">Node.js</h3>
-          <p class="notes__description">
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="nodeJS">Node.js</h3>
+          <p class="notes-article__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
             nesciunt atque numquam. Culpa qui accusantium quisquam veniam illum
             nemo porro quo architecto repellat, dolorem, sunt repellendus
@@ -487,15 +471,15 @@
         </article>
 
         <!--WEBPACK-->
-        <article class="notes__article">
-          <h3 class="notes__title notes__title--h3" id="webpack">Webpack</h3>
-          <p class="notes__description">
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="webpack">Webpack</h3>
+          <p class="notes-article__description">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Perferendis quod eos ex fugit! Ratione maxime vel nihil quis, iure
             ducimus ea nesciunt nobis mollitia nemo quisquam, laboriosam veniam
             provident totam.
           </p>
-          <h4 class="notes__title notes__title--h4">
+          <h4 class="notes-article__subTitle">
             WTF Webpack - instalacja oraz instrukcja obsługi
           </h4>
           <ol class="notes-list">
@@ -505,7 +489,7 @@
               </b>
               -
               <a
-                class="notes__link"
+                class="notes-list__link"
                 href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"
                 >wtf webpack</a
               >
@@ -557,9 +541,9 @@
         </article>
 
         <!--NPM-->
-        <article class="notes__article">
-          <h3 class="notes__title notes__title--h3" id="npm">NPM</h3>
-          <p class="notes__description">
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="npm">NPM</h3>
+          <p class="notes-article__description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
             dicta recusandae nesciunt iure quaerat esse obcaecati, amet dolores
             rem ipsum, deserunt quo explicabo praesentium in reiciendis cum vel
@@ -613,7 +597,7 @@
               </ul>
             </li>
           </ul>
-          <h4 class="notes__title notes__title--h4">NPX</h4>
+          <h4 class="notes-article__subTitle">NPX</h4>
           <ul class="notes-list">
             <li class="notes-list__element">
               <b>NPX</b> - narzędzia konsolowe używane w terminalu
@@ -625,13 +609,13 @@
               </ul>
             </li>
           </ul>
-          <h4 class="notes__title notes__title--h4">Script</h4>
+          <h4 class="notes-article__subTitle">Script</h4>
           <ul class="notes-list">
             <li class="notes-list__element">
               <b>package.json</b> - wewnątrz pliku znajdują się skrypty, w
               których możemy dodawać komendy (przykład w repozytorium
               <a
-                class="notes__link"
+                class="notes-list__link"
                 href="https://github.com/kamilMalinowski/node-playground"
                 >node-playground</a
               >

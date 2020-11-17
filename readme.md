@@ -20,6 +20,8 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 
 ## AVAILABLE README.MD NOTES
 
-1. [Javascript](https://github.com/kamilMalinowski/webpack-test/blob/master/README-JS.md)
+1. [Javascript-Podstawy](https://codepen.io/kamilmalinowski/pen/JjKzWoZ) - w rozbudowie
+2. [Javascript](https://github.com/kamilMalinowski/webpack-test/blob/master/README-JS.md)
+
 
 

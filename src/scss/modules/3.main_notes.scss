@@ -18,6 +18,10 @@
 }
 
 .notes-article {
+  &__iframe {
+    width: 200px;
+    height: 200px;
+  }
   &__intro {
     display: flex;
     flex-direction: row;
@@ -29,13 +33,11 @@
     padding: 0;
     width: 12px;
     transition-duration: 0.5s;
-    &:hover{
-      width:200px;
+    &:hover {
+      width: 200px;
       text-align: left;
       border-left: 12px solid var(--color-gray);
-
     }
-
   }
 
   &--bootstrap {

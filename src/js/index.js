@@ -70,11 +70,20 @@ switchModes.addEventListener("click", () => {
 // const timePlaceholder = document.querySelector(".time--js");
 // timePlaceholder.innerHTML = time;
 
+//wysuwany aside w sekcji html
+
+let buttonAside = document.querySelector(".buttonAside--js");
+
+buttonAside.addEventListener("click", () => {
+  const aside = document.querySelector(".notes-article--aside");
+  aside.classList.toggle("notes-article--openAside");
+});
+
 //GAMEJS - Prosta gra, w której walczę z JavaScriptem :).
 
 // const gameJS = document.querySelector(".gameJS--js");
-const me = document.querySelector(".me--js");
-const javaSript = document.querySelector(".javaSript--js");
+let me = document.querySelector(".me--js");
+// const javaSript = document.querySelector(".javaSript--js");
 const jumpButton = document.querySelector(".jumpButton--js");
 
 jumpButton.addEventListener("click", () => {
@@ -85,3 +94,6 @@ jumpButton.addEventListener("click", () => {
     me.classList.remove("animation");
   }, 500);
 });
+//kontynuacja niebawem
+
+

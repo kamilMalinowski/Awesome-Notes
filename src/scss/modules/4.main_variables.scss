@@ -1,0 +1,72 @@
+//gameJS
+
+.gameJS {
+  width: 100vw;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--color-purple);
+  &__me {
+    width: 25px;
+    height: 50px;
+    background: var(--color-gray);
+    position: relative;
+    top: 150px;
+    left:50px;
+  }
+  &__javaScript {
+    animation: runJS 4s linear infinite;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: var(--color-gray);
+    font-size: 20px;
+    background-color: var(--color-orange);
+    position: relative;
+    top: 125px;
+  }
+  &__jumpButton {
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    margin: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 2px 0 0 0;
+    font-size: 16px;
+    background: var(--color-gray);
+    color: var(--color-lightGreen);
+    position: relative;
+    top: -50px;
+    left: 25px;
+  }
+}
+
+.animation {
+  animation: myJump 0.5s ease-out;
+}
+
+@keyframes runJS {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -5px;
+  }
+}
+
+@keyframes myJump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}

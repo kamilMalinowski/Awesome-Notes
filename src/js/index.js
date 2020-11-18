@@ -69,3 +69,19 @@ switchModes.addEventListener("click", () => {
 // const time = moment().endOf("week").fromNow();
 // const timePlaceholder = document.querySelector(".time--js");
 // timePlaceholder.innerHTML = time;
+
+//GAMEJS - Prosta gra, w której walczę z JavaScriptem :).
+
+// const gameJS = document.querySelector(".gameJS--js");
+const me = document.querySelector(".me--js");
+const javaSript = document.querySelector(".javaSript--js");
+const jumpButton = document.querySelector(".jumpButton--js");
+
+jumpButton.addEventListener("click", () => {
+  if (me.classList != "animation") {
+    me.classList.add("animation");
+  }
+  setTimeout(function () {
+    me.classList.remove("animation");
+  }, 500);
+});

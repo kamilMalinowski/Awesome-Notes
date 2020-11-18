@@ -1,6 +1,19 @@
 .notes {
   padding-bottom: 20px;
   margin: 0;
+  &__button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 2px 0 0 1px;
+    font-size: 16px;
+    background: var(--color-gray);
+    color: var(--color-purple);
+  }
   &__title {
     width: 100%;
     display: flex;
@@ -20,7 +33,7 @@
       height: 30px;
       margin: 0 10px;
       padding: 0;
-      border:none;
+      border: none;
     }
   }
 }
@@ -35,10 +48,13 @@
     flex-direction: row;
   }
   &--aside {
+    display: none;
+  }
+  &--openAside {
+    display: block;
     background-color: var(--color-lightGreen);
     margin: 0;
     padding: 0;
-
     width: 200px;
     text-align: left;
     border-left: 12px solid var(--color-gray);

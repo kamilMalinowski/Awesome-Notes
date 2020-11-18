@@ -43,7 +43,7 @@ const switchModes = document.querySelector(".darkmode--js");
 switchModes.addEventListener("click", () => {
   if (isDark) {
     document.documentElement.style.setProperty("--color-lightGreen", "#daff82");
-    document.documentElement.style.setProperty("--color-purple", "#a38fffa6b");
+    document.documentElement.style.setProperty("--color-purple", "#a38fff");
     document.documentElement.style.setProperty("--color-orange", "#ffd475");
     document.documentElement.style.setProperty("--color-pink", "#e86bab");
     document.documentElement.style.setProperty("--color-green", "#75ffc2");

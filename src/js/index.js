@@ -1,15 +1,23 @@
 import "../scss/main.scss"; /*dont  delete this code line*/
-import 'bootstrap'; /*second step to install bootstrap*/
+import "bootstrap"; /*second step to install bootstrap*/
 
-import moment from "moment";
+// import moment from "moment";
 /*pobranie repozytorium do html*/
 fetch("https://api.github.com/users/kamilMalinowski/repos")
   .then((resp) => resp.json())
   .then((resp) => {
     for (let repo of resp) {
-      const repositoryList = document.querySelector(".list--js");
+      const repositoryList = document.querySelector(".repoList--js");
       const { name, html_url } = repo;
-      const myTemplate = `<li class="list__element">${name} <a class="link" href="${html_url}" title="link do repozytorium ${name} na githubie">link do githuba</a></li>`;
+      const myTemplate = `
+      <li class="notes-list__element">${name} 
+        <a 
+        class="notes-list__link" 
+        href="${html_url}" 
+        title="link do repozytorium ${name} na githubie"
+        > - link do GitHuba
+        </a>
+      </li>`;
       repositoryList.innerHTML += myTemplate;
     }
   })
@@ -33,7 +41,6 @@ let isDark = false;
 const switchModes = document.querySelector(".darkmode--js");
 
 switchModes.addEventListener("click", () => {
-
   if (isDark) {
     document.documentElement.style.setProperty("--color-lightGreen", "#daff82");
     document.documentElement.style.setProperty("--color-purple", "#a38fffa6b");
@@ -62,4 +69,3 @@ switchModes.addEventListener("click", () => {
 // const time = moment().endOf("week").fromNow();
 // const timePlaceholder = document.querySelector(".time--js");
 // timePlaceholder.innerHTML = time;
-

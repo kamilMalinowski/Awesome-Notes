@@ -1,5 +1,5 @@
 .notes {
-  padding:0;
+  padding: 0;
   margin: 0;
   &__button {
     width: 34px;
@@ -28,6 +28,9 @@
     border-top: 2px solid var(--color-gray);
     border-bottom: 2px solid var(--color-orange);
     margin: 0;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
     &--workInProgress {
       animation: rotate 14s linear infinite;
       width: 30px;
@@ -35,6 +38,7 @@
       margin: 0 10px;
       padding: 0;
       border: none;
+      background: none;
     }
   }
 }
@@ -79,6 +83,9 @@
     padding: 0;
     height: 50px;
     margin: 0;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
   &__subTitle {
     width: 100%;
@@ -93,6 +100,9 @@
     font-weight: 400;
     height: 40px;
     margin: 0;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   &__image {
@@ -116,6 +126,9 @@
     padding: 0;
     text-align: center;
     margin: 16px 10px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
     &--bootstrap {
       color: var(--color-bg);
       padding: 10px 0;
@@ -135,6 +148,9 @@
     &__element {
       margin: 0;
       padding-left: 10px;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+      }
       &--special {
         margin-top: 4px;
         border-top: 1px solid var(--color-gray);
@@ -165,6 +181,9 @@ figcaption {
   text-align: center;
   padding-top: 10px;
   color: var(--color-bg);
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .notes-table {
@@ -173,19 +192,51 @@ figcaption {
   text-align: center;
   margin: 0;
   &__td {
+    font-size: 14px;
     border: 1px solid var(--color-gray);
     background-color: var(--color-orange);
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 8px;
+      margin: 0;
+      padding: 0;
+    }
     &--special {
+      font-size: 14px;
       color: var(--color-pink);
       background-color: var(--color-bg);
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        font-size: 12px;
+        margin: 0;
+      }
+      @media screen and (max-width: 375px) {
+        padding: 0;
+        font-size: 8px;
+        margin: 0;
+      }
     }
   }
   &__th {
+    font-size: 14px;
     border: 1px solid var(--color-gray);
     background-color: var(--color-purple);
     padding: 14px;
+    font-weight: 700;
     @media screen and (max-width: 768px) {
+      font-size: 12px;
       padding: 0;
+      margin: 0;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 375px) {
+      padding: 0;
+      font-size: 8px;
+      margin: 0;
     }
   }
 }

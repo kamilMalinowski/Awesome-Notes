@@ -6,6 +6,9 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  @media screen and (max-width: 460px) {
+flex-direction: column;
+  }
 }
 
 .menu-hamburger {
@@ -52,7 +55,6 @@
   font-size: 16px;
   background: var(--color-gray);
   color: var(--color-lightGreen);
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +74,15 @@
     margin: 0 0 0 30px;
     font-weight: 400;
     opacity: 1;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      margin:10px 0;
+      padding-left: 10px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 12px;
+    }
     &:hover {
       opacity: 0.8;
       text-decoration: none;

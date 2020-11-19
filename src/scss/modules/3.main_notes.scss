@@ -29,7 +29,10 @@
     border-bottom: 2px solid var(--color-orange);
     margin: 0;
     @media screen and (max-width: 768px) {
-      font-size: 14px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 16px;
     }
     &--workInProgress {
       animation: rotate 14s linear infinite;
@@ -84,6 +87,9 @@
     height: 50px;
     margin: 0;
     @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 375px) {
       font-size: 14px;
     }
   }
@@ -101,6 +107,9 @@
     height: 40px;
     margin: 0;
     @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 375px) {
       font-size: 12px;
     }
   }
@@ -127,6 +136,9 @@
     text-align: center;
     margin: 16px 10px;
     @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 375px) {
       font-size: 12px;
     }
     &--bootstrap {
@@ -148,7 +160,11 @@
     &__element {
       margin: 0;
       padding-left: 10px;
+      padding-bottom: 10px;
       @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 375px) {
         font-size: 12px;
       }
       &--special {

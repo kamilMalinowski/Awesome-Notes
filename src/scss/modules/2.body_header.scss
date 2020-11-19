@@ -21,7 +21,10 @@
     height: 120px;
     width: 100%;
     @media screen and (max-width: 768px) {
-      font-size: 26px;
+      font-size: 24px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 20px;
     }
   }
   &__subTitle {
@@ -40,7 +43,10 @@
     border-bottom: 2px solid var(--color-gray);
     height: 66px;
     @media screen and (max-width: 768px) {
-      font-size: 20px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 14px;
     }
   }
 }
@@ -71,7 +77,13 @@
     justify-self: center;
     margin: 0;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 16px;    
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 12px;
+    }
   }
 }
 

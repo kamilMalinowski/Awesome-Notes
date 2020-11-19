@@ -4,10 +4,13 @@
   &__description {
     text-align: center;
     color: var(--color-gray);
-    font-size: 18px;
+    font-size: 12px;
     font-style: italic;
-    padding: 10px 0;
+    padding: 10px;
     margin: 0;
+    @media screen and (max-width: 375px) {
+      font-size: 8px;
+    }
     &--link {
       text-decoration: none;
       color: var(--color-pink);

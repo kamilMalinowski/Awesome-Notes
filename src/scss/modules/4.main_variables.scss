@@ -1,21 +1,21 @@
 //gameJS
 
 .gameJS {
-  width: 100vw;
+  width: 600px;
   height: 200px;
   margin: 0 auto;
   padding: 0;
   background-color: var(--color-purple);
-  &__me {
+  &__mePerson {
     width: 25px;
     height: 50px;
     background: var(--color-gray);
     position: relative;
     top: 150px;
-    left:50px;
+    left: 50px;
   }
   &__javaScript {
-    animation: runJS 4s linear infinite;
+    animation: runJS 1s linear infinite;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -49,7 +49,7 @@
 
 @keyframes runJS {
   0% {
-    left: 100vw;
+    left: 575px;
   }
   100% {
     left: 0;
@@ -69,4 +69,11 @@
   100% {
     top: 150px;
   }
+}
+
+.time {
+  display: block;
+  padding: 0 10px;
+  color: var(--color-gray);
+  background-color: var(--color-bg);
 }

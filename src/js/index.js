@@ -1,8 +1,22 @@
-import "../scss/main.scss"; /*dont  delete this code line*/
+import "../scss/main.scss"; /*dont delete this code line*/
 import "bootstrap"; /*second step to install bootstrap*/
 
-// import moment from "moment";
-/*pobranie repozytorium do html*/
+import moment from "moment"; /*unlock this code for use moment*/
+
+console.log("PL: Witam, cieszę się, że tu zaglądasz ❤️."); /*greeting*/
+console.log("EN: Hello, i'm glad you're here ❤️."); /*greeting*/
+
+//FETCH ('index.html')
+// 1. 
+// 2.
+// 3.
+// 4.
+// 5.
+// 6.
+// 7.
+// 8.
+// 9.
+// 10.
 fetch("https://api.github.com/users/kamilMalinowski/repos")
   .then((resp) => resp.json())
   .then((resp) => {
@@ -25,7 +39,17 @@ fetch("https://api.github.com/users/kamilMalinowski/repos")
     console.log("nie udało się pobrać");
   });
 
-/*zadanie domowe wtf tydzień VI - hamburger*/
+//MENU BUTTON - HAMBURGER ('all')
+// 1. 
+// 2.
+// 3.
+// 4.
+// 5.
+// 6.
+// 7.
+// 8.
+// 9.
+// 10.
 const hamburger = document.querySelector(".hamburger--js");
 
 hamburger.addEventListener("click", () => {
@@ -33,9 +57,17 @@ hamburger.addEventListener("click", () => {
   nav.classList.toggle("menu-navigation--open");
 });
 
-console.log(hamburger);
-
-/*document.documentElement.style.setProperty('--zmienna', 'wartość') - darkmmode*/
+//DARK MODE ('all')
+// 1. 
+// 2.
+// 3.
+// 4.
+// 5.
+// 6.
+// 7.
+// 8.
+// 9.
+// 10.
 let isDark = false;
 
 const switchModes = document.querySelector(".darkmode--js");
@@ -66,34 +98,37 @@ switchModes.addEventListener("click", () => {
   }
 });
 
-// const time = moment().endOf("week").fromNow();
-// const timePlaceholder = document.querySelector(".time--js");
-// timePlaceholder.innerHTML = time;
-
-//wysuwany aside w sekcji html
-
-let buttonAside = document.querySelector(".buttonAside--js");
-
-buttonAside.addEventListener("click", () => {
-  const aside = document.querySelector(".notes-article--aside");
-  aside.classList.toggle("notes-article--openAside");
-});
+//MOMENT ('notatki-js.html')
+// 1. assign option from moment co const(time)
+// 2. assign const(timePlaceholder) to class(.time--js)
+// 3. put cont(time) to html
+const time = moment().format('LLL'); 
+const timePlaceholder = document.querySelector(".time--js");
+timePlaceholder.innerHTML = time;
 
 //GAMEJS - Prosta gra, w której walczę z JavaScriptem :).
 
 // const gameJS = document.querySelector(".gameJS--js");
-let me = document.querySelector(".me--js");
+const mePerson = document.querySelector(".mePerson--js");
 // const javaSript = document.querySelector(".javaSript--js");
 const jumpButton = document.querySelector(".jumpButton--js");
 
 jumpButton.addEventListener("click", () => {
-  if (me.classList != "animation") {
-    me.classList.add("animation");
+  if (mePerson.classList != "animation") {
+    mePerson.classList.add("animation");
+    console.log("Button is working");
   }
   setTimeout(function () {
-    me.classList.remove("animation");
+    mePerson.classList.remove("animation");
   }, 500);
 });
 //kontynuacja niebawem
 
 
+//ASIDE MODE
+// const buttonAside = document.querySelector(".buttonAside--js");
+
+// buttonAside.addEventListener("click", () => {
+//   const aside = document.querySelector(".notes-article--aside");
+//   aside.classList.toggle("notes-article--openAside");
+// });

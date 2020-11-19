@@ -1,18 +1,19 @@
 .notes {
-  padding-bottom: 20px;
+  padding:0;
   margin: 0;
   &__button {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
     margin-left: 10px;
+    margin-bottom: 1px;
     border: none;
     cursor: pointer;
     text-align: center;
     padding: 2px 0 0 1px;
     font-size: 16px;
     background: var(--color-gray);
-    color: var(--color-purple);
+    color: var(--color-orange);
   }
   &__title {
     width: 100%;
@@ -24,9 +25,9 @@
     font-size: 20px;
     padding: 0;
     height: 60px;
-    border-top: 6px solid var(--color-gray);
-    border-bottom: 6px solid var(--color-gray);
-    margin-bottom: 10px;
+    border-top: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-orange);
+    margin: 0;
     &--workInProgress {
       animation: rotate 14s linear infinite;
       width: 30px;
@@ -57,7 +58,7 @@
     padding: 0;
     width: 200px;
     text-align: left;
-    border-left: 12px solid var(--color-gray);
+    border-left: 2px solid var(--color-gray);
   }
 
   &--bootstrap {
@@ -70,8 +71,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 6px solid var(--color-gray);
-    border-bottom: 6px solid var(--color-gray);
+    border-top: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-gray);
     font-weight: 400;
     background-color: var(--color-orange);
     font-size: 18px;
@@ -84,19 +85,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 6px solid var(--color-gray);
-    border-bottom: 6px solid var(--color-gray);
+    border-top: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-gray);
     font-size: 16px;
     background-color: var(--color-green);
     padding: 0;
     font-weight: 400;
     height: 40px;
-    margin-bottom: 10px;
+    margin: 0;
   }
 
   &__image {
     width: 100%;
-
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
       5px 5px 15px 5px rgba(0, 0, 0, 0);
     border-radius: 8px;
@@ -113,10 +113,9 @@
     text-decoration: none;
   }
   &__description {
-    width: 100%;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
-    margin: 0;
+    margin: 16px 10px;
     &--bootstrap {
       color: var(--color-bg);
       padding: 10px 0;
@@ -125,16 +124,20 @@
 
   /*LIST*/
   .notes-list {
+    list-style-position: outside;
+    margin: 10px 0;
+    padding-left: 34px;
+    padding-right: 10px;
     &--legend {
       display: flex;
       flex-direction: row;
     }
     &__element {
-      margin: 10px 0;
+      margin: 0;
+      padding-left: 10px;
       &--special {
         margin-top: 4px;
-        padding: 8px 0 0 0;
-        border-top: 1px solid var(--color-black);
+        border-top: 1px solid var(--color-gray);
       }
       &--abbr {
         opacity: 0.6;
@@ -166,7 +169,6 @@ figcaption {
 
 .notes-table {
   width: 100%;
-  border: 6px solid var(--color-gray);
   padding: 0;
   text-align: center;
   margin: 0;

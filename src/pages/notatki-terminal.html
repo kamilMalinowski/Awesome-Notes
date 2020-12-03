@@ -63,6 +63,9 @@
           <li class="header-navList__element">
             <a class="header-navList__link" href="#npm">Npm</a>
           </li>
+          <li class="header-navList__element">
+            <a class="header-navList__link" href="#json">JSON</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -589,6 +592,73 @@
             </li>
             <li class="notes-list__element">
               <b>npm run +nazwa skryptu</b> odpalamy skrypt w terminalu
+            </li>
+          </ul>
+        </article>
+
+        <!--JSON-->
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="json">JSON</h3>
+          <p class="notes-article__description">
+            JavaScript Object Notation – lekki format wymiany danych
+            komputerowych. JSON jest formatem tekstowym, bazującym na podzbiorze
+            języka JavaScript.
+          </p>
+          <h4 class="notes-article__subTitle">JSON - struktura(przykład)</h4>
+          <pre class="notes-article__pre">
+  {
+    "name": "wtf-webpack-starterkit",
+    "version": "1.0.1",
+    "description": "WTF Webpack starterkit",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+      "start": "webpack-dev-server --config webpack.dev.js --mode development",
+      "build": "webpack --config webpack.prod.js --mode production",
+      "publish": "npm run build && gh-pages -d dist"
+    }
+  }</pre
+          >
+          <!--json podstawy-->
+          <h4 class="notes-article__subTitle">JSON - podstawy</h4>
+          <ul class="notes-list">
+            <li class="notes-list__element">lekki format wymiany danych</li>
+            <li class="notes-list__element">JavaScript Object Notation</li>
+            <li class="notes-list__element">
+              niezależny od języka JS (ani jakiegokolwiek innego)
+            </li>
+            <li class="notes-list__element">
+              zawiera wyłącznie dane (nie ma funkji, zmiennych ani niczego
+              podobnego)
+            </li>
+            <li class="notes-list__element">domyślny format wymiany danych</li>
+            <li class="notes-list__element">
+              "powstał" oficjalnie w 2001 (chociaż był stosowany już w 1996)
+            </li>
+          </ul>
+
+          <!--json dlaczego-->
+          <h4 class="notes-article__subTitle">JSON - dlaczego?</h4>
+          <ul class="notes-list">
+            <li class="notes-list__element">lekki</li>
+            <li class="notes-list__element">czytelny</li>
+            <li class="notes-list__element">
+              naturalny dostęp (jak do obiektu, tablicy
+            </li>
+            <li class="notes-list__element">uniwersalny</li>
+            <li class="notes-list__element">popularny</li>
+          </ul>
+
+          <!--json przesyłanie-->
+          <h4 class="notes-article__subTitle">JSON - przesyłanie</h4>
+          <ul class="notes-list">
+            <li class="notes-list__element">
+              <b>JSON.stringify({nasz JSON})</b> - zamiana JSONa na plik
+              tekstowy typu string
+            </li>
+            <li class="notes-list__element">
+              <b>JSON.parse(JSON w formie zmiennej)</b> - zmian JSONa z
+              teksty(stringa) na JSON
             </li>
           </ul>
         </article>

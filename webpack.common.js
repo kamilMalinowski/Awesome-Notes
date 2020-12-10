@@ -101,16 +101,10 @@ module.exports = {
       filename: "notatki-js.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/notatki-terminal.html",
+      template: "./src/pages/notatki-roznosci.html",
       inject: true,
       chunks: ["index"],
-      filename: "notatki-terminal.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/notatki-react.html",
-      inject: true,
-      chunks: ["index"],
-      filename: "notatki-react.html",
+      filename: "notatki-roznosci.html",
     }),
   ],
 };

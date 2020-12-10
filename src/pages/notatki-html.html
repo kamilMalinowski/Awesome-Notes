@@ -15,30 +15,30 @@
   <body class="body">
     <!--MENU NAVIGATION-->
     <nav class="menu">
-      <!--menu button-->
-      <button class="menu-hamburger hamburger--js" aria-label="otwórz menu">
-        <span class="menu-hamburger__item"></span>
-        <span class="menu-hamburger__item"></span>
-        <span class="menu-hamburger__item"></span>
-      </button>
-      <!--dark/light mode button-->
-      <button
-        class="menu-darkmode darkmode--js"
-        aria-label="przełącz na ciemny tryb"
-      >
-        NOC
-      </button>
-      <!--home button-->
-      <a class="menu-home" href="index.html">DOM</a>
+      <!--menu buttons-->
+      <div class="menu-buttons">
+        <button
+          class="menu-darkmode darkmode--js"
+          aria-label="przełącz na ciemny tryb"
+        >
+          NOC
+        </button>
+        <button class="menu-hamburger hamburger--js" aria-label="otwórz menu">
+          <span class="menu-hamburger__item"></span>
+          <span class="menu-hamburger__item"></span>
+          <span class="menu-hamburger__item"></span>
+        </button>
+        <a class="menu-home" href="index.html">DOM</a>
+      </div>
+
       <!--navigation list-->
       <nav class="menu-navigation menu-navigation--js">
         <a class="menu-navigation__link" href="notatki-html.html">HTML</a>
         <a class="menu-navigation__link" href="notatki-css.html">CSS</a>
         <a class="menu-navigation__link" href="notatki-js.html">JAVASCRIPT</a>
-        <a class="menu-navigation__link" href="notatki-terminal.html"
-          >TERMINAL</a
+        <a class="menu-navigation__link" href="notatki-roznosci.html"
+          >RÓŻNOŚCI</a
         >
-        <a class="menu-navigation__link" href="notatki-react.html">REACT</a>
       </nav>
     </nav>
 
@@ -63,6 +63,9 @@
           </li>
           <li class="header-navList__element">
             <a class="header-navList__link" href="#bootstrap">Bootstrap</a>
+          </li>
+          <li class="header-navList__element">
+            <a class="header-navList__link" href="#php">PHP</a>
           </li>
         </ul>
       </nav>
@@ -498,6 +501,52 @@
               </div>
             </div>
           </article>
+        </article>
+
+        <!--PHP-->
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="php">PHP</h3>
+          <p class="notes-article__description">Hypertext Preprocessor</p>
+
+          <!--Paczka XAMPP-->
+          <h4 class="notes-article__subTitle">Paczka XAMPP:</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b>Apache</b> - otwarty serwer HTTP dostępny dla wielu systemów
+              operacyjnych.
+            </li>
+            <li class="notes-list__element">
+              <b>MariaDB</b> - system zarządzania relacyjną bazą danych
+              stworzony przez grupę byłych pracowników MySQL.
+            </li>
+            <li class="notes-list__element">
+              <b>PHP</b> - interpretowany, skryptowy język programowania
+              zaprojektowany do generowania stron internetowych i budowania
+              aplikacji webowych w czasie rzeczywistym.
+            </li>
+            <li class="notes-list__element">
+              <b>Perl</b> - interpretowany, dynamiczny język programowania
+              wysokiego poziomu autorstwa Larry’ego Walla początkowo
+              przeznaczony głównie do pracy z danymi tekstowymi, obecnie używany
+              do wielu innych zastosowań. Wzorowany na takich językach jak C,
+              skryptowe: sed, awk i sh i inne.
+            </li>
+          </ol>
+
+          <!--PHP podstawy-->
+          <h4 class="notes-article__subTitle">PHP - podstawy</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <a
+                class="notes-list__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="readmejs"
+                href="https://github.com/kamilMalinowski/Awesome-Notes/blob/master/README-PHP.md"
+                >PHP - podstawy (README-PHP.MD)</a
+              >
+            </li>
+          </ol>
         </article>
       </section>
 

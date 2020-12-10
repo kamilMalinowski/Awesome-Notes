@@ -2,7 +2,6 @@
   position: sticky;
   top: 0;
   z-index: 9999;
-  background-color: none;
   margin: 0;
   padding: 0;
   background: var(--color-lightGreen);
@@ -11,8 +10,15 @@
   justify-content: start;
   align-items: center;
   @media screen and (max-width: 460px) {
+    justify-content: center;
     flex-direction: column;
   }
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .menu-hamburger {
@@ -96,9 +102,9 @@
   &--open {
     margin: 0;
     padding: 2px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    display: block;
+    @media screen and (max-width: 460px) {
+      justify-content: center;
+    }
   }
 }

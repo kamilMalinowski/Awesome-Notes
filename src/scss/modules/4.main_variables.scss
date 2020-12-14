@@ -5,19 +5,19 @@
   height: 200px;
   margin: 0 auto;
   padding: 0;
-  background-image: url("../assets/img/gameJS_bg.jpg");
-  background-size: contain;
+  background: black;
   &__mePerson {
     width: 25px;
     height: 50px;
-    background-image: url("../assets/img/kamil_m--game.png");
-    background-size: contain;
+    background: greenyellow;
     position: relative;
-    top: 125px;
+    top: 150px;
     left: 50px;
   }
   &__javaScript {
-    animation: runJS 1s linear infinite;
+    padding:0;
+    margin:0;
+    // animation: runJS 1s linear infinite;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -25,7 +25,8 @@
     font-size: 20px;
     background-color: yellow;
     position: relative;
-    top: 100px;
+    top: 125px;
+    left:0;
   }
   &__jumpButton {
     width: 46px;
@@ -40,8 +41,8 @@
     background: var(--color-gray);
     color: var(--color-lightGreen);
     position: relative;
-    top: -50px;
-    left: 25px;
+    top: -75px;
+    left: 5px;
   }
 }
 
@@ -60,7 +61,7 @@
 
 @keyframes myJump {
   0% {
-    top: 125px;
+    top: 150px;
   }
   30% {
     top: 85px;
@@ -69,7 +70,7 @@
     top: 85px;
   }
   100% {
-    top: 125px;
+    top: 150px;
   }
 }
 

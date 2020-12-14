@@ -52,6 +52,24 @@ hamburger.addEventListener("click", () => {
   console.log("It's open");
 });
 
+//ASIDE MODE ('notatki-html.html') - WORK IN PROGRESS
+// 1.
+// 2.
+// 3.
+// 4.
+// 5.
+// 6.
+// 7.
+// 8.
+// 9.
+// 10.
+const buttonAside = document.querySelector(".buttonAside--js");
+
+buttonAside.addEventListener("click", () => {
+ const aside = document.querySelector(".notes-article--asideOff");
+  aside.classList.toggle("notes-article--asideOn");
+});
+
 //DARK MODE ('all')
 // 1. create let = false
 // 2. assign const(switchModes) to class(.darkmode--js)
@@ -106,35 +124,21 @@ timePlaceholder.innerHTML = time;
 // 8.
 // 9.
 // 10.
-// const gameJS = document.querySelector(".gameJS--js");
+
 const mePerson = document.querySelector(".mePerson--js");
-// const javaSript = document.querySelector(".javaSript--js");
 const jumpButton = document.querySelector(".jumpButton--js");
+// const javaScript = document.querySelector(".javaScript--js");
 
 jumpButton.addEventListener("click", () => {
-  if (mePerson.classList != "animation") {
+  if (mePerson) {
     mePerson.classList.add("animation");
-    console.log("Button is working");
   }
-  setTimeout(function () {
+  setTimeout(() => {
     mePerson.classList.remove("animation");
   }, 500);
 });
 
-//ASIDE MODE ('notatki-html.html') - WORK IN PROGRESS
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
-// 6.
-// 7.
-// 8.
-// 9.
-// 10.
-// const buttonAside = document.querySelector(".buttonAside--js");
 
-// buttonAside.addEventListener("click", () => {
-//   const aside = document.querySelector(".notes-article--aside");
-//   aside.classList.toggle("notes-article--openAside");
-// });
+
+
+

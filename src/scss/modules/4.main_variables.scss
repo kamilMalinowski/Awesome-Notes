@@ -1,34 +1,8 @@
 //gameJS
 
-.gameJS {
-  width: 600px;
-  height: 200px;
-  margin: 0 auto;
-  padding: 0;
-  background: black;
-  &__mePerson {
-    width: 25px;
-    height: 50px;
-    background: greenyellow;
-    position: relative;
-    top: 150px;
-    left: 50px;
-  }
-  &__javaScript {
-    padding:0;
-    margin:0;
-    // animation: runJS 1s linear infinite;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    color: var(--color-gray);
-    font-size: 20px;
-    background-color: yellow;
-    position: relative;
-    top: 125px;
-    left:0;
-  }
-  &__jumpButton {
+.jumpGame {
+
+  &__button {
     width: 46px;
     height: 46px;
     border-radius: 4px;
@@ -40,9 +14,37 @@
     font-size: 16px;
     background: var(--color-gray);
     color: var(--color-lightGreen);
+  }
+}
+
+.jumpGame-area {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  background: black;
+  display: none;
+  &__sprite {
+    width: 25px;
+    height: 50px;
+    background: greenyellow;
     position: relative;
-    top: -75px;
-    left: 5px;
+    top: 150px;
+    left: 25px;
+  }
+  &__js {
+    padding: 0;
+    margin: 0;
+    animation: runJS 1s linear infinite;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: var(--color-gray);
+    font-size: 20px;
+    background-color: yellow;
+    position: relative;
+    top: 125px;
+    left: 0;
   }
 }
 
@@ -52,7 +54,7 @@
 
 @keyframes runJS {
   0% {
-    left: 575px;
+    left: 480px;
   }
   100% {
     left: 0;
@@ -64,10 +66,10 @@
     top: 150px;
   }
   30% {
-    top: 85px;
+    top: 100px;
   }
   70% {
-    top: 85px;
+    top: 100px;
   }
   100% {
     top: 150px;

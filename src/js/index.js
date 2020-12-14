@@ -1,6 +1,5 @@
 import "../scss/main.scss"; /*dont delete this code line*/
 import "bootstrap"; /*second step to install bootstrap*/
-
 import moment from "moment"; /*unlock this code for use moment*/
 
 console.log("PL: Witam, cieszę się, że tu zaglądasz ❤️."); /*greeting*/
@@ -52,6 +51,63 @@ hamburger.addEventListener("click", () => {
   console.log("It's open");
 });
 
+//GAME-JUMP ('notatki-js.html') - WORK IN PROGRESS
+// 1.
+// 2.
+// 3.
+// 4.
+// 5.
+// 6.
+// 7.
+// 8.
+// 9.
+// 10.
+
+const play = document.querySelector(".play--js");
+const jump = document.querySelector(".jump--js");
+
+const sprite = document.querySelector(".sprite--js");
+const js = document.querySelector(".js--js");
+
+//buttons
+//1. play
+
+let isOff = false;
+play.addEventListener("click", () => {
+  const area = document.querySelector(".area--js");
+  if (isOff) {
+    area.style.display = "none";
+
+    isOff = false;
+  } else {
+    area.style.display = "block";
+    isOff = true;
+  }
+});
+
+//2. jump
+jump.addEventListener("click", () => {
+  if (sprite) {
+    sprite.classList.add("animation");
+  }
+  setTimeout(() => {
+    sprite.classList.remove("animation");
+  }, 400);
+});
+
+const gameOver = setInterval(() => {
+  let spriteTop = parseInt(
+    window.getComputedStyle(sprite).getPropertyValue("top")
+  );
+  let jsLeft = parseInt(window.getComputedStyle(js).getPropertyValue("left"));
+  if (jsLeft < 25 && jsLeft > -25 && spriteTop >= 135) {
+    js.style.animation = "none";
+    js.style.left = "50px";
+  }
+}, 10);
+
+
+
 //ASIDE MODE ('notatki-html.html')
 // 1. assign const(buttonAside) to class(.buttonAside--js)
 // 2. assign click function to buttonAside button
@@ -60,7 +116,7 @@ hamburger.addEventListener("click", () => {
 const buttonAside = document.querySelector(".buttonAside--js");
 
 buttonAside.addEventListener("click", () => {
- const aside = document.querySelector(".notes-article--asideOff");
+  const aside = document.querySelector(".notes-article--asideOff");
   aside.classList.toggle("notes-article--asideOn");
 });
 
@@ -106,33 +162,3 @@ switchModes.addEventListener("click", () => {
 const time = moment().format("LLL");
 const timePlaceholder = document.querySelector(".time--js");
 timePlaceholder.innerHTML = time;
-
-//GAMEJ ('notatki-js.html') - WORK IN PROGRESS
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
-// 6.
-// 7.
-// 8.
-// 9.
-// 10.
-
-const mePerson = document.querySelector(".mePerson--js");
-const jumpButton = document.querySelector(".jumpButton--js");
-// const javaScript = document.querySelector(".javaScript--js");
-
-jumpButton.addEventListener("click", () => {
-  if (mePerson) {
-    mePerson.classList.add("animation");
-  }
-  setTimeout(() => {
-    mePerson.classList.remove("animation");
-  }, 500);
-});
-
-
-
-
-

@@ -52,17 +52,11 @@ hamburger.addEventListener("click", () => {
   console.log("It's open");
 });
 
-//ASIDE MODE ('notatki-html.html') - WORK IN PROGRESS
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
-// 6.
-// 7.
-// 8.
-// 9.
-// 10.
+//ASIDE MODE ('notatki-html.html')
+// 1. assign const(buttonAside) to class(.buttonAside--js)
+// 2. assign click function to buttonAside button
+// 3. assign const(aside) to class(.notes-article--asideOff)
+// 4. assign toggle option to const(aside) |--> this add (notes-article--asideOn)
 const buttonAside = document.querySelector(".buttonAside--js");
 
 buttonAside.addEventListener("click", () => {
@@ -75,7 +69,7 @@ buttonAside.addEventListener("click", () => {
 // 2. assign const(switchModes) to class(.darkmode--js)
 // 3. assign click function to switchModes button
 // 4. assign color to darkmode off | if
-// 5. assign color to darkmode on | else
+// 5. assign color to darkmode on  | else
 let isDark = false;
 const switchModes = document.querySelector(".darkmode--js");
 

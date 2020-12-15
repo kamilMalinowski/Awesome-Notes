@@ -1,6 +1,7 @@
 .notes {
   padding: 0;
   margin: 0;
+
   &__button {
     width: 34px;
     height: 34px;
@@ -47,6 +48,7 @@
 }
 
 .notes-article {
+  position: relative;
   &__pre {
     margin: 0;
     padding: 0;
@@ -59,12 +61,14 @@
     display: flex;
     flex-direction: row;
   }
-  &--aside {
+  &--asideOff {
     display: none;
   }
-  &--openAside {
+  &--asideOn {
+    position: absolute;
     display: block;
     background-color: var(--color-lightGreen);
+    right: 0;
     margin: 0;
     padding: 0;
     width: 200px;

@@ -1,6 +1,5 @@
 import "../scss/main.scss"; /*dont delete this code line*/
 import "bootstrap"; /*second step to install bootstrap*/
-
 import moment from "moment"; /*unlock this code for use moment*/
 
 console.log("PL: Witam, cieszę się, że tu zaglądasz ❤️."); /*greeting*/
@@ -52,12 +51,24 @@ hamburger.addEventListener("click", () => {
   console.log("It's open");
 });
 
+//ASIDE MODE ('notatki-html.html')
+// 1. assign const(buttonAside) to class(.buttonAside--js)
+// 2. assign click function to buttonAside button
+// 3. assign const(aside) to class(.notes-article--asideOff)
+// 4. assign toggle option to const(aside) |--> this add (notes-article--asideOn)
+const buttonAside = document.querySelector(".buttonAside--js");
+
+buttonAside.addEventListener("click", () => {
+  const aside = document.querySelector(".notes-article--asideOff");
+  aside.classList.toggle("notes-article--asideOn");
+});
+
 //DARK MODE ('all')
 // 1. create let = false
 // 2. assign const(switchModes) to class(.darkmode--js)
 // 3. assign click function to switchModes button
 // 4. assign color to darkmode off | if
-// 5. assign color to darkmode on | else
+// 5. assign color to darkmode on  | else
 let isDark = false;
 const switchModes = document.querySelector(".darkmode--js");
 
@@ -94,47 +105,3 @@ switchModes.addEventListener("click", () => {
 const time = moment().format("LLL");
 const timePlaceholder = document.querySelector(".time--js");
 timePlaceholder.innerHTML = time;
-
-//GAMEJ ('notatki-js.html') - WORK IN PROGRESS
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
-// 6.
-// 7.
-// 8.
-// 9.
-// 10.
-// const gameJS = document.querySelector(".gameJS--js");
-const mePerson = document.querySelector(".mePerson--js");
-// const javaSript = document.querySelector(".javaSript--js");
-const jumpButton = document.querySelector(".jumpButton--js");
-
-jumpButton.addEventListener("click", () => {
-  if (mePerson.classList != "animation") {
-    mePerson.classList.add("animation");
-    console.log("Button is working");
-  }
-  setTimeout(function () {
-    mePerson.classList.remove("animation");
-  }, 500);
-});
-
-//ASIDE MODE ('notatki-html.html') - WORK IN PROGRESS
-// 1.
-// 2.
-// 3.
-// 4.
-// 5.
-// 6.
-// 7.
-// 8.
-// 9.
-// 10.
-// const buttonAside = document.querySelector(".buttonAside--js");
-
-// buttonAside.addEventListener("click", () => {
-//   const aside = document.querySelector(".notes-article--aside");
-//   aside.classList.toggle("notes-article--openAside");
-// });

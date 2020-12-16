@@ -1,14 +1,46 @@
 ![myWtfNotesLogo](https://mir-cdn.behance.net/v1/rendition/project_modules/fs/85c71f90815521.5f10cd28aed53.jpg "Moja nauka Frontendu")
 
-# MOJA NAUKA FRONTENDU - NOTES
+# MOJA NAUKA FRONTENDU - AWESOME-NOTES
 
 My notes created as part of the "WTF: Co ten frontend" training. I'm still thinking about how to assimilate them better.
+
+## INSIDE:
+### DOM
+
+- my reopo
+- helpfull links
+
+### HTML
+
+- HTML
+- BEM
+- Markdown
+- Bootstrap **(New!)**
+- PHP **(New!)**
+
+### CSS (work in progress)
+
+### JAVASCRIPT 
+
+- JavaScript od podstaw (CodePen)
+- JavaScript różności (README-JS.MD)
+- Jumping JS **(New!)**
+
+### RÓŻNOŚCI
+
+- Terminal
+- Git
+- Node.js
+- Webpack
+- Npm
+- JSON **(New!)**
 
 ## TOOLS
 
 - WTF Webpack starterkit
 - HTML + CSS + JS
 - Github API
+- and other
 
 ## AVAILABLE SCRIPTS
 

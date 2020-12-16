@@ -7,7 +7,7 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 ## INSIDE:
 ### DOM
 
-- my reopo
+- my repo
 - helpfull links
 
 ### HTML

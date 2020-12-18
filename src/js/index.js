@@ -44,23 +44,11 @@ fetch("https://api.github.com/users/kamilMalinowski/repos")
 // 3. assign const(nav) to class(.menu-navigation--js)
 // 4. assign toggle option to const(nav) |--> this add (menu-navigation--open)
 const hamburger = document.querySelector(".hamburger--js");
+const nav = document.querySelector(".menu-navigation--js");
 
 hamburger.addEventListener("click", () => {
-  const nav = document.querySelector(".menu-navigation--js");
   nav.classList.toggle("menu-navigation--open");
   console.log("It's open");
-});
-
-//ASIDE MODE ('notatki-html.html')
-// 1. assign const(buttonAside) to class(.buttonAside--js)
-// 2. assign click function to buttonAside button
-// 3. assign const(aside) to class(.notes-article--asideOff)
-// 4. assign toggle option to const(aside) |--> this add (notes-article--asideOn)
-const buttonAside = document.querySelector(".buttonAside--js");
-
-buttonAside.addEventListener("click", () => {
-  const aside = document.querySelector(".notes-article--asideOff");
-  aside.classList.toggle("notes-article--asideOn");
 });
 
 //DARK MODE ('all')
@@ -96,6 +84,17 @@ switchModes.addEventListener("click", () => {
 
     isDark = true;
   }
+});
+
+//ASIDE MODE ('notatki-html.html')
+// 1. assign const(buttonAside) to class(.buttonAside--js)
+// 2. assign click function to buttonAside button
+// 3. assign const(aside) to class(.notes-article--asideOff)
+// 4. assign toggle option to const(aside) |--> this add (notes-article--asideOn)
+const buttonAside = document.querySelector(".buttonAside--js");
+const aside = document.querySelector(".aside--js");
+buttonAside.addEventListener("click", () => {
+  aside.classList.toggle("notes-article--asideOn");
 });
 
 //MOMENT ('notatki-js.html')

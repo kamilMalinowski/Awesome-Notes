@@ -59,13 +59,17 @@
             <a class="header-navList__link" href="#bem">BEM</a>
           </li>
           <li class="header-navList__element">
-            <a class="header-navList__link" href="#markdown">Markdown</a>
+            <a class="header-navList__link" href="#markdown"
+              >Markdown <strong>Update</strong></a
+            >
           </li>
           <li class="header-navList__element">
             <a class="header-navList__link" href="#bootstrap">Bootstrap</a>
           </li>
           <li class="header-navList__element">
-            <a class="header-navList__link" href="#php">PHP</a>
+            <a class="header-navList__link" href="#php"
+              >PHP <strong>New</strong></a
+            >
           </li>
         </ul>
       </nav>
@@ -74,9 +78,7 @@
     <!--SECTION NOTES-->
     <main class="main main--html">
       <section class="notes">
-        <h2 class="notes__title">
-          Ściągawka / Elementy HTML
-        </h2>
+        <h2 class="notes__title">Ściągawka / Elementy HTML</h2>
 
         <!--HTML-->
         <article class="notes-article">
@@ -101,8 +103,10 @@
             </li>
           </ul>
 
-          <!--HTML elementy jakie używam-->
-          <h4 class="notes-article__subTitle">Html - Elementy jakie używam</h4>
+          <!--HTML popularne (pozostałe w części Aside)-->
+          <h4 class="notes-article__subTitle">
+            Html - popularne (pozostałe w części Aside)
+          </h4>
           <ul class="notes-list">
             <li class="notes-list__element">
               <b>&lt;html&gt;</b> = &lt;head&gt;+&lt;body&gt;
@@ -210,24 +214,138 @@
 
           <!--znaczniki-->
           <h4 class="notes-article__subTitle">Znaczniki</h4>
+          <!-- Nagłówki -->
           <ul class="notes-list">
+            Nagłówki:
             <li class="notes-list__element">
-              <b>#</b> - nagłówek (odpowiednik h1)
+              <b># lub ======</b> - nagłówek (odpowiednik h1)
             </li>
             <li class="notes-list__element">
-              <b>##</b> - nagłówek (odpowiednik h2) i tak dalej i tak dalej
+              <b>## lub ------</b> - nagłówek (odpowiednik h2)
             </li>
             <li class="notes-list__element">
-              <b>[opis linku](link)</b> - odpowiednik html-owego a(link)
+              <b>###</b> - nagłówek (odpowiednik h3)
             </li>
             <li class="notes-list__element">
-              <b>![odpowiednik treści <i>alt=""</i>](link do obrazu)</b> -
-              odpowiednik obrazu img
+              <b>####</b> - nagłówek (odpowiednik h4)
             </li>
             <li class="notes-list__element">
-              <b>Kwadratowe [] przed okrągłymi ()</b> - K przed O
-              (alfabetycznie) - <i>podstawowa reguła</i>
+              <b>#####</b> - nagłówek (odpowiednik h5)
             </li>
+            <li class="notes-list__element">
+              <b>#####</b> - nagłówek (odpowiednik h6)
+            </li>
+          </ul>
+          <!-- Pogrubienie, kursywa oraz przekreślenie -->
+          <ul class="notes-list">
+            Pogrubienie, kursywa oraz przekreślenie:
+            <li class="notes-list__element">
+              <b>*tekst* lub _tekst_</b> - kursywa
+            </li>
+            <li class="notes-list__element">
+              <b>**tekst** lub __tekst__</b> - pogrubienie
+            </li>
+            <li class="notes-list__element">
+              <b>***tekst*** lub **_tekst_** lub inna kombinacja</b> - kursywa i
+              pogrubienie
+            </li>
+            <li class="notes-list__element">
+              <b>~~tekst~~</b> - przekreślenie
+            </li>
+          </ul>
+          <!-- Alerty -->
+          <ul class="notes-list">
+            Alerty:
+            <li class="notes-list__element">
+              <b>> [!NOTE] + > tekst</b> - notatka
+            </li>
+            <li class="notes-list__element">
+              <b>> [!TIP] + > tekst</b> - porada
+            </li>
+            <li class="notes-list__element">
+              <b>> [!IMPORTANT] + > tekst</b> - ważne
+            </li>
+            <li class="notes-list__element">
+              <b>> [!CAUTION] + > tekst</b> - uwaga
+            </li>
+            <li class="notes-list__element">
+              <b>> [!WARNING] + > tekst</b> - ostrzeżenie
+            </li>
+          </ul>
+          <!-- Linki -->
+          <ul class="notes-list">
+            Linki:
+            <li class="notes-list__element">
+              <b>[opis linku](link)</b> - odpowiednik a(link)
+            </li>
+            <li class="notes-list__element">
+              <b>[opis linku](link "tytuł")</b> - link z tytułem
+            </li>
+            <li class="notes-list__element">
+              <b
+                >[opis linku] [tekst referencyjny bez rozróżniania wielkości
+                liter]</b
+              >
+              - styl referencyjny
+            </li>
+            <li class="notes-list__element">
+              <b>[opis linku](../blob/master/LICENSE)</b> - względny odnośnik do
+              pliku repozytorum
+            </li>
+            <li class="notes-list__element">
+              <b>[opis linku][1]</b> - Możesz użyć numerów dla definicji linków
+              w stylu odniesienia
+            </li>
+            <li class="notes-list__element">
+              <b>[opis linku]</b> - pusty link
+            </li>
+            <li class="notes-list__element">
+              <b>link</b> - link bez znaczników
+            </li>
+          </ul>
+          <!-- Obrazy -->
+          <ul class="notes-list">
+            Obrazy:
+            <li class="notes-list__element">
+              <b>![alt text](link do obrazu "tytuł")</b> - odpowiednik obrazu
+              img
+            </li>
+            <li class="notes-list__element">
+              <b>![alt text][logo]</b> - [logo]: link do obrazu "tytuł" - link
+              referencyjny
+            </li>
+          </ul>
+          <!-- Listy -->
+          <ul class="notes-list">
+            Listy:
+            <li class="notes-list__element">
+              <b>- lub * lub + tekst</b> - lista nieuporządkowana (ul)
+            </li>
+            <li class="notes-list__element">
+              <b>1. tekst</b> - lista uporządkowana (ol)
+            </li>
+            <li class="notes-list__element">
+              <b>...</b> - wcięcie w listach / sublistach
+            </li>
+          </ul>
+          <!-- Tabela -->
+          <ul class="notes-list">
+            Tabela:
+            <li class="notes-list__element">
+              <pre>
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+            </pre
+              >
+            </li>
+          </ul>
+          <!-- Ogólne -->
+          <ul class="notes-list">
+            Ogólne:
             <li class="notes-list__element">
               <b>`polecenie / jednolinijkowy kod`</b> - wyróżniona treść
             </li>
@@ -236,17 +354,8 @@
               od przeglądarki lub programu wpisując na początku kod (np.
               javascript) dostajemy kolory z edytora
             </li>
-            <li class="notes-list__element"><b>*tekst*</b> - kursywa</li>
-            <li class="notes-list__element"><b>**tekst**</b> - pogrubienie</li>
-            <li class="notes-list__element">
-              <b>***tekst***</b> - kursywa i pogrubienie
-            </li>
             <li class="notes-list__element">
               <b>> tekst</b> - wcięcie do cytatu
-            </li>
-            <li class="notes-list__element"><b>- tekst</b> - lista</li>
-            <li class="notes-list__element">
-              <b>1. tekst ...i tak dalej</b> - lista numeryczna
             </li>
             <li class="notes-list__element">
               <b>.md</b> - pliki Markdown mają rozszerzenie .md

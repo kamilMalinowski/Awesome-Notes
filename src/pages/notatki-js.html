@@ -38,7 +38,7 @@
       <nav class="menu-navigation menu-navigation--js">
         <a class="menu-navigation__link" href="notatki-html.html">HTML</a>
         <a class="menu-navigation__link" href="notatki-css.html">CSS</a>
-        <a class="menu-navigation__link" href="notatki-js.html">JAVASCRIPT</a>
+        <a class="menu-navigation__link" href="notatki-js.html">JS | VUE</a>
         <a class="menu-navigation__link" href="notatki-roznosci.html"
           >RÓŻNOŚCI</a
         >
@@ -47,8 +47,8 @@
 
     <!--HEADER-->
     <header class="header">
-      <h1 class="header__title">JavaScript</h1>
-      <h2 class="header__subTitle">Co ten JAVASCRIPT?</h2>
+      <h1 class="header__title">JavaScript | VUE</h1>
+      <h2 class="header__subTitle">Co ten JAVASCRIPT | VUE?</h2>
 
       <!--nav-->
       <nav class="header-nav>">
@@ -73,6 +73,21 @@
               >JavaScript różności (README-JS.MD)</a
             >
           </li>
+          <li class="header-navList__element">
+            <a class="header-navList__link" href="#appJS"
+              >Aplikacje Javascript <strong>New</strong></a
+            >
+          </li>
+          <li class="header-navList__element">
+            <a class="header-navList__link" href="#VUE"
+              >VUE.JS <strong>New</strong></a
+            >
+          </li>
+          <li class="header-navList__element">
+            <a class="header-navList__link" href="#appVUE"
+              >Aplikacje Vue <strong>New</strong></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -84,7 +99,7 @@
 
         <!--Aplikacje JavaScript-->
         <article class="notes-article notes-article--bootstrap">
-          <h3 class="notes-article__title" id="html">Aplikacje Javascript</h3>
+          <h3 class="notes-article__title" id="appJS">Aplikacje Javascript</h3>
           <p
             class="notes-article__description notes-article__description--bootstrap"
           >
@@ -168,13 +183,71 @@
           </div>
         </article>
 
+        <!-- VUE.JS -->
+        <article class="notes-article">
+          <h3 class="notes-article__title" id="VUE">VUE.JS</h3>
+          <p class="notes-article__description">
+            Vue.js to front-endowy framework JavaScript typu open source
+            model-view-viewmodel do tworzenia interfejsów użytkownika i
+            aplikacji jednostronicowych. Został stworzony przez Evana You i jest
+            utrzymywany przez niego i pozostałych aktywnych członków zespołu.
+          </p>
+
+          <!--Instalacja vue 1-->
+          <h4 class="notes-article__subTitle">Instalacja Vue (sposób nr.1):</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b
+                >&lt;script&gt;
+                src="https://unpkg.com/vue@next"&lt;/script&gt;</b
+              >
+              - instalacja poprzez użycie CDN package
+            </li>
+          </ol>
+          <!--Instalacja vue 2-->
+          <h4 class="notes-article__subTitle">Instalacja Vue (sposób nr.2):</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b>npm install vue@next</b> - instalacja poprzez użycie npm
+            </li>
+          </ol>
+          <!--Instalacja vue 3-->
+          <h4 class="notes-article__subTitle">Instalacja Vue (sposób nr.3):</h4>
+          <ol class="notes-list">
+            <li class="notes-list__element">
+              <b>yarn global add @vue/cli</b> lub
+              <b>npm install -g @vue/cli</b> - instalacja poprzez użycie CLI
+            </li>
+          </ol>
+          <!--vue-->
+          <h4 class="notes-article__subTitle">Vue</h4>
+          <ul class="notes-list">
+            <li class="notes-list__element"><b>v-bind:</b> -</li>
+            <li class="notes-list__element"><b>v-if</b> -</li>
+            <li class="notes-list__element"><b>v-for="name in names"</b> -</li>
+            <li class="notes-list__element"><b>@click</b> -</li>
+            <li class="notes-list__element"><b>v-model</b> -</li>
+            <li class="notes-list__element"><b>v-bind:key</b> -</li>
+            <li class="notes-list__element"><b> {{ title }} </b> -</li>
+            <li class="notes-list__element">
+              <b>v-bind:class="{ completed: item.completed }"</b> -
+            </li>
+            <li class="notes-list__element"><b></b> -</li>
+            <li class="notes-list__element"><b></b> -</li>
+            <li class="notes-list__element"><b></b> -</li>
+            <li class="notes-list__element"><b></b> -</li>
+            <li class="notes-list__element"><b></b> -</li>
+            <li class="notes-list__element"><b></b> -</li>
+          </ul>
+        </article>
+
         <!--Aplikacje Vue-->
         <article class="notes-article notes-article--bootstrap">
-          <h3 class="notes-article__title" id="html">Aplikacje Vue</h3>
+          <h3 class="notes-article__title" id="appVUE">Aplikacje Vue</h3>
           <p
             class="notes-article__description notes-article__description--bootstrap"
           >
-            Moje przykładowe aplikacje JavaScript
+            Moje przykładowe aplikacje Vue.js
           </p>
           <!-- Aplikacje -->
           <div class="container">

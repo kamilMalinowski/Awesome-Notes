@@ -14,7 +14,7 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 
 - HTML
 - BEM
-- Markdown
+- Markdown **(Update)**
 - Bootstrap **(New!)**
 - PHP **(New!)**
 
@@ -55,6 +55,7 @@ My notes created as part of the "WTF: Co ten frontend" training. I'm still think
 1. [Javascript-podstawy](https://codepen.io/kamilmalinowski/pen/JjKzWoZ)
 2. [Javascript-notatki](https://github.com/kamilMalinowski/webpack-test/blob/master/README-JS.md)
 3. [PHP-podstawy](https://github.com/kamilMalinowski/webpack-test/blob/master/README-PHP.md)
+4. [Markdown-podstawy](https://github.com/kamilMalinowski/webpack-test/blob/master/README-MARKDOWN.md) **New**
 
 
 

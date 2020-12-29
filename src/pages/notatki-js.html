@@ -203,6 +203,24 @@
               >
               - instalacja poprzez użycie CDN package
             </li>
+            <li class="notes-list__element">
+              <b>Praktyczny przykład:</b>
+              <pre class="notes-article__pre">
+&lt;div id ="app" &gt; 
+  &lt;p&gt; {{ title }} &lt;/p&gt; 
+&lt;/div&gt;
+
+&lt;script&gt;
+  new Vue ({
+    el: '#app',
+    data: {
+      title: 'Hello Vue!'
+    }
+  })
+&lt;/script&gt;            
+            </pre
+              >
+            </li>
           </ol>
           <!--Instalacja vue 2-->
           <h4 class="notes-article__subTitle">Instalacja Vue (sposób nr.2):</h4>
@@ -215,28 +233,96 @@
           <h4 class="notes-article__subTitle">Instalacja Vue (sposób nr.3):</h4>
           <ol class="notes-list">
             <li class="notes-list__element">
-              <b>yarn global add @vue/cli</b> lub
-              <b>npm install -g @vue/cli</b> - instalacja poprzez użycie CLI
+              <b>yarn global add @vue/cli @vue/cli-service-global</b> lub
+              <b>npm install -g @vue/cli @vue/cli-service-global</b> -
+              instalacja poprzez użycie CLI
+            </li>
+            <li class="notes-list__element">
+              <b>vue create newApp</b> - tworzymy projekt vue w nowym folderze
+              newApp
+            </li>
+            <li class="notes-list__element">
+              <b>vue create .</b> - tworzymy projekt vue w obecnym folderze
+            </li>
+            <li class="notes-list__element">
+              <b>Praktyczny przykład:</b>
+              <pre class="notes-article__pre">
+&lt;template &gt; 
+  &lt;p&gt; {{ title }} &lt;/p&gt; 
+&lt;/template&gt;
+
+&lt;script&gt;
+  export default {
+    data() {
+      return {
+        title: 'Hello Vue!',
+      }
+    }
+  }
+&lt;/script&gt;            
+            </pre
+              >
             </li>
           </ol>
           <!--vue-->
-          <h4 class="notes-article__subTitle">Vue</h4>
+          <h4 class="notes-article__subTitle">Vue - podstawy</h4>
           <ul class="notes-list">
-            <li class="notes-list__element"><b>v-bind:</b> -</li>
-            <li class="notes-list__element"><b>v-if</b> -</li>
-            <li class="notes-list__element"><b>v-for="name in names"</b> -</li>
-            <li class="notes-list__element"><b>@click</b> -</li>
-            <li class="notes-list__element"><b>v-model</b> -</li>
-            <li class="notes-list__element"><b>v-bind:key</b> -</li>
-            <li class="notes-list__element"><b> {{ title }} </b> -</li>
             <li class="notes-list__element">
-              <b>v-bind:class="{ completed: item.completed }"</b> -
+              <b> {{ title }} </b> - przykładowo dodajemy tytuł do elementu html
             </li>
-            <li class="notes-list__element"><b></b> -</li>
-            <li class="notes-list__element"><b></b> -</li>
-            <li class="notes-list__element"><b></b> -</li>
-            <li class="notes-list__element"><b></b> -</li>
-            <li class="notes-list__element"><b></b> -</li>
+            <li class="notes-list__element">
+              <b>el: ''</b> - nasza aplikacja 'app'
+            </li>
+            <li class="notes-list__element">
+              <b>template: `kod html`</b> - nasza kod html umieszczony w
+              skrypcie vue
+            </li>
+            <li class="notes-list__element">
+              <b>data: {}</b> - tu dodajemy elementy aplikacji
+            </li>
+            <li class="notes-list__element">
+              <b>methods: {}</b> - tu dodajemy nasze funkcje
+            </li>
+            <li class="notes-list__element">
+              <b>watch: {}</b> - tu dodajemy elementy aplikacji, które chcemy
+              obserwować
+            </li>
+            <li class="notes-list__element">
+              <b>computed: {nazwaFunkcji(){return}}</b> - tu dodajemy elementy,
+              którę mają się automatycznie kalkulować
+            </li>
+          </ul>
+          <!-- dyrektywy -->
+          <h4 class="notes-article__subTitle">Dyrektywy</h4>
+          <ul class="notes-list">
+            <li class="notes-list__element">
+              <b> {{ title }} </b> - przykładowo dodajemy tytuł do elementu html
+            </li>
+            <li class="notes-list__element">
+              <b>v-if</b> - instrukcja warunkowa if
+            </li>
+            <li class="notes-list__element">
+              <b>v-else</b> - instrukcja warunkowa else
+            </li>
+            <li class="notes-list__element">
+              <b>v-for="name in names"</b> - pętla for
+            </li>
+            <li class="notes-list__element">
+              <b>v-bind:key</b> - klucz dzięki, któremu rozpoznajemy elementy
+              (używamy np w pętli)
+            </li>
+            <li class="notes-list__element">
+              <b>v-on:click</b> lub <b>@click</b> - przykładowo do przycisku
+              dodajemy funkcję
+            </li>
+            <li class="notes-list__element">
+              <b>v-model</b> - przechwytuje zawartość inputa
+            </li>
+            <li class="notes-list__element">
+              <b>v-bind:class="{ nazwaKlasy: coSięMaWydażyć }"</b> - dodajemy
+              zlinkowaną klasę (podobnie jak
+              <i>const.classList.toggle("nazwaKlasy")</i>)
+            </li>
             <li class="notes-list__element"><b></b> -</li>
           </ul>
         </article>

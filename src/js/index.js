@@ -16,14 +16,15 @@ console.log("EN: Hello, i'm glad you're here ❤️."); /*greeting*/
 // 8.
 // 9.
 // 10.
-fetch("https://api.github.com/users/kamilMalinowski/repos")
+fetch("https://api.github.com/users/kamilMalinowski/repos?sort=created")
   .then((resp) => resp.json())
   .then((resp) => {
     for (let repo of resp) {
       const repositoryList = document.querySelector(".repoList--js");
-      const { name, html_url } = repo;
-      const myTemplate = `
-      <li class="notes-list__element">${name} 
+      const { name, html_url, id } = repo;
+      if (id !== 277371084) {
+        const myTemplate = `
+      <li class="notes-list__element">${name}
         <a 
         class="notes-list__link" 
         href="${html_url}" 
@@ -31,7 +32,8 @@ fetch("https://api.github.com/users/kamilMalinowski/repos")
         > - link do GitHuba
         </a>
       </li>`;
-      repositoryList.innerHTML += myTemplate;
+        repositoryList.innerHTML += myTemplate;
+      }
     }
   })
   .catch((error) => {

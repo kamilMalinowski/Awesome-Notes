@@ -23,7 +23,9 @@ html {
   display: none;
 }
 .body {
-  background: var(--color-bg);
+  // background: var(--color-bg);
+  background: url("../assets/img/bg-paper.jpg");
+  background-size: cover;
   font-family: "Miriam Libre", sans-serif;
   font-size: 16px;
   color: var(--color-gray);

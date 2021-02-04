@@ -35,9 +35,10 @@ html {
 .main {
   margin: 0;
   padding: 0;
-  &--html{
-    width:100vw;
-    display:flex;
+  &--html {
+    width: 100vw;
+    display: flex;
     flex-direction: row;
   }
 }
+
